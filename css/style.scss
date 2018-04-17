@@ -33,6 +33,11 @@
   src: url("../assets/font/Merel Thin.otf");
 }
 
+@font-face {
+  font-family: 'Georgiai';
+  src: url("../assets/font/georgiai.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -105,6 +110,7 @@ body {
 }
 
 .aside-btn {
+  cursor: pointer;
   margin-top: 58px;
   width: 241px;
   height: 55px;
