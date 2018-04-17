@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'Catorze27 Style 1';
+  src: url("../assets/font/catorze27style1-semibold.ttf");
+}
+
+@font-face {
+  font-family: 'Merel Regular';
+  src: url("../assets/font/Merel.otf");
+}
+
+@font-face {
+  font-family: 'Merel Black';
+  src: url("../assets/font/Merel Black.otf");
+}
+
+@font-face {
+  font-family: 'Merel Bold';
+  src: url("../assets/font/Merel Bold.otf");
+}
+
+@font-face {
+  font-family: 'Merel Light';
+  src: url("../assets/font/Merel Light.otf");
+}
+
+@font-face {
+  font-family: 'Merel Medium';
+  src: url("../assets/font/Merel Medium.otf");
+}
+
+@font-face {
+  font-family: 'Merel Thin';
+  src: url("../assets/font/Merel Thin.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +41,7 @@
   text-decoration: none;
   list-style: none;
   color: #263049;
+  cursor: default;
 }
 
 html,
@@ -21,7 +57,7 @@ body {
 /*aside*/
 .aside {
   position: fixed;
-  width: 300px;
+  width: 280px;
   height: 100vh;
   top: 0;
   left: 0;
@@ -29,15 +65,86 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-item-link {
+  font-family: 'Catorze27 Style 1', sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 57px;
+}
+
+.aside__container .aside-text {
+  text-align: center;
+  &:nth-child(2) {
+    font-family: 'Merel Medium', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  &:nth-child(3) {
+    margin: 13.72px 0 55.61px;
+    font-family: 'Merel Regular', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  &:last-child {
+    font-family: 'Catorze27 Style 1', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+}
+
+.aside-btn {
+  margin-top: 58px;
+  width: 241px;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(241, 218, 194, 0.5);
+  font-family: 'Catorze27 Style 1', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
 /*end*/
 
 /*main*/
 .main {
-  width: calc(100% - 300px);
-  margin-left: 300px;
+  width: calc(100% - 280px);
+  margin-left: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #faf7f2;
+  background: #FAF7F2;
+  position: relative;
+}
+
+.lang {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Catorze27 Style 1', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
 }
 /*end*/
