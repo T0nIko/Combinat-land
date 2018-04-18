@@ -285,6 +285,97 @@ body {
       z-index: 2;
     }
   }
+  &:nth-child(2) .container-caption {
+    font-family:'Catorze27 Style 1', sans-serif;
+    font-size: 120px;
+    text-transform: uppercase;
+    line-height: 113px;
+    margin: 25px auto auto 220px;
+  }
+  &:nth-child(2) .container-wrapper {
+    position: absolute;
+    z-index: 3;
+    top: 274px;
+    right: 217px;
+    width: 437px;
+    height: 400px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &:nth-child(2) .container-wrapper .container-text {
+    font-family: 'Georgiai', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    &:first-child {
+      position: relative;
+      margin: auto auto 80px;
+      &:after {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 10px;
+        background: url('../assets/pictures/svg/zigzag.svg') no-repeat 50% 50%;
+        background-size: cover;
+        left: calc(50% - 30px);
+        top: 139px;
+      }
+    }
+    &:last-child {
+      margin: 0 auto auto;
+    }
+  }
+  &:nth-child(2) .container__slider {
+    position: absolute;
+    z-index: 2;
+    top: 211px;
+    left: 245px;
+    width: 959px;
+    height: 557px;
+    background: rgba(248,236,222,.6);
+    &:before {
+      position: absolute;
+      top: 38px;
+      left: -24px;
+      content: '';
+      width: 945px;
+      height: 544px;
+      background: rgba(248,236,222,.6);
+    }
+  }
+  &:nth-child(2) .container__slider .slider-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  &:nth-child(2) .container__slider .slider-wrapper .slider-arrow {
+    &:first-child {
+      cursor: pointer;
+      position: absolute;
+      top: 150px;
+      left: -54.5px;
+      content: '';
+      height: 109px;
+      width: 116px;
+      background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
+      background-size: 100% 28px;
+    }
+    &:nth-child(2) {
+      cursor: pointer;
+      transform: scale(-1,-1);
+      position: absolute;
+      top: 267px;
+      left: -54.5px;
+      content: '';
+      height: 109px;
+      width: 116px;
+      background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
+      background-size: 100% 28px;
+    }
+  }
   &:nth-child(7) {
     height: calc(100vh - 97px);
   }
