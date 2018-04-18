@@ -346,12 +346,8 @@ body {
       background: rgba(248,236,222,.6);
     }
   }
-  &:nth-child(2) .container__slider .slider-wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  &:nth-child(2) .container__slider .slider-wrapper .slider-arrow {
+  &:nth-child(2) .container__slider .slider-arrow {
+    z-index: 5;
     &:first-child {
       cursor: pointer;
       position: absolute;
@@ -374,6 +370,35 @@ body {
       width: 116px;
       background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
       background-size: 100% 28px;
+    }
+  }
+  &:nth-child(2) .container__slider .slider-wrapper {
+    width: 100%;
+    height: 544px;
+    overflow: hidden;
+    position: relative;
+  }
+  &:nth-child(2) .container__slider .slider-wrapper .slider-list {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2176px;
+    display: flex;
+    flex-direction: column;
+  }
+  &:nth-child(2) .container__slider .slider-wrapper .slider-list .slider-item {
+    width: 100%;
+    height: 544px;
+    &:first-child {
+      background: black;
+    }
+    &:nth-child(2),
+    &:nth-child(4){
+      background: grey;
+    }
+    &:nth-child(3) {
+      background: red;
     }
   }
   &:nth-child(7) {
