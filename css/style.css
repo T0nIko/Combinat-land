@@ -105,7 +105,7 @@ body {
 .aside-img {
   width: 51px;
   height: 29px;
-  margin: 20px auto; }
+  margin: 35px auto; }
 
 .aside-btn {
   cursor: pointer;
@@ -128,7 +128,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: repeating-linear-gradient(to right, #FAF7F2, #FAF7F2 112px, rgba(241, 218, 194, 0.5) 112px, rgba(241, 218, 194, 0.5) 113px);
+  background: #FAF7F2;
   position: relative; }
 
 .lang {
@@ -138,7 +138,7 @@ body {
   right: 20px;
   width: 64px;
   height: 64px;
-  background: white;
+  background: #FFFFFF;
   border-radius: 50%;
   display: flex;
   flex-direction: row;
@@ -148,12 +148,96 @@ body {
   text-transform: uppercase;
   font-size: 24px; }
 
+.button-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
+  background-size: 100% 28px;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+
+.active {
+  cursor: pointer;
+  opacity: 1; }
+
+.gold {
+  font-family: 'Georgiai', sans-serif;
+  color: #BA8161; }
+
 /*end*/
 /*content*/
-.container {
+.main .container {
   width: 100%;
   position: relative;
   height: 100vh; }
+  .main .container:first-child {
+    background: url("../assets/pictures/svg/fish.svg") no-repeat 330px 67px;
+    background-size: 327px 332px;
+    display: flex;
+    flex-direction: row-reverse; }
+  .main .container:first-child .container-caption {
+    font-family: 'Catorze27 Style 1', sans-serif;
+    font-size: 120px;
+    text-transform: uppercase;
+    line-height: 113px;
+    position: absolute;
+    top: 217px;
+    left: 876px;
+    z-index: 4; }
+  .main .container:first-child .container-wrapper {
+    position: absolute;
+    top: 469px;
+    left: 222px;
+    width: 557px;
+    height: 400px;
+    border: 6px solid #F7EBDD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3; }
+  .main .container:first-child .container-wrapper .container-text {
+    font-family: 'Georgiai', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center; }
+    .main .container:first-child .container-wrapper .container-text:first-child {
+      position: relative;
+      margin: auto auto 80px; }
+      .main .container:first-child .container-wrapper .container-text:first-child:after {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 10px;
+        background: url("../assets/pictures/svg/zigzag.svg") no-repeat 50% 50%;
+        background-size: cover;
+        left: calc(50% - 30px);
+        top: 87px; }
+    .main .container:first-child .container-wrapper .container-text:last-child {
+      margin: 0 auto auto; }
+  .main .container:first-child .container-block:nth-child(3) {
+    position: absolute;
+    top: 512px;
+    right: 327px;
+    width: 655.5px;
+    height: 382px;
+    background: #FFFFFF;
+    z-index: 1; }
+  .main .container:first-child .container-block:nth-child(4) {
+    position: absolute;
+    top: 89px;
+    right: 218px;
+    width: 436px;
+    height: 607px;
+    background: #BA8161 url("../assets/pictures/png/1.png") no-repeat 75% 50%;
+    background-size: cover;
+    z-index: 2; }
+  .main .container:nth-child(7) {
+    height: calc(100vh - 97px); }
 
 /*end*/
 /*footer*/
