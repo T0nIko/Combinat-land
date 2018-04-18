@@ -7,12 +7,13 @@
 
     <!-- css -->
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <!-- js -->
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 
 </head>
@@ -115,7 +116,8 @@
             <a href="" class="container-btn">Полное меню</a>
         </div>
         <div class="container__slider">
-            <!-- Smth -->
+            <span class="slider-arrow prev"></span>
+            <span class="slider-arrow next"></span>
         </div>
     </section>
 
@@ -123,17 +125,25 @@
     <section class="container" id="affiche">
         <h1 class="container-caption">Афиша</h1>
         <div class="container-wrapper">
-            <img src="assets/pictures" class="container-img" />
-            <div class="container__text">
-                <h2 class="container-caption">Поэтический вечер Олега Юрьева</h2>
-                <p class="container-text">23 ноября, 19:00</p>
+            <div class="container-box">
+                <div class="container-img-wrapper">
+                    <img src="assets/pictures/png/1.png" class="container-img affiche-img" />
+                </div>
+                <div class="container__text">
+                    <h2 class="container-caption">Поэтический вечер Олега Юрьева</h2>
+                    <img src="assets/pictures/svg/zigzag.svg" class="container-img" />
+                    <p class="container-text">23 ноября, 19:00</p>
+                </div>
             </div>
-        </div>
-        <div class="container-wrapper">
-            <img src="assets/pictures" class="container-img" />
-            <div class="container__text">
-                <h2 class="container-caption">Поэтический вечер Олега Юрьева</h2>
-                <p class="container-text">23 ноября, 19:00</p>
+            <div class="container-box">
+                <div class="container-img-wrapper">
+                    <img src="assets/pictures/png/2.png" class="container-img affiche-img" />
+                </div>
+                <div class="container__text">
+                    <h2 class="container-caption">Поэтический вечер Олега Юрьева</h2>
+                    <img src="assets/pictures/svg/zigzag.svg" class="container-img" />
+                    <p class="container-text">23 ноября, 19:00</p>
+                </div>
             </div>
         </div>
     </section>
