@@ -682,7 +682,7 @@ body {
       margin: auto auto 0;
     }
     &:nth-child(2) {
-      margin: auto auto;
+      margin: auto;
     }
     &:nth-child(3) {
       margin: 0 auto auto;
@@ -776,7 +776,7 @@ body {
     }
   }
   &:nth-child(7) {
-    height: auto;
+    height: 570px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -789,6 +789,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    &:first-child {
+      margin: auto auto 0;
+    }
+    &:nth-child(2) {
+      margin: -15px auto auto;
+    }
+    &:nth-child(3) {
+      margin: -120px auto auto;
+    }
   }
   &:nth-child(8) {
     height: calc(100vh - 97px);
