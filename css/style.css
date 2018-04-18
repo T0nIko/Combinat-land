@@ -487,6 +487,86 @@ body {
     text-align: center;
     color: #BA8161;
     margin: 0 auto 34px; }
+  .main .container:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    background: url("../assets/pictures/svg/shrimp-right.svg") no-repeat calc(100% - 7px) 308px;
+    background-size: 295px 368px; }
+  .main .container:nth-child(5) .container-caption {
+    font-family: 'Catorze27 Style 1', sans-serif;
+    font-size: 120px;
+    text-transform: uppercase;
+    line-height: 113px;
+    margin: 0 217px 0 auto; }
+  .main .container:nth-child(5) .container-wrapper {
+    position: absolute;
+    z-index: 3;
+    top: 208px;
+    right: 217px;
+    width: 764px;
+    height: 401px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main .container:nth-child(5) .container-wrapper .container-text:first-child {
+    font-family: 'Catorze27 Style 1', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 34px;
+    margin: auto auto 0; }
+  .main .container:nth-child(5) .container-wrapper .container-text:nth-child(3) {
+    font-family: 'Catorze27 Style 1', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 19px;
+    color: #BA8161;
+    margin: 0 auto auto; }
+  .main .container:nth-child(5) .container-wrapper .container-img {
+    width: 70px;
+    height: 10px;
+    margin: 50px auto 40px; }
+  .main .container:nth-child(5) .container__slider {
+    position: absolute;
+    width: 546px;
+    height: 553px;
+    left: 222px;
+    top: 123px;
+    background: rgba(248, 236, 222, 0.6); }
+    .main .container:nth-child(5) .container__slider:before {
+      position: absolute;
+      z-index: 1;
+      content: '';
+      width: 546px;
+      height: 553px;
+      background: rgba(248, 236, 222, 0.6);
+      top: 25px;
+      left: 30px; }
+  .main .container:nth-child(5) .container__slider .slider-arrow {
+    z-index: 5; }
+    .main .container:nth-child(5) .container__slider .slider-arrow:first-child {
+      cursor: pointer;
+      position: absolute;
+      top: 171px;
+      left: -54.5px;
+      content: '';
+      height: 109px;
+      width: 116px;
+      background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
+      background-size: 100% 28px; }
+    .main .container:nth-child(5) .container__slider .slider-arrow:nth-child(2) {
+      cursor: pointer;
+      transform: scale(-1, -1);
+      position: absolute;
+      top: 288px;
+      left: -54.5px;
+      content: '';
+      height: 109px;
+      width: 116px;
+      background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
+      background-size: 100% 28px; }
   .main .container:nth-child(7) {
     height: calc(100vh - 97px); }
 
