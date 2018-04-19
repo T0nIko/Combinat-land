@@ -7,13 +7,11 @@
 
     <!-- css -->
     <link href="css/style.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 
 </head>
@@ -57,58 +55,57 @@
 
         <img src="assets/pictures/svg/owl.svg" class="aside-img" alt="Морда совы"/>
 
-        <a href="" class="aside-btn">Забронировать столик</a>
+        <a id="aside_btn" class="aside-btn">Забронировать столик</a>
+    </div>
+</aside>
+
+<section class="aside__container pop-up" id="pop_up">
+
+    <div class="pop-up__container">
+        <span class="pop-up-btn" id="pop_up_btn"></span>
+        <h1 class="pop-up-caption">Заказать банкет</h1>
+        <p class="pop-up-text">Для лиц старше 18 лет</p>
+        <form class="pop-up-form" id="order_form" action="" method="post">
+            <div class="field__container">
+                <div class="field-wrapper">
+                    <label class="field-label" for="date">Дата и время</label>
+                    <input type="date" class="field" id="date" placeholder="__ __ ____"/>
+                </div>
+                <div class="field-wrapper">
+                    <label class="field-label" for="count">Кол-во гостей</label>
+                    <span class="field-btn" id="add">+</span>
+                    <input type="number" class="field" min="1" id="count"/>
+                    <span class="field-btn" id="remove">-</span>
+                </div>
+            </div>
+            <div class="field__container">
+                <div class="field-wrapper">
+                    <label class="field-label" for="name">Ваше имя и фамилия</label>
+                    <input type="text" class="field" id="name" placeholder="Например, Мария Иванова"/>
+                </div>
+                <div class="field-wrapper">
+                    <label class="field-label" for="phone">Контактный телефон</label>
+                    <input type="tel" class="field" id="phone" placeholder="+7___ ___-__-__"/>
+                </div>
+                <div class="field-wrapper">
+                    <label class="field-label" for="email">Электорнная почта</label>
+                    <input type="email" class="field" id="email" placeholder="Например, maryivanova@example.ru"/>
+                </div>
+                <div class="field-wrapper">
+                    <label class="field-label" for="comment">Комментарий</label>
+                    <textarea class="field-text" id="comment" placeholder="Ваш текст"></textarea>
+                </div>
+                <button type="submit" class="form-btn" value="" form>Отправить</button>
+            </div>
+        </form>
+        <p class="pop-up-text">Нажимая на кнопку вы соглашаетесь с
+            <a href="" class="pop-up-text--gold">правилами сайта</a>
+        </p>
     </div>
 
-    <section class="aside__container pop-up">
+    <div class="pop-up__container"></div>
 
-        <div class="pop-up__container">
-            <span class="pop-up-btn"></span>
-            <h1 class="pop-up-caption">Заказать банкет</h1>
-            <p class="pop-up-text">Для лиц старше 18 лет</p>
-            <form class="pop-up-form" id="order_form" action="" method="post">
-                <div class="field__container">
-                    <div class="field-wrapper">
-                        <label class="field-label" for="date">Дата и время</label>
-                        <input type="date" class="field" id="date" placeholder="__ __ ____"/>
-                    </div>
-                    <div class="field-wrapper">
-                        <label class="field-label" for="count">Кол-во гостей</label>
-                        <span class="field-btn">+</span>
-                        <input type="number" class="field" id="count"/>
-                        <span class="field-btn">-</span>
-                    </div>
-                </div>
-                <div class="field__container">
-                    <div class="field-wrapper">
-                        <label class="field-label" for="name">Ваше имя и фамилия</label>
-                        <input type="text" class="field" id="name" placeholder="Например, Мария Иванова"/>
-                    </div>
-                    <div class="field-wrapper">
-                        <label class="field-label" for="phone">Контактный телефон</label>
-                        <input type="tel" class="field" id="phone" placeholder="+7___ ___-__-__"/>
-                    </div>
-                    <div class="field-wrapper">
-                        <label class="field-label" for="email">Электорнная почта</label>
-                        <input type="email" class="field" id="email" placeholder="Например, maryivanova@example.ru"/>
-                    </div>
-                    <div class="field-wrapper">
-                        <label class="field-label" for="comment">Комментарий</label>
-                        <textarea class="field-text" id="comment" placeholder="Ваш текст"></textarea>
-                    </div>
-                    <button type="submit" class="form-btn" value="" form>Отправить</button>
-
-                </div>
-            </form>
-            <p class="pop-up-text">Нажимая на кнопку вы соглашаетесь с
-                <span class="pop-up-text--gold">правилами сайта</span>
-            </p>
-        </div>
-
-        <div class="pop-up__container"></div>
-
-    </section>
-</aside>
+</section>
 
 <main class="main">
 
@@ -297,7 +294,7 @@
                 <br/>ТРЦ "Ривьера", 3-й этаж</p>
             <p class="container-text">11:00 — 24:00</p>
             <h3 class="container-caption">+7 926 192-40-35</h3>
-            <a href="" class="container-btn">Забронировать столик</a>
+            <a id="reserve_btn" class="container-btn">Забронировать столик</a>
             <div class="container__box">
                 <a href="" class="container-box-icon"></a>
                 <a href="" class="container-box-icon"></a>

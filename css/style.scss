@@ -59,6 +59,21 @@ body {
   position: relative;
 }
 
+input[type='number'],
+input[type='date'] {
+  -moz-appearance:textfield;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='date']::-webkit-outer-spin-button,
+input[type='date']::-webkit-inner-spin-button {
+  opacity: 0;
+}
+
 /*aside*/
 .aside {
   position: fixed;
@@ -71,6 +86,11 @@ body {
   top: 0;
   left: 0;
   display: flex;
+  transition: all .3s cubic-bezier(0.42, 2.12, 0.35, 0.55);
+}
+
+.aside--active {
+  box-shadow: 10px 0 30px rgba(168, 147, 113, 0.1);
 }
 
 .aside-wrapper {
@@ -164,14 +184,20 @@ body {
 /*aside pop-up*/
 .pop-up {
   position: fixed;
+  z-index: 8;
   top: 0;
-  left: 280px;
+  left: -100%;
   max-width: 765px;
   width: 100%;
   height: 100vh;
   display: flex;
   background: #FFFFFF;
   box-shadow: 10px 0 30px rgba(168, 147, 113, 0.1);
+  transition: all .5s cubic-bezier(.51,.92,.24,1.15);
+}
+
+.pop-up--active {
+  left: 280px;
 }
 
 .pop-up__container {
@@ -217,6 +243,7 @@ body {
       color: #28304A;
     }
     &:nth-child(5) .pop-up-text--gold {
+      cursor: pointer;
       font-family: 'Merel Regular', sans-serif;
       font-size: 14px;
       color: #BA8161;
@@ -266,7 +293,7 @@ body {
         }
       }
       &:first-child .field {
-        width: 80px;
+        width: 100px;
       }
       &:nth-child(2) {
         width: 230px;
@@ -277,6 +304,11 @@ body {
         padding-left: 20px !important;
       }
       &:nth-child(2) .field-btn {
+        cursor: pointer;
+        font-family: 'Catorze27 Style 1', sans-serif;
+        line-height: 17px;
+        font-size: 18px;
+        text-transform: uppercase;
         &:nth-child(2) {
           margin: auto 0 auto auto;
         }
@@ -287,6 +319,7 @@ body {
       &:nth-child(2) .field {
         width: 20px;
         margin: auto 5px;
+        text-align: center;
       }
     }
     &:nth-child(2) .field-wrapper {
@@ -296,6 +329,26 @@ body {
       align-items: center;
       background: #FAF7F2;
       margin-bottom: 15px;
+      &:nth-child(4) {
+        margin-bottom: 40px;
+      }
+    }
+    &:nth-child(2) .form-btn {
+      cursor: pointer;
+      background: #FFFFFF;
+      outline: none;
+      margin: 0 auto;
+      width: 178px;
+      height: 55px;
+      border: 1.5px solid #28304A;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      font-family: 'Catorze27 Style 1', sans-serif;
+      font-size: 18px;
+      text-align: center;
+      text-transform: uppercase;
     }
     &:nth-child(2) .field-wrapper .field-label {
       width: 207px;
@@ -318,12 +371,47 @@ body {
     border-right: 1px solid #EAE9E4;
   }
   &:first-child .pop-up-form .field__container .field-wrapper .field {
+    cursor: text;
     background: transparent;
     outline: none;
     border: none;
     height: 28px;
-    padding-top: 5px;
+    padding-top: 2px;
     width: calc(100% - 246px);
+    font-family: 'Catorze27 Style 1', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    &::placeholder {
+      font-family: 'Catorze27 Style 1', sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: rgba(186, 129, 97, .2);
+    }
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-moz-placeholder {
+      font-family: 'Catorze27 Style 1', sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: rgba(186, 129, 97, .2);
+    }
+  }
+  &:first-child .pop-up-form .field__container .field-wrapper .field-text {
+    cursor: text;
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 28px;
+    width: calc(100% - 246px);
+    margin-left: 20px;
+    padding-top: 5px;
+    font-family: 'Catorze27 Style 1', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
     &::placeholder {
       font-family: 'Catorze27 Style 1', sans-serif;
       font-size: 18px;

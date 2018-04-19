@@ -37,4 +37,42 @@ $(document).ready(function () {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
+// Open reserved's pop-up
+$(document).ready(function () {
+    $('#aside_btn').click(function () {
+        $('#pop_up').toggleClass('pop-up--active');
+        $('.aside').toggleClass('aside--active');
+    });
 
+    $('#pop_up_btn').click(function () {
+        $('#pop_up').toggleClass('pop-up--active');
+        $('.aside').toggleClass('aside--active');
+    });
+
+    $('#reserve_btn').click(function () {
+        $('#pop_up').toggleClass('pop-up--active');
+        $('.aside').toggleClass('aside--active');
+    });
+});
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+$(document).ready(function () {
+    let count = 1;
+    $('#count').attr('value', count);
+
+    $('#add').click(function () {
+        $('#count').attr('value', count++);
+    });
+
+    $('#remove').click(function () {
+        let regressCount = count--;
+        if (regressCount >= 1) {
+            $('#count').attr('value', regressCount);
+        }
+        else {
+            $('#count').attr('value', 1);
+        }
+    });
+
+});
