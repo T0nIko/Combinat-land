@@ -191,43 +191,55 @@ input[type='date']::-webkit-inner-spin-button {
   width: 100%;
   height: 100vh;
   display: flex;
-  background: #FFFFFF;
+  background: #FFFFFF url("../assets/pictures/svg/dish-bg.svg") no-repeat 50% 100%;
+  background-size: 326px 250px;
   box-shadow: 10px 0 30px rgba(168, 147, 113, 0.1);
   transition: all .5s cubic-bezier(.51,.92,.24,1.15);
+}
+
+.pop-up-close {
+  cursor: pointer;
+  width: 33px;
+  height: 35px;
+  position: absolute;
+  z-index: 10;
+  content: '';
+  top: 32px;
+  right: 40px;
+  background: url("../assets/pictures/svg/close.svg") no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .pop-up--active {
   left: 280px;
 }
 
+.last-pop-up--active {
+  left: 0 !important;
+}
+
 .pop-up__container {
   width: 100%;
   height: 100vh;
-  &:first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #FFFFFF url("../assets/pictures/svg/dish-bg.svg") no-repeat 50% 100%;
-    background-size: 326px 250px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  &:nth-child(2) {
+    z-index: 8;
+    left: 0;
   }
-  &:first-child .pop-up-btn {
-    cursor: pointer;
-    width: 33px;
-    height: 35px;
-    position: relative;
-    margin: 32px 40px 90px auto;
-    background: url("../assets/pictures/svg/close.svg") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  &:first-child .pop-up-caption {
+  &:nth-child(2) .pop-up-caption {
     font-family: 'Catorze27 Style 1', sans-serif;
     line-height: 45px;
     font-size: 48px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin: 157px auto 15px;
   }
-  &:first-child .pop-up-text {
+  &:nth-child(2) .pop-up-text {
     &:nth-child(3) {
       font-family: 'Catorze27 Style 1', sans-serif;
       line-height: 15px;
@@ -249,14 +261,14 @@ input[type='date']::-webkit-inner-spin-button {
       color: #BA8161;
     }
   }
-  &:first-child .pop-up-form {
+  &:nth-child(2) .pop-up-form {
     margin: 36px auto 27px;
     max-width: 545px;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  &:first-child .pop-up-form .field__container {
+  &:nth-child(2) .pop-up-form .field__container {
     display: flex;
     &:first-child {
       flex-direction: row;
@@ -357,7 +369,7 @@ input[type='date']::-webkit-inner-spin-button {
       margin-left: 20px;
     }
   }
-  &:first-child .pop-up-form .field__container .field-wrapper .field-label {
+  &:nth-child(2) .pop-up-form .field__container .field-wrapper .field-label {
     font-family: 'Catorze27 Style 1', sans-serif;
     line-height: 17px;
     font-size: 18px;
@@ -370,7 +382,7 @@ input[type='date']::-webkit-inner-spin-button {
     padding-left: 30px;
     border-right: 1px solid #EAE9E4;
   }
-  &:first-child .pop-up-form .field__container .field-wrapper .field {
+  &:nth-child(2) .pop-up-form .field__container .field-wrapper .field {
     cursor: text;
     background: transparent;
     outline: none;
@@ -399,7 +411,7 @@ input[type='date']::-webkit-inner-spin-button {
       color: rgba(186, 129, 97, .2);
     }
   }
-  &:first-child .pop-up-form .field__container .field-wrapper .field-text {
+  &:nth-child(2) .pop-up-form .field__container .field-wrapper .field-text {
     cursor: text;
     background: transparent;
     outline: none;
@@ -429,8 +441,48 @@ input[type='date']::-webkit-inner-spin-button {
       color: rgba(186, 129, 97, .2);
     }
   }
-  &:nth-child(2) {
-    display: none;
+  &:nth-child(3) {
+    z-index: 9;
+    left: -100%;
+    transition: all .5s cubic-bezier(.51,.92,.24,1.15);
+  }
+  &:nth-child(3) .pop-up-img {
+    width: 156px;
+    height: 67px;
+    margin: 306px auto 50px;
+  }
+  &:nth-child(3) .pop-up-caption {
+    font-family: 'Catorze27 Style 1', sans-serif;
+    line-height: 45px;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #28304A;
+  }
+  &:nth-child(3) .pop-up-text {
+    font-family: 'Georgia', sans-serif;
+    font-style: italic;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: center;
+    color: #28304A;
+    margin: 25px auto 65px;
+  }
+  &:nth-child(3) .pop-up-btn {
+    cursor: pointer;
+    width: 178px;
+    height: 55px;
+    border: 1.5px solid #28304A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Catorze27 Style 1', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #28304A;
+    margin: 0 auto auto;
   }
 }
   /*end*/

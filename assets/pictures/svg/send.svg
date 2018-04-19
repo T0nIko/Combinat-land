@@ -1,0 +1,34 @@
+<svg width="158" height="68" viewBox="0 0 158 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Group 16">
+<g id="Group 14">
+<g id="Rectangle (Stroke)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 0 0L 89.8207 0L 89.8207 30.5052L 87.4599 30.5052L 87.4599 2.36081L 2.36081 2.36081L 2.36081 54.5338L 74.2352 54.5338L 74.2352 56.8946L 0 56.8946L 0 0Z" transform="translate(49.1543 0.140625)" fill="#BA8161"/>
+</g>
+<g id="Vector 2 (Stroke)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 87.2713 1.87603L 43.1546 35.5782L 0 1.86825L 1.4533 0.00777903L 43.1706 32.595L 85.8382 0L 87.2713 1.87603Z" transform="translate(50.6387 1.1875)" fill="#BA8161"/>
+</g>
+</g>
+<g id="Group 15">
+<g id="Line 4 (Stroke)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 33.955 2.36081L 0 2.36081L 0 0L 33.955 0L 33.955 2.36081Z" transform="translate(0.945312 12.3398)" fill="#BA8161"/>
+</g>
+<g id="Line 4.1 (Stroke)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 25.7235 2.36081L 0 2.36081L 0 0L 25.7235 0L 25.7235 2.36081Z" transform="matrix(1 8.74227e-08 8.74227e-08 -1 9.17773 30.4375)" fill="#BA8161"/>
+</g>
+<g id="Line 4.2 (Stroke)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 16.463 2.36081L 0 2.36081L 0 0L 16.463 0L 16.463 2.36081Z" transform="matrix(1 -8.74229e-08 8.74229e-08 1 18.4355 44.2383)" fill="#BA8161"/>
+</g>
+</g>
+<g id="Group 2.1">
+<g id="Ellipse (Stroke)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 19.0354 35.71C 28.2445 35.71 35.71 28.2445 35.71 19.0354C 35.71 9.82628 28.2445 2.36081 19.0354 2.36081C 9.82628 2.36081 2.36081 9.82628 2.36081 19.0354C 2.36081 28.2445 9.82628 35.71 19.0354 35.71ZM 19.0354 38.0708C 29.5483 38.0708 38.0708 29.5483 38.0708 19.0354C 38.0708 8.52244 29.5483 0 19.0354 0C 8.52244 0 0 8.52244 0 19.0354C 0 29.5483 8.52244 38.0708 19.0354 38.0708Z" transform="translate(119.275 67.1719) scale(1 -1)" fill="#BA8161"/>
+</g>
+<g id="Vector 2 (Stroke)_2">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 15.1159 1.71634L 5.79932 10.5153L 0 5.82066L 1.48542 3.98573L 5.67967 7.38108L 13.4949 0L 15.1159 1.71634Z" transform="translate(130.906 44.1133)" fill="#BA8161"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
+

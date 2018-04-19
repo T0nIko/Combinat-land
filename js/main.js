@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Для меню и соответствующих блоков
     $('a.nav-item-link').click(function () {
         let elementClick = $(this).attr("href");
-        let destination = $(elementClick).offset().top;
+        let destination = $(elementClick).offset().top - 20;
         $('html').animate({
                 scrollTop: destination
             }
@@ -37,21 +37,55 @@ $(document).ready(function () {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-// Open reserved's pop-up
+// N способов скрыть попап
 $(document).ready(function () {
+    // Если жмякнули на кнопку с сайд-бара
     $('#aside_btn').click(function () {
         $('#pop_up').toggleClass('pop-up--active');
         $('.aside').toggleClass('aside--active');
+        $('#last_pop_up').removeClass('last-pop-up--active');
     });
 
+    // Если жмякнули на крестик внутри поп-апа
     $('#pop_up_btn').click(function () {
         $('#pop_up').toggleClass('pop-up--active');
         $('.aside').toggleClass('aside--active');
+        $('#last_pop_up').removeClass('last-pop-up--active');
     });
 
+    // Если жмякнули на кнопку на саааамом последнем экране (контакты)
     $('#reserve_btn').click(function () {
         $('#pop_up').toggleClass('pop-up--active');
         $('.aside').toggleClass('aside--active');
+        $('#last_pop_up').removeClass('last-pop-up--active');
+    });
+
+    // Если жмякнули на кнопку "закрыть" после отправки формы
+    $('#close_pop_up').click(function () {
+        $('#pop_up').toggleClass('pop-up--active');
+        $('.aside').toggleClass('aside--active');
+        $('#last_pop_up').removeClass('last-pop-up--active');
+    });
+
+    // Если мимо жмякнули
+    $(function($){
+        $(document).mouseup(function (e){
+            let popup = $('#pop_up');
+            if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+                popup.removeClass('pop-up--active');
+                $('#last_pop_up').removeClass('last-pop-up--active');
+            }
+        });
+    });
+});
+
+// Валидация
+
+// После валидации и отправки формы
+$(document).ready(function () {
+    $('#form_btn').click(function () {
+        $('#last_pop_up').addClass('last-pop-up--active');
+        $(' input ').val('');
     });
 });
 
@@ -74,5 +108,7 @@ $(document).ready(function () {
             $('#count').attr('value', 1);
         }
     });
-
 });
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+

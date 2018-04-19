@@ -61,8 +61,9 @@
 
 <section class="aside__container pop-up" id="pop_up">
 
-    <div class="pop-up__container">
-        <span class="pop-up-btn" id="pop_up_btn"></span>
+    <span class="pop-up-close" id="pop_up_btn"></span>
+
+    <div class="pop-up__container" id="first_pop_up">
         <h1 class="pop-up-caption">Заказать банкет</h1>
         <p class="pop-up-text">Для лиц старше 18 лет</p>
         <form class="pop-up-form" id="order_form" action="" method="post">
@@ -95,7 +96,7 @@
                     <label class="field-label" for="comment">Комментарий</label>
                     <textarea class="field-text" id="comment" placeholder="Ваш текст"></textarea>
                 </div>
-                <button type="submit" class="form-btn" value="" form>Отправить</button>
+                <button type="submit" class="form-btn" id="form_btn" form>Отправить</button>
             </div>
         </form>
         <p class="pop-up-text">Нажимая на кнопку вы соглашаетесь с
@@ -103,7 +104,12 @@
         </p>
     </div>
 
-    <div class="pop-up__container"></div>
+    <div class="pop-up__container" id="last_pop_up">
+        <img src="assets/pictures/svg/send.svg" class="pop-up-img" alt="Запрос отправлен"/>
+        <h2 class="pop-up-caption">Спасибо!</h2>
+        <p class="pop-up-text">Мы свяжемся с вами втечение 24 часов</p>
+        <a id="close_pop_up" class="pop-up-btn">Закрыть</a>
+    </div>
 
 </section>
 
