@@ -59,6 +59,55 @@
 
         <a href="" class="aside-btn">Забронировать столик</a>
     </div>
+
+    <section class="aside__container pop-up">
+
+        <div class="pop-up__container">
+            <span class="pop-up-btn"></span>
+            <h1 class="pop-up-caption">Заказать банкет</h1>
+            <p class="pop-up-text">Для лиц старше 18 лет</p>
+            <form class="pop-up-form" id="order_form" action="" method="post">
+                <div class="field__container">
+                    <div class="field-wrapper">
+                        <label class="field-label" for="date">Дата и время</label>
+                        <input type="date" class="field" id="date" placeholder="__ __ ____"/>
+                    </div>
+                    <div class="field-wrapper">
+                        <label class="field-label" for="count">Кол-во гостей</label>
+                        <span class="field-btn">+</span>
+                        <input type="number" class="field" id="count"/>
+                        <span class="field-btn">-</span>
+                    </div>
+                </div>
+                <div class="field__container">
+                    <div class="field-wrapper">
+                        <label class="field-label" for="name">Ваше имя и фамилия</label>
+                        <input type="text" class="field" id="name" placeholder="Например, Мария Иванова"/>
+                    </div>
+                    <div class="field-wrapper">
+                        <label class="field-label" for="phone">Контактный телефон</label>
+                        <input type="tel" class="field" id="phone" placeholder="+7___ ___-__-__"/>
+                    </div>
+                    <div class="field-wrapper">
+                        <label class="field-label" for="email">Электорнная почта</label>
+                        <input type="email" class="field" id="email" placeholder="Например, maryivanova@example.ru"/>
+                    </div>
+                    <div class="field-wrapper">
+                        <label class="field-label" for="comment">Комментарий</label>
+                        <textarea class="field" id="comment" placeholder="Ваш текст"></textarea>
+                    </div>
+                    <button type="submit" class="form-btn" value="" form>Отправить</button>
+
+                </div>
+            </form>
+            <p class="pop-up-text">Нажимая на кнопку вы соглашаетесь с
+                <span class="pop-up-text--gold">правилами сайта</span>
+            </p>
+        </div>
+
+        <div class="pop-up__container"></div>
+
+    </section>
 </aside>
 
 <main class="main">
@@ -202,43 +251,41 @@
 
     <!-- Seventh-->
     <section class="container">
-
         <div class="container-wrapper">
-            <img src="assets/pictures/svg/car.svg" class="container-img"/>
-            <h2 class="container-caption">Доставка</h2>
-            <h3 class="container-caption">по всей Москве</h3>
-            <img src="assets/pictures/svg/zigzag-bold.svg" class="container-img"/>
-            <span class="container-line"></span>
-            <a href="" class="container-btn">
-                <p class="container-btn-text">Перейти</p>
-                <img src="assets/pictures/svg/arrow.svg" class="container-btn-icon" />
-            </a>
+            <div class="container-box">
+                <img src="assets/pictures/svg/car.svg" class="container-img"/>
+                <h2 class="container-caption">Доставка</h2>
+                <h3 class="container-caption">по всей Москве</h3>
+                <img src="assets/pictures/svg/zigzag-bold.svg" class="container-img"/>
+                <span class="container-line"></span>
+                <a href="" class="container-btn">
+                    <p class="container-btn-text">Перейти</p>
+                    <img src="assets/pictures/svg/arrow-right.svg" class="container-btn-icon" />
+                </a>
+            </div>
+            <div class="container-box">
+                <img src="assets/pictures/svg/owl.svg" class="container-img"/>
+                <span class="container-line"></span>
+                <p class="container-text">Ресторан</p>
+                <h3 class="container-caption">На tripadviser</h3>
+                <span class="container-line"></span>
+                <a href="" class="container-btn">
+                    <p class="container-btn-text">Перейти</p>
+                    <img src="assets/pictures/svg/arrow-right.svg" class="container-btn-icon" />
+                </a>
+            </div>
+            <div class="container-box">
+                <img src="assets/pictures/svg/dinner.svg" class="container-img"/>
+                <h2 class="container-caption">Меню</h2>
+                <h3 class="container-caption">ресторана</h3>
+                <img src="assets/pictures/svg/zigzag-bold.svg" class="container-img"/>
+                <span class="container-line"></span>
+                <a href="" class="container-btn">
+                    <p class="container-btn-text">Перейти</p>
+                    <img src="assets/pictures/svg/arrow-right.svg" class="container-btn-icon" />
+                </a>
+            </div>
         </div>
-
-        <div class="container-wrapper">
-            <img src="assets/pictures/svg/owl.svg" class="container-img"/>
-            <span class="container-line"></span>
-            <p class="container-text">Ресторан</p>
-            <h3 class="container-caption">На tripadviser</h3>
-            <span class="container-line"></span>
-            <a href="" class="container-btn">
-                <p class="container-btn-text">Перейти</p>
-                <img src="assets/pictures/svg/arrow.svg" class="container-btn-icon" />
-            </a>
-        </div>
-
-        <div class="container-wrapper">
-            <img src="assets/pictures/svg/dinner.svg" class="container-img"/>
-            <h2 class="container-caption">Меню</h2>
-            <h3 class="container-caption">ресторана</h3>
-            <img src="assets/pictures/svg/zigzag-bold.svg" class="container-img"/>
-            <span class="container-line"></span>
-            <a href="" class="container-btn">
-                <p class="container-btn-text">Перейти</p>
-                <img src="assets/pictures/svg/arrow.svg" class="container-btn-icon" />
-            </a>
-        </div>
-
     </section>
 
     <!-- Eighth -->
