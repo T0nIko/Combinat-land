@@ -50,6 +50,11 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
+  display: flex; }
+
+.aside-wrapper {
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -57,7 +62,7 @@ body {
 .aside-logo {
   width: 200px;
   height: 109px;
-  margin: 50px auto 65px; }
+  margin: 0 auto 65px; }
 
 .nav-list {
   display: flex;
@@ -129,7 +134,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background: #FAF7F2 url("../assets/pictures/svg/shrimp-right.svg") no-repeat calc(100% - 7px) 63.2%;
+  background: #FAF7F2;
   background-size: 295px 368px; }
 
 .lang {
@@ -312,20 +317,26 @@ body {
   .main .container:nth-child(3) {
     max-height: 860px;
     margin-bottom: 140px;
-    display: flex;
-    flex-direction: column;
     background: url("../assets/pictures/svg/dish.svg") no-repeat 150px 46px;
     background-size: 487px 380px; }
-  .main .container:nth-child(3) .container-caption {
+  .main .container:nth-child(3) .container-wrapper {
+    max-width: 1200px;
+    max-height: 860px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+  .main .container:nth-child(3) .container-wrapper .container-caption {
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 120px;
     text-transform: uppercase;
     line-height: 113px;
-    margin: 0 220px 0 auto; }
-  .main .container:nth-child(3) .container-wrapper {
+    margin: 0 0 0 auto; }
+  .main .container:nth-child(3) .container-wrapper .container-box {
     position: absolute;
     z-index: 3;
-    left: 222px;
+    left: 0;
     top: 330px;
     background: #FFFFFF;
     width: 437px;
@@ -333,7 +344,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .main .container:nth-child(3) .container-wrapper .container-text {
+  .main .container:nth-child(3) .container-wrapper .container-box .container-text {
     font-family: 'Georgiai', sans-serif;
     font-style: italic;
     font-size: 18px;
@@ -341,11 +352,11 @@ body {
     text-align: center;
     position: relative;
     margin: auto auto 0; }
-  .main .container:nth-child(3) .container-wrapper .container-img {
+  .main .container:nth-child(3) .container-wrapper .container-box .container-img {
     width: 60px;
     height: 10px;
     margin: 36px auto 60px; }
-  .main .container:nth-child(3) .container-wrapper .container-btn {
+  .main .container:nth-child(3) .container-wrapper .container-box .container-btn {
     margin: 0 auto auto;
     width: 178px;
     height: 55px;
@@ -357,18 +368,18 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around; }
-  .main .container:nth-child(3) .container__slider {
+  .main .container:nth-child(3) .container-wrapper .container__slider {
     position: absolute;
     z-index: 1;
-    right: 217px;
+    right: 0;
     top: 187px;
     width: 985px;
     height: 669px;
     background: url("../assets/pictures/png/1.png") no-repeat 50% 50%;
     background-size: cover; }
-  .main .container:nth-child(3) .container__slider .slider-arrow {
+  .main .container:nth-child(3) .container-wrapper .container__slider .slider-arrow {
     z-index: 5; }
-    .main .container:nth-child(3) .container__slider .slider-arrow:first-child {
+    .main .container:nth-child(3) .container-wrapper .container__slider .slider-arrow:first-child {
       cursor: pointer;
       position: absolute;
       top: 303px;
@@ -378,7 +389,7 @@ body {
       width: 116px;
       background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
       background-size: 100% 28px; }
-    .main .container:nth-child(3) .container__slider .slider-arrow:nth-child(2) {
+    .main .container:nth-child(3) .container-wrapper .container__slider .slider-arrow:nth-child(2) {
       cursor: pointer;
       transform: scale(-1, -1);
       position: absolute;
@@ -486,17 +497,24 @@ body {
     margin: 0 auto 34px; }
   .main .container:nth-child(5) {
     max-height: 730px;
-    margin-bottom: 160px;
+    margin-bottom: 80px;
+    background: url("../assets/pictures/svg/shrimp-right.svg") no-repeat calc(100% - 7px) 308px;
+    background-size: 294px 368px; }
+  .main .container:nth-child(5) .container-wrapper {
+    max-height: 730px;
+    height: auto;
     max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column; }
-  .main .container:nth-child(5) .container-caption {
+    flex-direction: column;
+    position: relative; }
+  .main .container:nth-child(5) .container-wrapper .container-caption {
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 120px;
     text-transform: uppercase;
     line-height: 113px;
     margin: 0 0 0 auto; }
-  .main .container:nth-child(5) .container-wrapper {
+  .main .container:nth-child(5) .container-wrapper .container-box {
     position: absolute;
     z-index: 3;
     top: 230px;
@@ -507,14 +525,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .main .container:nth-child(5) .container-wrapper .container-text:first-child {
+  .main .container:nth-child(5) .container-wrapper .container-box .container-text:first-child {
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 32px;
     text-align: center;
     text-transform: uppercase;
     line-height: 34px;
     margin: auto auto 0; }
-  .main .container:nth-child(5) .container-wrapper .container-text:nth-child(3) {
+  .main .container:nth-child(5) .container-wrapper .container-box .container-text:nth-child(3) {
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 18px;
     text-align: center;
@@ -522,18 +540,18 @@ body {
     line-height: 19px;
     color: #BA8161;
     margin: 0 auto auto; }
-  .main .container:nth-child(5) .container-wrapper .container-img {
+  .main .container:nth-child(5) .container-wrapper .container-box .container-img {
     width: 70px;
     height: 10px;
     margin: 45px auto; }
-  .main .container:nth-child(5) .container__slider {
+  .main .container:nth-child(5) .container-wrapper .container__slider {
     position: absolute;
     width: 546px;
     height: 553px;
     left: 0;
     top: 150px;
     background: rgba(248, 236, 222, 0.6); }
-    .main .container:nth-child(5) .container__slider:before {
+    .main .container:nth-child(5) .container-wrapper .container__slider:before {
       position: absolute;
       z-index: 1;
       content: '';
@@ -542,9 +560,9 @@ body {
       background: rgba(248, 236, 222, 0.6);
       top: 25px;
       left: 30px; }
-  .main .container:nth-child(5) .container__slider .slider-arrow {
+  .main .container:nth-child(5) .container-wrapper .container__slider .slider-arrow {
     z-index: 5; }
-    .main .container:nth-child(5) .container__slider .slider-arrow:first-child {
+    .main .container:nth-child(5) .container-wrapper .container__slider .slider-arrow:first-child {
       cursor: pointer;
       position: absolute;
       top: 171px;
@@ -554,7 +572,7 @@ body {
       width: 116px;
       background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
       background-size: 100% 28px; }
-    .main .container:nth-child(5) .container__slider .slider-arrow:nth-child(2) {
+    .main .container:nth-child(5) .container-wrapper .container__slider .slider-arrow:nth-child(2) {
       cursor: pointer;
       transform: scale(-1, -1);
       position: absolute;
@@ -566,27 +584,33 @@ body {
       background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
       background-size: 100% 28px; }
   .main .container:nth-child(6) {
+    padding-top: 80px;
+    height: 650px;
+    background: url("../assets/pictures/svg/shrimp-left.svg") no-repeat 22% 45px;
+    background-size: 294px 368px; }
+  .main .container:nth-child(6) .container-wrapper {
     max-width: 1200px;
-    height: 570px;
+    margin: 0 auto;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap; }
-  .main .container:nth-child(6) .container-wrapper {
+  .main .container:nth-child(6) .container-wrapper .container-box {
     width: 330px; }
-    .main .container:nth-child(6) .container-wrapper:first-child {
+    .main .container:nth-child(6) .container-wrapper .container-box:first-child {
       margin: auto auto 0 0; }
-    .main .container:nth-child(6) .container-wrapper:nth-child(2) {
+    .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2) {
       margin: auto; }
-    .main .container:nth-child(6) .container-wrapper:nth-child(3) {
+    .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3) {
       margin: 0 0 auto auto; }
-    .main .container:nth-child(6) .container-wrapper:first-child, .main .container:nth-child(6) .container-wrapper:nth-child(2), .main .container:nth-child(6) .container-wrapper:nth-child(3) {
+    .main .container:nth-child(6) .container-wrapper .container-box:first-child, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2), .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3) {
       cursor: pointer;
       position: relative;
       height: 360px; }
-      .main .container:nth-child(6) .container-wrapper:first-child:hover:first-child .container-link, .main .container:nth-child(6) .container-wrapper:first-child:hover:nth-child(2) .container-link, .main .container:nth-child(6) .container-wrapper:first-child:hover:nth-child(3) .container-link, .main .container:nth-child(6) .container-wrapper:nth-child(2):hover:first-child .container-link, .main .container:nth-child(6) .container-wrapper:nth-child(2):hover:nth-child(2) .container-link, .main .container:nth-child(6) .container-wrapper:nth-child(2):hover:nth-child(3) .container-link, .main .container:nth-child(6) .container-wrapper:nth-child(3):hover:first-child .container-link, .main .container:nth-child(6) .container-wrapper:nth-child(3):hover:nth-child(2) .container-link, .main .container:nth-child(6) .container-wrapper:nth-child(3):hover:nth-child(3) .container-link {
+      .main .container:nth-child(6) .container-wrapper .container-box:first-child:hover:first-child .container-link, .main .container:nth-child(6) .container-wrapper .container-box:first-child:hover:nth-child(2) .container-link, .main .container:nth-child(6) .container-wrapper .container-box:first-child:hover:nth-child(3) .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2):hover:first-child .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2):hover:nth-child(2) .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2):hover:nth-child(3) .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3):hover:first-child .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3):hover:nth-child(2) .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3):hover:nth-child(3) .container-link {
         opacity: 1; }
-    .main .container:nth-child(6) .container-wrapper:nth-child(3) .container-box {
+    .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3) .container-box {
       position: absolute;
       z-index: 8;
       width: 275px;
@@ -597,16 +621,16 @@ body {
       display: flex;
       flex-direction: row;
       align-items: center; }
-    .main .container:nth-child(6) .container-wrapper:nth-child(3) .container-box .container-icon {
+    .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3) .container-box .container-icon {
       width: 35px;
       height: 35px;
       margin: auto 6px auto auto; }
-    .main .container:nth-child(6) .container-wrapper:nth-child(3) .container-box .container-caption {
+    .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3) .container-box .container-caption {
       font-family: 'Catorze27 Style 1', sans-serif;
       font-size: 38px;
       text-transform: uppercase;
       margin: auto auto auto 0; }
-    .main .container:nth-child(6) .container-wrapper:nth-child(3) .container-text {
+    .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3) .container-text {
       position: absolute;
       z-index: 8;
       width: 242px;
@@ -621,7 +645,7 @@ body {
       font-size: 24px;
       color: #BA8161;
       background: #FFFFFF; }
-    .main .container:nth-child(6) .container-wrapper:first-child .container-link, .main .container:nth-child(6) .container-wrapper:nth-child(2) .container-link, .main .container:nth-child(6) .container-wrapper:nth-child(3) .container-link {
+    .main .container:nth-child(6) .container-wrapper .container-box:first-child .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2) .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3) .container-link {
       cursor: pointer;
       transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
       opacity: 0;
@@ -634,12 +658,12 @@ body {
       height: 100%;
       background: rgba(0, 0, 0, 0.5) url("../assets/pictures/svg/inst-white.svg") no-repeat 50% 50%;
       background-size: 76px 76px; }
-    .main .container:nth-child(6) .container-wrapper:first-child .container-img-wrapper, .main .container:nth-child(6) .container-wrapper:nth-child(2) .container-img-wrapper, .main .container:nth-child(6) .container-wrapper:nth-child(3) .container-img-wrapper {
+    .main .container:nth-child(6) .container-wrapper .container-box:first-child .container-img-wrapper, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2) .container-img-wrapper, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3) .container-img-wrapper {
       position: relative;
       width: 100%;
       height: 100%;
       overflow: hidden; }
-    .main .container:nth-child(6) .container-wrapper:first-child .container-img-wrapper .container-img, .main .container:nth-child(6) .container-wrapper:nth-child(2) .container-img-wrapper .container-img, .main .container:nth-child(6) .container-wrapper:nth-child(3) .container-img-wrapper .container-img {
+    .main .container:nth-child(6) .container-wrapper .container-box:first-child .container-img-wrapper .container-img, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2) .container-img-wrapper .container-img, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3) .container-img-wrapper .container-img {
       position: absolute;
       z-index: 1;
       top: 0;
