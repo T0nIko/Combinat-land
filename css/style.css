@@ -1127,7 +1127,7 @@ input[type='date']::-webkit-inner-spin-button {
     flex-direction: column;
     align-items: center;
     background: #FFFFFF;
-    box-shadow: 0px 4px 30px rgba(184, 184, 184, 0.25); }
+    box-shadow: 0 4px 30px rgba(184, 184, 184, 0.25); }
   .main .container:nth-child(8) .container-wrapper .container-caption:first-child {
     font-family: 'Catorze27 Style 1', sans-serif;
     line-height: 68px;
