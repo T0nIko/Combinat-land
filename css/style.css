@@ -431,6 +431,7 @@ input[type='date']::-webkit-inner-spin-button {
 
 .button-up {
   position: fixed;
+  z-index: 15;
   bottom: 20px;
   right: 20px;
   width: 64px;
@@ -1114,16 +1115,19 @@ input[type='date']::-webkit-inner-spin-button {
       background: #F7EBDD;
       margin: 0 auto 35px; }
   .main .container:nth-child(8) {
-    height: calc(100vh - 97px);
-    display: flex; }
+    max-height: 940px; }
   .main .container:nth-child(8) .container-wrapper {
-    margin: 0 217px auto auto;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 220px;
     width: 545px;
     height: 720px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(184, 184, 184, 0.25); }
   .main .container:nth-child(8) .container-wrapper .container-caption:first-child {
     font-family: 'Catorze27 Style 1', sans-serif;
     line-height: 68px;
@@ -1226,6 +1230,14 @@ input[type='date']::-webkit-inner-spin-button {
       height: 16px;
       background: url("../assets/pictures/svg/facebook-logo.svg") no-repeat 50% 50%;
       background-size: cover; }
+
+.container-map {
+  z-index: 1;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  width: 100%;
+  height: 887px; }
 
 /*end*/
 /*footer*/
