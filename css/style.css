@@ -136,7 +136,8 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  background: #FEFBF8; }
+  background: #FFFFFF;
+  box-shadow: 10px 0 30px rgba(168, 147, 113, 0.1); }
 
 .pop-up__container {
   width: 100%;
@@ -144,7 +145,9 @@ body {
   .pop-up__container:first-child {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    background: #FFFFFF url("../assets/pictures/svg/dish-bg.svg") no-repeat 50% 100%;
+    background-size: 326px 250px; }
   .pop-up__container:first-child .pop-up-btn {
     cursor: pointer;
     width: 33px;
@@ -254,7 +257,22 @@ body {
   .pop-up__container:first-child .pop-up-form .field__container .field-wrapper .field {
     background: transparent;
     outline: none;
-    border: none; }
+    border: none;
+    height: 28px;
+    padding-top: 5px;
+    width: calc(100% - 246px); }
+    .pop-up__container:first-child .pop-up-form .field__container .field-wrapper .field::placeholder {
+      font-family: 'Catorze27 Style 1', sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: rgba(186, 129, 97, 0.2); }
+    .pop-up__container:first-child .pop-up-form .field__container .field-wrapper .field::-webkit-input-placeholder, .pop-up__container:first-child .pop-up-form .field__container .field-wrapper .field::-moz-placeholder, .pop-up__container:first-child .pop-up-form .field__container .field-wrapper .field:-moz-placeholder {
+      font-family: 'Catorze27 Style 1', sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: rgba(186, 129, 97, 0.2); }
   .pop-up__container:nth-child(2) {
     display: none; }
 
