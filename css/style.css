@@ -499,6 +499,10 @@ input[type='date']::-webkit-inner-spin-button {
   font-family: 'Catorze27 Style 1', sans-serif;
   text-transform: uppercase;
   font-size: 24px; }
+  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+    .lang {
+      top: 15px;
+      right: 15px; } }
 
 .button-up {
   position: fixed;
@@ -512,6 +516,10 @@ input[type='date']::-webkit-inner-spin-button {
   background-size: 100% 28px;
   opacity: 0;
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+    .button-up {
+      bottom: 15px;
+      right: 15px; } }
 
 .active {
   cursor: pointer;
@@ -543,10 +551,10 @@ input[type='date']::-webkit-inner-spin-button {
         margin-bottom: 60px; } }
     @media screen and (min-width: 1500px) and (max-width: 1599px) {
       .main .container:first-child {
-        max-width: 1100px; } }
+        max-width: 1050px; } }
     @media screen and (min-width: 1366px) and (max-width: 1499px) {
       .main .container:first-child {
-        max-width: 1000px; } }
+        max-width: 950px; } }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       .main .container:first-child {
         background: url("../assets/pictures/svg/fish.svg") no-repeat 80px 37px;
@@ -634,10 +642,10 @@ input[type='date']::-webkit-inner-spin-button {
     margin-bottom: 165px; }
     @media screen and (min-width: 1500px) and (max-width: 1599px) {
       .main .container:nth-child(2) {
-        max-width: 1100px; } }
+        max-width: 1050px; } }
     @media screen and (min-width: 1366px) and (max-width: 1499px) {
       .main .container:nth-child(2) {
-        max-width: 1000px; } }
+        max-width: 950px; } }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       .main .container:nth-child(2) {
         max-height: 720px;
@@ -753,10 +761,10 @@ input[type='date']::-webkit-inner-spin-button {
     position: relative; }
     @media screen and (min-width: 1500px) and (max-width: 1599px) {
       .main .container:nth-child(3) .container-wrapper {
-        max-width: 1100px; } }
+        max-width: 1050px; } }
     @media screen and (min-width: 1366px) and (max-width: 1499px) {
       .main .container:nth-child(3) .container-wrapper {
-        max-width: 1000px; } }
+        max-width: 950px; } }
   .main .container:nth-child(3) .container-wrapper .container-caption {
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 120px;
@@ -859,10 +867,13 @@ input[type='date']::-webkit-inner-spin-button {
     margin-bottom: 50px; }
     @media screen and (min-width: 1500px) and (max-width: 1599px) {
       .main .container:nth-child(4) {
-        max-width: 1100px; } }
+        max-width: 1050px; } }
     @media screen and (min-width: 1366px) and (max-width: 1499px) {
       .main .container:nth-child(4) {
-        max-width: 1000px; } }
+        max-width: 950px; } }
+    @media screen and (min-width: 1366px) and (max-width: 1599px) {
+      .main .container:nth-child(4) {
+        max-height: 750px; } }
   .main .container:nth-child(4) .container-wrapper:first-child {
     position: absolute;
     top: 0;
@@ -880,9 +891,6 @@ input[type='date']::-webkit-inner-spin-button {
     font-size: 120px;
     text-transform: uppercase;
     line-height: 113px; }
-    @media screen and (min-width: 1366px) and (max-width: 1599px) {
-      .main .container:nth-child(4) .container-wrapper:first-child .container-caption {
-        line-height: 103px; } }
   .main .container:nth-child(4) .container-wrapper:first-child .slider-arrow {
     cursor: pointer;
     width: 70px;
@@ -913,7 +921,7 @@ input[type='date']::-webkit-inner-spin-button {
     position: relative; }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       .main .container:nth-child(4) .container-wrapper .container-box {
-        max-width: 460px; } }
+        max-width: 420px; } }
     .main .container:nth-child(4) .container-wrapper .container-box:first-child {
       margin-top: 185px; }
     .main .container:nth-child(4) .container-wrapper .container-box:nth-child(2) {
@@ -929,7 +937,7 @@ input[type='date']::-webkit-inner-spin-button {
       background: rgba(248, 236, 222, 0.6); }
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         .main .container:nth-child(4) .container-wrapper .container-box:before {
-          height: 480px; } }
+          height: 450px; } }
   .main .container:nth-child(4) .container-wrapper .container-box .container-img-wrapper {
     position: relative;
     overflow: hidden;
@@ -944,7 +952,7 @@ input[type='date']::-webkit-inner-spin-button {
       -o-transform: scale(1.1); }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       .main .container:nth-child(4) .container-wrapper .container-box .container-img-wrapper {
-        height: 440px; } }
+        height: 410px; } }
   .main .container:nth-child(4) .container-wrapper .container-box .container-img-wrapper .container-img {
     position: absolute;
     z-index: 1;
@@ -976,7 +984,8 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       .main .container:nth-child(4) .container-wrapper .container-box .container__text {
         max-width: 360px;
-        left: calc(50% - 180px); } }
+        left: calc(50% - 180px);
+        top: 330px; } }
   .main .container:nth-child(4) .container-wrapper .container-box .container__text .container-caption {
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 28px;
@@ -1014,6 +1023,10 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1600px) and (max-width: 1700px) {
       .main .container:nth-child(5) {
         background: none; } }
+    @media screen and (min-width: 1366px) and (max-width: 1599px) {
+      .main .container:nth-child(5) {
+        max-width: 950px;
+        margin-bottom: 40px; } }
   .main .container:nth-child(5) .container-wrapper {
     max-height: 730px;
     height: 100%;
@@ -1022,6 +1035,12 @@ input[type='date']::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     position: relative; }
+    @media screen and (min-width: 1500px) and (max-width: 1599px) {
+      .main .container:nth-child(5) .container-wrapper {
+        max-width: 1050px; } }
+    @media screen and (min-width: 1366px) and (max-width: 1499px) {
+      .main .container:nth-child(5) .container-wrapper {
+        max-width: 950px; } }
   .main .container:nth-child(5) .container-wrapper .container-caption {
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 120px;
@@ -1039,6 +1058,11 @@ input[type='date']::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media screen and (min-width: 1366px) and (max-width: 1599px) {
+      .main .container:nth-child(5) .container-wrapper .container-box {
+        width: 640px;
+        height: 380px;
+        top: 260px; } }
   .main .container:nth-child(5) .container-wrapper .container-box .container-text:first-child {
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 32px;
@@ -1117,8 +1141,17 @@ input[type='date']::-webkit-inner-spin-button {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap; }
+    @media screen and (min-width: 1500px) and (max-width: 1599px) {
+      .main .container:nth-child(6) .container-wrapper {
+        max-width: 1050px; } }
+    @media screen and (min-width: 1366px) and (max-width: 1499px) {
+      .main .container:nth-child(6) .container-wrapper {
+        max-width: 950px; } }
   .main .container:nth-child(6) .container-wrapper .container-box {
     width: 330px; }
+    @media screen and (min-width: 1366px) and (max-width: 1599px) {
+      .main .container:nth-child(6) .container-wrapper .container-box {
+        max-width: 280px; } }
     .main .container:nth-child(6) .container-wrapper .container-box:first-child {
       margin: auto auto 0 0; }
     .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2) {
@@ -1208,6 +1241,12 @@ input[type='date']::-webkit-inner-spin-button {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap; }
+    @media screen and (min-width: 1500px) and (max-width: 1599px) {
+      .main .container:nth-child(7) .container-wrapper {
+        max-width: 1050px; } }
+    @media screen and (min-width: 1366px) and (max-width: 1499px) {
+      .main .container:nth-child(7) .container-wrapper {
+        max-width: 950px; } }
   .main .container:nth-child(7) .container-wrapper .container-box {
     width: 330px;
     height: 480px;
@@ -1215,6 +1254,9 @@ input[type='date']::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media screen and (min-width: 1366px) and (max-width: 1599px) {
+      .main .container:nth-child(7) .container-wrapper .container-box {
+        max-width: 280px; } }
     .main .container:nth-child(7) .container-wrapper .container-box:first-child {
       margin: auto 0 0 0; }
     .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) {
