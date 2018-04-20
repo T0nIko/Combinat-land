@@ -1646,6 +1646,11 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1600px) and (max-width: 1600px)  {
       right: 60px;
     }
+    @media screen and (min-width: 1366px) and (max-width: 1599px)  {
+      right: 88px;
+      width: 500px;
+      height: 680px;
+    }
   }
   &:nth-child(8) .container-wrapper .map-wrapper {
     position: relative;
