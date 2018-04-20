@@ -528,7 +528,6 @@ input[type='date']::-webkit-inner-spin-button {
     height: 67px;
     margin: 306px auto 50px;
   }
-
   &:nth-child(3) .pop-up-caption {
     font-family: 'Catorze27 Style 1', sans-serif;
     line-height: 45px;
@@ -611,12 +610,50 @@ input[type='date']::-webkit-inner-spin-button {
   cursor: pointer;
   z-index: 15;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 13px;
+  right: 13px;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  &:before {
+    cursor: pointer;
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 7px;
+    left: 7px;
+    width: 64px;
+    height: 64px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    transition: all .2s cubic-bezier(.22,.68,0,1.71);
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+    top: 15px;
+    right: 15px;
+  }
+}
+
+.lang .lang-text {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  top: 7px;
+  left: 7px;
   width: 64px;
   height: 64px;
-  background: #FFFFFF;
-  border-radius: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -624,24 +661,50 @@ input[type='date']::-webkit-inner-spin-button {
   font-family: 'Catorze27 Style 1', sans-serif;
   text-transform: uppercase;
   font-size: 24px;
-  @media screen and (min-width: 1366px) and (max-width: 1599px) {
-    top: 15px;
-    right: 15px;
-  }
 }
 
 .button-up {
   position: fixed;
   z-index: 15;
-  bottom: 20px;
-  right: 20px;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
-  background-size: 100% 28px;
+  bottom: 13px;
+  right: 13px;
+  width: 78px;
+  height: 78px;
   opacity: 0;
   transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  &:before {
+    cursor: pointer;
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 7px;
+    left: 7px;
+    width: 64px;
+    height: 64px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    transition: all .2s cubic-bezier(.22,.68,0,1.71);
+  }
+  &:after {
+    cursor: pointer;
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 7px;
+    left: 7px;
+    width: 64px;
+    height: 64px;
+    background: url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
+    background-size: 100% 28px;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
   @media screen and (min-width: 1366px) and (max-width: 1599px) {
     bottom: 15px;
     right: 15px;
@@ -1146,6 +1209,7 @@ input[type='date']::-webkit-inner-spin-button {
   &:nth-child(4) .container-wrapper .container-box .container-img-wrapper {
     position: relative;
     overflow: hidden;
+    cursor: pointer;
     width: 100%;
     max-width: 520px;
     height: 490px;
@@ -1162,6 +1226,7 @@ input[type='date']::-webkit-inner-spin-button {
   }
   &:nth-child(4) .container-wrapper .container-box .container-img-wrapper .container-img {
     position: absolute;
+    cursor: pointer;
     z-index: 1;
     height: 100%;
     top: 0;
@@ -1199,6 +1264,7 @@ input[type='date']::-webkit-inner-spin-button {
   &:nth-child(4) .container-wrapper .container-box .container__text .container-caption {
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 28px;
+    cursor: pointer;
     text-transform: uppercase;
     text-align: center;
     max-width: 350px;
@@ -1735,11 +1801,20 @@ input[type='date']::-webkit-inner-spin-button {
       height: 680px;
     }
   }
-  &:nth-child(8) .container-wrapper .map-wrapper {
+  &:nth-child(8) .container-map .map-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
+  }
+  &:nth-child(8) .container-map {
+    z-index: 1;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 887px;
   }
   &:nth-child(8) .container-wrapper .container-caption {
     &:first-child {
@@ -1824,9 +1899,9 @@ input[type='date']::-webkit-inner-spin-button {
     }
   }
   &:nth-child(8) .container-wrapper .container__box {
-    margin: 40px auto auto;
+    margin: 35px auto auto;
     width: 202px;
-    height: 58px;
+    height: 67px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1834,21 +1909,21 @@ input[type='date']::-webkit-inner-spin-button {
   }
   &:nth-child(8) .container-wrapper .container__box .container-box-icon {
     position: relative;
-    width: 58px;
-    height: 58px;
+    width: 67px;
+    height: 67px;
     cursor: pointer;
     &:before {
       cursor: pointer;
       position: absolute;
       content: '';
       z-index: 1;
-      top: 2.5px;
-      left: 2.5px;
+      top: 7px;
+      left: 7px;
       width: 53px;
       height: 53px;
       border-radius: 50%;
       background: #F7EBDD;
-      transition: all .15s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: all .2s cubic-bezier(.22,.68,0,1.71);
     }
     &:hover {
       &:before {
@@ -1895,16 +1970,6 @@ input[type='date']::-webkit-inner-spin-button {
       }
     }
   }
-}
-
-.container-map {
-  z-index: 1;
-  position: absolute;
-  top: 53px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 887px;
 }
 /*end*/
 
@@ -1958,6 +2023,50 @@ input[type='date']::-webkit-inner-spin-button {
   height: 14px;
   margin-left: 5px;
 }
-
 /*end*/
 
+/*page*/
+.main-event {
+  height: 100vh;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 483px;
+}
+
+.header-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -50%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  top: 270px;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+/*end*/
