@@ -41,29 +41,29 @@ $(document).ready(function () {
 $(document).ready(function () {
     // Если жмякнули на кнопку с сайд-бара
     $('#aside_btn').click(function () {
-        $('#pop_up').toggleClass('pop-up--active');
-        $('.aside').toggleClass('aside--active');
+        $('#pop_up').addClass('pop-up--active');
+        $('.aside').addClass('aside--active');
         $('#last_pop_up').removeClass('last-pop-up--active');
     });
 
     // Если жмякнули на крестик внутри поп-апа
     $('#pop_up_btn').click(function () {
-        $('#pop_up').toggleClass('pop-up--active');
-        $('.aside').toggleClass('aside--active');
+        $('#pop_up').removeClass('pop-up--active');
+        $('.aside').removeClass('aside--active');
         $('#last_pop_up').removeClass('last-pop-up--active');
     });
 
     // Если жмякнули на кнопку на саааамом последнем экране (контакты)
     $('#reserve_btn').click(function () {
-        $('#pop_up').toggleClass('pop-up--active');
-        $('.aside').toggleClass('aside--active');
+        $('#pop_up').addClass('pop-up--active');
+        $('.aside').addClass('aside--active');
         $('#last_pop_up').removeClass('last-pop-up--active');
     });
 
     // Если жмякнули на кнопку "закрыть" после отправки формы
     $('#close_pop_up').click(function () {
-        $('#pop_up').toggleClass('pop-up--active');
-        $('.aside').toggleClass('aside--active');
+        $('#pop_up').removeClass('pop-up--active');
+        $('.aside').removeClass('aside--active');
         $('#last_pop_up').removeClass('last-pop-up--active');
     });
 });
