@@ -62,7 +62,7 @@
 <!-- end -->
 
 <!-- Pop-up -->
-<section class="aside__container pop-up" id="pop_up">
+<section class="pop-up" id="pop_up">
 
     <span class="pop-up-close" id="pop_up_btn"></span> <!-- Close pop-up -->
 
@@ -125,7 +125,7 @@
 
     <!-- First -->
     <section class="container" id="restaurant">
-        <h1 class="container-caption">Рыба<br/>и не<br/>только</h1>
+        <h1 class="container-caption" id="parallax_caption_1">Рыба<br/>и не<br/>только</h1>
         <div class="container-wrapper">
             <p class="container-text">Главное место в меню занимает <span class="gold">рыба и <br/>морепродукты</span> в
                 любых интерпретациях.</p>
@@ -137,14 +137,14 @@
                 <br/>живая, непринужденная амосфера —
                 <br/>совершенно <span class="gold">западный дух.</span></p>
         </div>
-        <div class="container-block"></div>
+        <div class="container-block" id="parallax_obj_1"></div>
         <div class="container-block"></div>
     </section>
     <!-- end -->
 
     <!-- Second -->
     <section class="container" id="atmosphere">
-        <h1 class="container-caption">Атмосфера</h1>
+        <h1 class="container-caption" id="parallax_caption_2">Атмосфера</h1>
         <div class="container-wrapper">
             <p class="container-text">В интерьере — <span class="gold">модная американская
                 <br/>урбанистика 70-х</span>, в концепции —
@@ -173,7 +173,7 @@
     <!-- Third -->
     <section class="container" id="menu">
         <div class="container-wrapper">
-            <h1 class="container-caption">Меню</h1>
+            <h1 class="container-caption" id="parallax_caption_3">Меню</h1>
             <div class="container-box">
                 <p class="container-text">Фотографии популярных блюд,
                     <br/>которые <span class="gold">вы можете попробовать</span>,
@@ -328,7 +328,9 @@
         </div>
 
         <div class="container-map" id="map">
-            <iframe src="https://snazzymaps.com/embed/65618" width="100%" height="887px" style="border:none;"></iframe>
+            <div class="map-wrapper">
+                <iframe src="https://snazzymaps.com/embed/65618" width="100%" height="887px" style="border:none;"></iframe>
+            </div>
         </div>
     </section>
     <!-- end -->

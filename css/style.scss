@@ -105,6 +105,19 @@ input[type='date']::-webkit-inner-spin-button {
   width: 200px;
   height: 109px;
   margin: 0 auto 65px;
+  @media screen and (min-height: 870px) and (max-height: 950px) {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-height: 800px) and (max-height: 869px) {
+    margin-bottom: 25px;
+    width: 180px;
+    height: auto;
+  }
+  @media screen and (min-height: 768px) and (max-height: 799px) {
+    margin-bottom: 25px;
+    width: 150px;
+    height: auto;
+  }
 }
 
 .nav-list {
@@ -126,6 +139,12 @@ input[type='date']::-webkit-inner-spin-button {
   cursor: pointer;
   font-size: 22px;
   line-height: 57px;
+  @media screen and (min-height: 800px) and (max-height: 869px) {
+    line-height: 47px;
+  }
+  @media screen and (min-height: 768px) and (max-height: 799px) {
+    line-height: 42px;
+  }
 }
 
 .aside__container {
@@ -138,6 +157,10 @@ input[type='date']::-webkit-inner-spin-button {
   width: 23px;
   height: 33px;
   margin-bottom: 10px;
+  @media screen and (min-height: 768px) and (max-height: 799px) {
+    width: 18px;
+    height: auto;
+  }
 }
 
 .aside__container .aside-text {
@@ -152,6 +175,15 @@ input[type='date']::-webkit-inner-spin-button {
     font-family: 'Merel Regular', sans-serif;
     font-size: 18px;
     line-height: 21px;
+    @media screen and (min-height: 870px) and (max-height: 950px) {
+      margin-bottom: 45px;
+    }
+    @media screen and (min-height: 800px) and (max-height: 869px) {
+      margin-bottom: 35px;
+    }
+    @media screen and (min-height: 768px) and (max-height: 799px) {
+      margin-bottom: 30px;
+    }
   }
   &:last-child {
     font-family: 'Catorze27 Style 1', sans-serif;
@@ -164,6 +196,15 @@ input[type='date']::-webkit-inner-spin-button {
   width: 51px;
   height: 29px;
   margin: 35px auto;
+  @media screen and (min-height: 870px) and (max-height: 950px) {
+    margin: 30px auto 20px;
+  }
+  @media screen and (min-height: 800px) and (max-height: 869px) {
+    margin: 25px auto 15px;
+  }
+  @media screen and (min-height: 768px) and (max-height: 799px) {
+    margin: 20px auto 15px;
+  }
 }
 
 .aside-btn {
@@ -240,7 +281,7 @@ input[type='date']::-webkit-inner-spin-button {
     margin: 157px auto 15px;
   }
   &:nth-child(2) .pop-up-text {
-    &:nth-child(3) {
+    &:nth-child(2) {
       font-family: 'Catorze27 Style 1', sans-serif;
       line-height: 15px;
       font-size: 16px;
@@ -248,13 +289,13 @@ input[type='date']::-webkit-inner-spin-button {
       text-transform: uppercase;
       color: rgba(40, 48, 74, 0.3);
     }
-    &:nth-child(5) {
+    &:nth-child(4) {
       font-family: 'Merel Regular', sans-serif;
       font-size: 14px;
       text-align: center;
       color: #28304A;
     }
-    &:nth-child(5) .pop-up-text--gold {
+    &:nth-child(4) .pop-up-text--gold {
       cursor: pointer;
       font-family: 'Merel Regular', sans-serif;
       font-size: 14px;
@@ -446,11 +487,12 @@ input[type='date']::-webkit-inner-spin-button {
     left: -100%;
     transition: all .5s cubic-bezier(.51,.92,.24,1.15);
   }
-  &:nth-child(3) .pop-up-img {
+  &:nth-child(3)  .pop-up-img {
     width: 156px;
     height: 67px;
     margin: 306px auto 50px;
   }
+
   &:nth-child(3) .pop-up-caption {
     font-family: 'Catorze27 Style 1', sans-serif;
     line-height: 45px;
@@ -472,7 +514,7 @@ input[type='date']::-webkit-inner-spin-button {
     cursor: pointer;
     width: 178px;
     height: 55px;
-    border: 1.5px solid #28304A;
+    box-shadow: 0 0 0 1.5px rgba(40,48,74,.2) inset;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -483,9 +525,35 @@ input[type='date']::-webkit-inner-spin-button {
     text-transform: uppercase;
     color: #28304A;
     margin: 0 auto auto;
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 2px;
+      transition: height 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    &::before {
+      box-shadow: 2px 2px 0 rgba(40,48,74,1) inset;
+      bottom: 0;
+      left: 0;
+    }
+    &::after {
+      box-shadow: -2px -2px 0 rgba(40,48,74,1) inset;
+      top: 0;
+      right: 0;
+    }
+    &:hover {
+      &::before, &::after {
+        height: 100%;
+        width: 100%;
+        transition: height 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+    }
   }
 }
-  /*end*/
+/*end*/
 
 /*main*/
 .main {
@@ -501,6 +569,7 @@ input[type='date']::-webkit-inner-spin-button {
 
 .lang {
   cursor: pointer;
+  z-index: 15;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -614,7 +683,7 @@ input[type='date']::-webkit-inner-spin-button {
       right: 0;
       width: 436px;
       height: 607px;
-      background: #BA8161 url("../assets/pictures/png/1.png") no-repeat 75% 50%;
+      background:  url("../assets/pictures/png/1.png") no-repeat 75% 50%;
       background-size: cover;
       z-index: 2;
     }
@@ -1346,6 +1415,7 @@ input[type='date']::-webkit-inner-spin-button {
   }
   &:nth-child(8) {
     max-height: 940px;
+    overflow: hidden;
   }
   &:nth-child(8) .container-wrapper {
     z-index: 2;
@@ -1359,6 +1429,12 @@ input[type='date']::-webkit-inner-spin-button {
     align-items: center;
     background: #FFFFFF;
     box-shadow: 0 4px 30px rgba(184, 184, 184, 0.25);
+  }
+  &:nth-child(8) .container-wrapper .map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
   &:nth-child(8) .container-wrapper .container-caption {
     &:first-child {
@@ -1496,7 +1572,8 @@ input[type='date']::-webkit-inner-spin-button {
   top: 53px;
   left: 0;
   width: 100%;
-  height: 887px;
+  height: 100%;
+  max-height: 887px;
 }
 /*end*/
 

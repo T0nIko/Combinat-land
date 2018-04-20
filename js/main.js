@@ -66,10 +66,12 @@ $(document).ready(function () {
         $('.aside').toggleClass('aside--active');
         $('#last_pop_up').removeClass('last-pop-up--active');
     });
+});
 
+$(document).ready(function () {
     // Если мимо жмякнули
-    $(function($){
-        $(document).mouseup(function (e){
+    $(function ($) {
+        $(document).mouseup(function (e) {
             let popup = $('#pop_up');
             if (!popup.is(e.target) && popup.has(e.target).length === 0) {
                 popup.removeClass('pop-up--active');
@@ -111,4 +113,50 @@ $(document).ready(function () {
 });
 
 /*--------------------------------------------------------------------------------------------------------------------*/
+
+// Мувы объектов
+$(document).ready(function () {
+
+    $(window).scroll(function (e) {
+        parallaxScroll();
+    });
+
+    function parallaxScroll() {
+        let scrolled = $(window).scrollTop();
+
+        // Блиц, Блиц - скорость без границ
+        this.speed03 = .05 * $(this).scrollTop();
+        this.speed1 = .1 * $(this).scrollTop();
+        this.speed2 = .2 * $(this).scrollTop();
+        this.speed3 = .15 * $(this).scrollTop();
+        this.speed4 = .4 * $(this).scrollTop();
+
+        // Первый заголовок
+        $('#parallax_caption_1').css({
+            transform: "translate3d(0," + this.speed3 + "px,0)",
+            "-webkit-transform": "translate3d(0," + this.speed3 + "px,0)",
+            "-moz-transform": "translate3d(0," + this.speed3 + "px,0)",
+            "-o-transform": "translate3d(0," + this.speed3 + "px,0)",
+            "-ms-transform": "translate3d(0," + this.speed3 + "px,0)"
+        });
+        // Белый блок на первом экране
+        $('#parallax_obj_1').css({
+            transform: "translate3d(0%," + this.speed1 + "px,0)",
+            "-webkit-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)",
+            "-moz-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)",
+            "-o-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)",
+            "-ms-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)"
+        });
+        // Второй заголовок
+        $('#parallax_caption_2').css({
+            transform: "translate3d(0," + this.speed03 + "px,0)",
+            "-webkit-transform": "translate3d(0," + this.speed03 + "px,0)",
+            "-moz-transform": "translate3d(0," + this.speed03 + "px,0)",
+            "-o-transform": "translate3d(0," + this.speed03 + "px,0)",
+            "-ms-transform": "translate3d(0," + this.speed03 + "px,0)"
+        });
+
+    }
+});
+
 
