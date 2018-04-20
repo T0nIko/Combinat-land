@@ -259,6 +259,9 @@ input[type='date']::-webkit-inner-spin-button {
 
 .pop-up--active {
   left: 280px;
+  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+    left: 240px;
+  }
 }
 
 .last-pop-up--active {
@@ -397,9 +400,9 @@ input[type='date']::-webkit-inner-spin-button {
       background: #FFFFFF;
       outline: none;
       margin: 0 auto;
-      width: 178px;
+      border: 0;
+      width: 180px;
       height: 55px;
-      border: 1.5px solid #28304A;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -408,6 +411,33 @@ input[type='date']::-webkit-inner-spin-button {
       font-size: 18px;
       text-align: center;
       text-transform: uppercase;
+      position: relative;
+      box-shadow: 0 0 0 1.5px #28304A inset;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 1.5px;
+        transition: height 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      &::before {
+        box-shadow: 2px 2px 0 #F1DAC2 inset;
+        bottom: 0;
+        left: 0;
+      }
+      &::after {
+        box-shadow: -2px -2px 0 #F1DAC2 inset;
+        top: 0;
+        right: 0;
+      }
+      &:hover {
+        &::before, &::after {
+          height: 100%;
+          width: 100%;
+          transition: height 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+        }
+      }
     }
     &:nth-child(2) .field-wrapper .field-label {
       width: 207px;
@@ -520,7 +550,6 @@ input[type='date']::-webkit-inner-spin-button {
     cursor: pointer;
     width: 178px;
     height: 55px;
-    box-shadow: 0 0 0 1.5px rgba(40,48,74,.2) inset;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -532,21 +561,22 @@ input[type='date']::-webkit-inner-spin-button {
     color: #28304A;
     margin: 0 auto auto;
     position: relative;
+    box-shadow: 0 0 0 1.5px #28304A inset;
     &:before,
     &:after {
       content: "";
       position: absolute;
       height: 0;
-      width: 2px;
+      width: 1.5px;
       transition: height 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s cubic-bezier(0.86, 0, 0.07, 1);
     }
     &::before {
-      box-shadow: 2px 2px 0 rgba(40,48,74,1) inset;
+      box-shadow: 2px 2px 0 #F1DAC2 inset;
       bottom: 0;
       left: 0;
     }
     &::after {
-      box-shadow: -2px -2px 0 rgba(40,48,74,1) inset;
+      box-shadow: -2px -2px 0 #F1DAC2 inset;
       top: 0;
       right: 0;
     }
@@ -932,9 +962,9 @@ input[type='date']::-webkit-inner-spin-button {
   }
   &:nth-child(3) .container-wrapper .container-box .container-btn {
     margin: 0 auto auto;
-    width: 178px;
+    cursor: pointer;
+    width: 180px;
     height: 55px;
-    border: 1.5px solid #28304A;
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
@@ -942,6 +972,33 @@ input[type='date']::-webkit-inner-spin-button {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    position: relative;
+    box-shadow: 0 0 0 1.5px #28304A inset;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 1.5px;
+      transition: height 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    &::before {
+      box-shadow: 2px 2px 0 #F1DAC2 inset;
+      bottom: 0;
+      left: 0;
+    }
+    &::after {
+      box-shadow: -2px -2px 0 #F1DAC2 inset;
+      top: 0;
+      right: 0;
+    }
+    &:hover {
+      &::before, &::after {
+        height: 100%;
+        width: 100%;
+        transition: height 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+    }
   }
   &:nth-child(3) .container-wrapper .container__slider {
     position: absolute;
@@ -1474,8 +1531,34 @@ input[type='date']::-webkit-inner-spin-button {
       align-items: center;
       width: 180px;
       height: 58px;
-      border: 1.5px solid #28304A;
       margin: 0 auto auto;
+      position: relative;
+      box-shadow: 0 0 0 1.5px #28304A inset;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 1.5px;
+        transition: height 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      &::before {
+        box-shadow: 2px 2px 0 #F1DAC2 inset;
+        bottom: 0;
+        left: 0;
+      }
+      &::after {
+        box-shadow: -2px -2px 0 #F1DAC2 inset;
+        top: 0;
+        right: 0;
+      }
+      &:hover {
+        &::before, &::after {
+          height: 100%;
+          width: 100%;
+          transition: height 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+        }
+      }
     }
     &:first-child .container-btn .container-btn-text,
     &:nth-child(2) .container-btn .container-btn-text,
@@ -1702,7 +1785,6 @@ input[type='date']::-webkit-inner-spin-button {
     cursor: pointer;
     width: 312px;
     height: 55px;
-    border: 1.5px solid #28304A;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1713,6 +1795,33 @@ input[type='date']::-webkit-inner-spin-button {
     text-transform: uppercase;
     color: #28304A;
     margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0 0 1.5px #28304A inset;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 1.5px;
+      transition: height 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    &::before {
+      box-shadow: 2px 2px 0 #F1DAC2 inset;
+      bottom: 0;
+      left: 0;
+    }
+    &::after {
+      box-shadow: -2px -2px 0 #F1DAC2 inset;
+      top: 0;
+      right: 0;
+    }
+    &:hover {
+      &::before, &::after {
+        height: 100%;
+        width: 100%;
+        transition: height 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+    }
   }
   &:nth-child(8) .container-wrapper .container__box {
     margin: 40px auto auto;
