@@ -53,6 +53,7 @@ html,
 body {
   width: 100%;
   height: 100vh;
+  background: #FAF7F2;
 }
 
 body {
@@ -2068,5 +2069,177 @@ input[type='date']::-webkit-inner-spin-button {
   width: 100%;
   margin: 0 auto;
   background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-data {
+  margin: 43px auto 32px;
+  font-family: 'Catorze27 Style 1',sans-serif;
+  line-height: 19px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #BA8161;
+}
+
+.content-caption {
+  margin: 0 auto;
+  font-family: 'Catorze27 Style 1',sans-serif;
+  line-height: 34px;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #28304A;
+  max-width: 870px;
+  width:100%;
+}
+
+.content-icon {
+  margin: 45px auto 50px;
+  width: 70px;
+  height: 10px;
+}
+
+.content-text {
+  margin: 0 auto;
+  font-family: 'Georgia', sans-serif;
+  line-height: 25px;
+  font-size: 18px;
+  text-align: center;
+  color: #28304A;
+  max-width: 770px;
+  width:100%;
+}
+
+.content-text---gold {
+  font-family: 'Georgia', sans-serif;
+  line-height: 25px;
+  font-size: 18px;
+  text-align: center;
+  color: #BA8161;
+}
+
+.content-slider__container {
+  width: 100%;
+  height: 570px;
+  background: #F7EBDD;
+  margin: 60px auto 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-slider__box {
+  position: relative;
+  height: 425px;
+  width: 100%;
+}
+
+.content-slider__box .content-slider-arrow {
+  position: absolute;
+  top: 253px;
+  width: 74px;
+  height: 47px;
+  background: #FFFFFF url("../assets/pictures/svg/arrow-right.svg") no-repeat 50% 50%;
+  background-size: 27px auto;
+  &:first-child {
+    right: 220px;
+  }
+  &:nth-child(2) {
+    left: 220px;
+    transform: scale(-1,-1);
+  }
+}
+
+.container-footer {
+  max-width: 764px;
+  width: 100%;
+  height: 84px;
+  border: 2px solid #F7EBDD;
+}
+
+.container-footer-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 84px;
+}
+
+.container-footer-list .container-footer-item {
+  width: 152px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-right: 2px solid #F7EBDD;
+  &:last-child {
+    border: 0;
+  }
+  &:first-child .container-footer-item-link {
+    width: 17px;
+    height: 13px;
+    background: url("../assets/pictures/svg/tw.svg") no-repeat 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    &:hover {
+      background: url("../assets/pictures/svg/tw-fill.svg") no-repeat 50% 50%;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
+  &:nth-child(2) .container-footer-item-link {
+    width: 7px;
+    height: 14px;
+    background: url("../assets/pictures/svg/fb.svg") no-repeat 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    &:hover {
+      background: url("../assets/pictures/svg/fb-fill.svg") no-repeat 50% 50%;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
+  &:nth-child(3) .container-footer-item-link {
+    width: 19px;
+    height: 10px;
+    background: url("../assets/pictures/svg/vk-small.svg") no-repeat 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    &:hover {
+      background: url("../assets/pictures/svg/vk-fill.svg") no-repeat 50% 50%;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
+  &:nth-child(4) .container-footer-item-link {
+    width: 20px;
+    height: 13px;
+    background: url("../assets/pictures/svg/gp.svg") no-repeat 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    &:hover {
+      background: url("../assets/pictures/svg/gp-fill.svg") no-repeat 50% 50%;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
+  &:nth-child(5) .container-footer-item-link {
+    width: 12px;
+    height: 18px;
+    background: url("../assets/pictures/svg/ok.svg") no-repeat 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    &:hover {
+      background: url("../assets/pictures/svg/ok-fill.svg") no-repeat 50% 50%;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
 }
 /*end*/
