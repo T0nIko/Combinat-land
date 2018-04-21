@@ -2104,21 +2104,23 @@ input[type='date']::-webkit-inner-spin-button {
 
 .content-text {
   margin: 0 auto;
-  font-family: 'Georgia', sans-serif;
+  font-family: 'Georgia', serif;
   line-height: 25px;
   font-size: 18px;
   text-align: center;
   color: #28304A;
   max-width: 770px;
   width:100%;
+  font-style: italic;
 }
 
 .content-text---gold {
-  font-family: 'Georgia', sans-serif;
+  font-family: 'Georgia', serif;
   line-height: 25px;
   font-size: 18px;
   text-align: center;
   color: #BA8161;
+  font-style: italic;
 }
 
 .content-slider__container {
