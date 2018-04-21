@@ -2376,3 +2376,10 @@ html {
 }
 /*end*/
 
+/*menu*/
+.main-menu {
+  height: 100vh;
+  background: #FAF7F2 url("../assets/pictures/svg/dish.svg") no-repeat calc(100% - 128px) 76px;
+  background-size: 487px 380px;
+}
+
