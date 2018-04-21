@@ -32,13 +32,14 @@
   color: #263049;
   cursor: default; }
 
-html,
-body {
+html {
   width: 100%;
   height: 100vh;
   background: #FAF7F2; }
 
 body {
+  width: 100%;
+  height: 100vh;
   position: relative; }
 
 input[type='number'],
@@ -1713,8 +1714,9 @@ input[type='date']::-webkit-inner-spin-button {
 
 /*end*/
 /*page*/
-.main-event {
-  height: 100vh; }
+html {
+  background: url("../assets/pictures/svg/fish.svg") no-repeat calc(100% + 163px) 396px, #FAF7F2 url("../assets/pictures/svg/fish.svg") no-repeat 127px 1510px;
+  background-size: 327px 332px; }
 
 .header {
   position: absolute;
