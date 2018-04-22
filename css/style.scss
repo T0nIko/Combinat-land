@@ -53,6 +53,9 @@ html {
   width: 100%;
   height: 100vh;
   background: #FAF7F2;
+  @media screen and (max-width: 649px) {
+    background: #FAF7F2;
+  }
 }
 
 body {
@@ -163,11 +166,15 @@ input[type='date']::-webkit-inner-spin-button {
 
 .aside-menu-lang {
   display: none;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 992px) {
     display: block;
     position: absolute;
     top: 27px;
     right: 53px;
+  }
+  @media screen and (max-width: 992px) {
+    top: 19px;
+    right: 25px;
   }
 }
 
@@ -178,6 +185,10 @@ input[type='date']::-webkit-inner-spin-button {
   text-align: center;
   text-transform: uppercase;
   color: #28304A;
+  @media screen and (max-width: 992px) {
+    line-height: 18px;
+    font-size: 22px;
+  }
 }
 
 .aside-menu-btn {
@@ -188,10 +199,16 @@ input[type='date']::-webkit-inner-spin-button {
   width: 39px;
   height: 24px;
   cursor: pointer;
+  @media screen and (max-width: 649px) {
+    left: 25px;
+    top: 14px;
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .burger {
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 993px) {
     display: none;
   }
   cursor: pointer;
@@ -199,6 +216,10 @@ input[type='date']::-webkit-inner-spin-button {
   height: 24px;
   margin: auto;
   position: relative;
+  @media screen and (max-width: 649px) {
+    width: 25px;
+    height: 25px;
+  }
 }
 .burger:before, .burger span, .burger:after {
   cursor: pointer;
@@ -217,6 +238,7 @@ input[type='date']::-webkit-inner-spin-button {
 }
 .burger:before {
   top: 4px;
+
 }
 .burger span {
   top: 15px;
@@ -254,12 +276,14 @@ input[type='date']::-webkit-inner-spin-button {
 
 .aside-mob-nav {
   display: none;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 992px) {
     display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
-    background: #FFFFFF;
+    background: #FFFFFF url("../assets/pictures/svg/fish-white.svg") no-repeat 50% calc(100% + 70px);
+    -webkit-background-size: 299px 303px;
+    background-size: 299px 303px;
     top: 0;
     z-index: 80;
     left: -100%;
@@ -468,10 +492,10 @@ input[type='date']::-webkit-inner-spin-button {
   background-size: 326px 250px;
   box-shadow: 10px 0 30px rgba(168, 147, 113, 0.1);
   transition: all .5s cubic-bezier(.51,.92,.24,1.15);
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 993px) {
     max-width: 765px;
   }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 992px) {
     z-index: 100;
     width: 100%;
     height: calc(100vh - 67px);
@@ -491,7 +515,7 @@ input[type='date']::-webkit-inner-spin-button {
   right: 40px;
   background: url("../assets/pictures/svg/close.svg") no-repeat 50% 50%;
   background-size: cover;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 992px) {
     display: none;
   }
 }
@@ -518,7 +542,8 @@ input[type='date']::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #FFFFFF;
+  background: #FFFFFF url("../assets/pictures/svg/dish-bg.svg") no-repeat 50% 100%;
+  background-size: 331px 255px;
   &:nth-child(2) {
     z-index: 8;
     left: 0;
@@ -530,7 +555,7 @@ input[type='date']::-webkit-inner-spin-button {
     text-align: center;
     text-transform: uppercase;
     margin: 157px auto 15px;
-    @media screen and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: 88px auto 15px;
     }
   }
@@ -772,7 +797,7 @@ input[type='date']::-webkit-inner-spin-button {
     width: 156px;
     height: 67px;
     margin: 306px auto 50px;
-    @media screen and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: 140px auto 50px;
     }
   }
@@ -852,9 +877,13 @@ input[type='date']::-webkit-inner-spin-button {
     margin-left: 240px;
     width: calc(100% - 240px);
   }
-  @media screen and (max-width: 992px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     width: 100%;
     margin: 80px 0 0;
+  }
+  @media screen and (max-width: 649px) {
+    margin-left: 0;
+    width: 100%;
   }
 }
 
@@ -896,7 +925,7 @@ input[type='date']::-webkit-inner-spin-button {
     top: 7px;
     right: 7px;
   }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 992px) {
     display: none;
   }
 }
@@ -916,7 +945,7 @@ input[type='date']::-webkit-inner-spin-button {
   font-family: 'Catorze27 Style 1', sans-serif;
   text-transform: uppercase;
   font-size: 24px;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     top: 0;
     left: 0;
     width: 46px;
@@ -946,7 +975,7 @@ input[type='date']::-webkit-inner-spin-button {
     background: #FFFFFF;
     border-radius: 50%;
     transition: all .2s cubic-bezier(.22,.68,0,1.71);
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 35px;
       height: 35px;
       top: 2.5px;
@@ -964,7 +993,7 @@ input[type='date']::-webkit-inner-spin-button {
     height: 64px;
     background: url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
     background-size: 100% 28px;
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 35px;
       height: 35px;
       top: 2.5px;
@@ -985,7 +1014,7 @@ input[type='date']::-webkit-inner-spin-button {
     bottom: 7px;
     right: 7px;
   }
-  @media screen and (max-width: 992px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     bottom: 8px;
     right: 5px;
     width: 40px;
@@ -1036,12 +1065,21 @@ input[type='date']::-webkit-inner-spin-button {
       max-height: 740px;
       margin-bottom: 80px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       background: url("../assets/pictures/svg/fish.svg") no-repeat 58px 50px;
       background-size: 180px auto;
-      width: calc(100% - 100px);
+      width: 670px;
       max-height: 520px;
       margin: 0 auto 40px;
+    }
+    @media screen and (max-width: 649px) {
+      background: url("../assets/pictures/svg/fish.svg") no-repeat 50% 14px;
+      background-size: 180px auto;
+      width: calc(100% - 40px);
+      margin: 56px auto 49px;
+      display: flex;
+      flex-direction: column;
+      max-height: 705px;
     }
   }
   &:first-child .container-caption {
@@ -1058,12 +1096,28 @@ input[type='date']::-webkit-inner-spin-button {
       top: 160px;
       right: 180px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       top: 133px;
       left: auto;
       right: 105px;
       font-size: 66px;
       line-height: 62px;
+    }
+    @media screen and (max-width: 649px) {
+      display: none;
+    }
+  }
+  &:first-child .container-caption--small {
+    display: none;
+    @media screen and (max-width: 649px) {
+      display: block;
+      font-family: 'Catorze27 Style 1', sans-serif;
+      font-size: 48px;
+      text-transform: uppercase;
+      line-height: 45px;
+      text-align: center;
+      margin: 49px auto 22px;
+      min-width: 324px;
     }
   }
   &:first-child .container-wrapper {
@@ -1085,11 +1139,22 @@ input[type='date']::-webkit-inner-spin-button {
       width: 500px;
       height: 350px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       top: 272px;
       width: 302px;
       height: 215px;
       border: 3px solid #F7EBDD;
+    }
+    @media screen and (max-width: 649px) {
+      position: relative;
+      width: calc(100% - 60px);
+      margin: -56px auto 0;
+      height: 100%;
+      padding: 20px;
+      border: none;
+      background: #FFFFFF;
+      top: 0;
+      left: 0;
     }
   }
   &:first-child .container-wrapper .container-text {
@@ -1101,10 +1166,14 @@ input[type='date']::-webkit-inner-spin-button {
     &:first-child {
       margin: auto auto 0;
     }
-    &:last-child {
+    &:nth-child(2),
+    &:nth-child(5) {
+      display: none;
+    }
+    &:nth-child(4) {
       margin: 0 auto auto;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 10px;
       line-height: 14px;
       &:first-child {
@@ -1114,19 +1183,36 @@ input[type='date']::-webkit-inner-spin-button {
         margin: 0 auto 30px;
       }
     }
+    @media screen and (max-width: 649px) {
+      font-size: 14px;
+      line-height: 24px;
+      &:nth-child(1),
+      &:nth-child(4) {
+        display: none;
+      }
+      &:nth-child(2),
+      &:nth-child(5) {
+        display: block;
+      }
+    }
   }
   &:first-child .container-wrapper .container-img {
     width: 60px;
     height: 10px;
     margin: 34px auto;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: auto;
       width: 33px;
       height: 5.5px;
     }
+    @media screen and (max-width: 649px) {
+      width: 31px;
+      height: 5px;
+      margin: 13px auto;
+    }
   }
   &:first-child .container-block {
-    &:nth-child(3) {
+    &:nth-child(5) {
       position: absolute;
       top: 512px;
       right: 107px;
@@ -1140,14 +1226,17 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         top: 352px;
       }
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 363px;
         height: 211px;
         top: 296px;
         right: 60px;
       }
+      @media screen and (max-width: 649px) {
+        display: none;
+      }
     }
-    &:nth-child(4) {
+    &:nth-child(3) {
       position: absolute;
       top: 89px;
       right: 0;
@@ -1161,10 +1250,19 @@ input[type='date']::-webkit-inner-spin-button {
         width: 390px;
         height: 540px;
       }
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         top: 54px;
         width: 240px;
         height: 336px;
+      }
+      @media screen and (max-width: 649px) {
+        position: relative;
+        width: 100%;
+        max-width: 330px;
+        min-height: 256px;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
       }
     }
   }
@@ -1182,10 +1280,15 @@ input[type='date']::-webkit-inner-spin-button {
       max-height: 720px;
       margin-bottom: 105px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
-      width: calc(100% - 100px);
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      width: 670px;
       max-height: 400px;
       margin: 0 auto 46px;
+    }
+    @media screen and (max-width: 649px) {
+      width: calc(100% - 40px);
+      margin: 0 auto 50px;
+      max-height: 540px;
     }
   }
   &:nth-child(2) .container-caption {
@@ -1194,10 +1297,15 @@ input[type='date']::-webkit-inner-spin-button {
     text-transform: uppercase;
     line-height: 113px;
     margin: 0 auto auto 0;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 64px;
       line-height: 60px;
       margin-left: 30px;
+    }
+    @media screen and (max-width: 649px) {
+      font-size: 48px;
+      line-height: 45px;
+      text-align: center;
     }
   }
   &:nth-child(2) .container-wrapper {
@@ -1211,10 +1319,16 @@ input[type='date']::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       top: 133px;
       width: 235px;
       height: 215px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 275px;
+      height: 265px;
+      left: calc(50% - 137.5px);
+      top: 274px;
     }
   }
   &:nth-child(2) .container-wrapper .container-text {
@@ -1229,7 +1343,7 @@ input[type='date']::-webkit-inner-spin-button {
     &:last-child {
       margin: 0 auto auto;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 10px;
       line-height: 14px;
       &:first-child {
@@ -1239,12 +1353,28 @@ input[type='date']::-webkit-inner-spin-button {
         margin: 0 auto 42px;
       }
     }
+    @media screen and (max-width: 649px) {
+      font-size: 14px;
+      line-height: 14px;
+      max-width: 230px;
+      &:first-child {
+        margin: 29px auto 0;
+      }
+      &:last-child {
+        margin: 0 auto 29px;
+      }
+    }
   }
   &:nth-child(2) .container-wrapper .container-img {
     width: 60px;
     height: 10px;
     margin: 34px auto;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      width: 32px;
+      height: 5.5px;
+      margin: auto;
+    }
+    @media screen and (max-width: 649px) {
       width: 32px;
       height: 5.5px;
       margin: auto;
@@ -1275,11 +1405,20 @@ input[type='date']::-webkit-inner-spin-button {
         height: 485px;
       }
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 515px;
       height: 300px;
       top: 99px;
       left: 30px;
+      &:before {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 649px) {
+      top: 102px;
+      width: 325px;
+      height: 256px;
+      left: 2.5px;
       &:before {
         display: none;
       }
@@ -1300,12 +1439,20 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         top: 130px;
       }
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 58px;
         height: 62px;
         top: 80px;
         left: -29px;
         background-size: 100% 21px;
+      }
+      @media screen and (max-width: 649px) {
+        width: 64px;
+        height: 60px;
+        top: -32px;
+        left: 161px;
+        background-size: 100% 21px;
+        transform: rotate(90deg);
       }
     }
     &:nth-child(2) {
@@ -1322,11 +1469,19 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         top: 247px;
       }
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 58px;
         height: 62px;
         top: 143px;
         left: -29px;
+      }
+      @media screen and (max-width: 649px) {
+        width: 64px;
+        height: 60px;
+        top: -32px;
+        left: 96px;
+        background-size: 100% 21px;
+        transform: rotate(-90deg);
       }
     }
   }
@@ -1349,13 +1504,19 @@ input[type='date']::-webkit-inner-spin-button {
       max-height: 710px;
       margin-bottom: 110px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       padding: 33px 0 0;
       background: url("../assets/pictures/svg/dish.svg") no-repeat 33px 0;
       background-size: 237px 185px;
-      width: calc(100% - 100px);
+      width: 670px;
       max-height: 485px;
       margin: 0 auto 76px;
+    }
+    @media screen and (max-width: 649px) {
+      width: calc(100% - 40px);
+      margin: 0 auto 50px;
+      background: none;
+      max-height: 525px;
     }
   }
   &:nth-child(3) .container-wrapper {
@@ -1371,7 +1532,10 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1499px) {
       max-width: 950px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 649px) {
       width: 100%;
     }
   }
@@ -1384,10 +1548,16 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       margin-right: 30px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 64px;
       line-height: 60px;
       margin-right: 30px;
+    }
+    @media screen and (max-width: 649px) {
+      font-size: 48px;
+      line-height: 45px;
+      text-align: center;
+      margin: 0;
     }
   }
   &:nth-child(3) .container-wrapper .container-box {
@@ -1404,10 +1574,16 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       top: 230px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       top: 182px;
       width: 231px;
       height: 194px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 275px;
+      height: 250px;
+      left: calc(50% - 137.5px);
+      top: 274px;
     }
   }
   &:nth-child(3) .container-wrapper .container-box .container-text {
@@ -1418,20 +1594,30 @@ input[type='date']::-webkit-inner-spin-button {
     text-align: center;
     position: relative;
     margin: auto auto 0;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 10px;
       line-height: 13px;
       margin: 36px auto 0;
+    }
+    @media screen and (max-width: 649px) {
+      font-size: 14px;
+      line-height: 20px;
+      max-width: 230px;
     }
   }
   &:nth-child(3) .container-wrapper .container-box .container-img {
     width: 60px;
     height: 10px;
     margin: 36px auto 60px;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 31px;
       height: 5px;
       margin: auto auto 33px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 32px;
+      height: 5.5px;
+      margin: 26px auto 34px;
     }
   }
   &:nth-child(3) .container-wrapper .container-box .container-btn {
@@ -1473,11 +1659,26 @@ input[type='date']::-webkit-inner-spin-button {
         transition: height 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1);
       }
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 94px;
       height: 29px;
       font-size: 10px;
       margin: 0 auto 35px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 157px;
+      height: 59px;
+      box-shadow: 0 0 0 1px #28304A inset;
+      &:before,
+      &:after {
+        width: 1px;
+      }
+      &::before {
+        box-shadow: 1px 1px 0 #F1DAC2 inset;
+      }
+      &::after {
+        box-shadow: -1px -1px 0 #F1DAC2 inset;
+      }
     }
   }
   &:nth-child(3) .container-wrapper .container__slider {
@@ -1498,11 +1699,17 @@ input[type='date']::-webkit-inner-spin-button {
       width: 740px;
       height: 540px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 521px;
       height: 354px;
       top: 98px;
       right: 30px;
+    }
+    @media screen and (max-width: 649px) {
+      top: 102px;
+      width: 325px;
+      height: 256px;
+      left: 2.5px;
     }
   }
   &:nth-child(3) .container-wrapper .container__slider .slider-arrow {
@@ -1520,7 +1727,14 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         top: 253px;
       }
-
+      @media screen and (max-width: 649px) {
+        width: 64px;
+        height: 60px;
+        top: -32px;
+        left: 161px;
+        background-size: 100% 21px;
+        transform: rotate(90deg);
+      }
     }
     &:nth-child(2) {
       cursor: pointer;
@@ -1536,8 +1750,16 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         top: 372px;
       }
+      @media screen and (max-width: 649px) {
+        width: 64px;
+        height: 60px;
+        top: -32px;
+        left: 96px;
+        background-size: 100% 21px;
+        transform: rotate(-90deg);
+      }
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       &:first-child {
         top: 160px;
         width: 57px;
@@ -1569,10 +1791,15 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       max-height: 750px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
-      width: calc(100% - 100px);
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      width: 670px;
       max-height: 455px;
       margin: 0 auto 43px;
+    }
+    @media screen and (max-width: 649px) {
+      width: calc(100% - 40px);
+      margin: 0 auto 50px;
+      max-height: 470px;
     }
   }
   &:nth-child(4) .container-wrapper {
@@ -1588,8 +1815,15 @@ input[type='date']::-webkit-inner-spin-button {
       display: flex;
       flex-direction: row;
       align-items: center;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         max-height: 63px;
+      }
+      @media screen and (max-width: 649px) {
+        max-height: 139px;
+        display: flex;
+        flex-direction: initial;
+        align-items: flex-start;
+        flex-wrap: wrap;
       }
     }
     &:first-child .container-caption {
@@ -1597,9 +1831,17 @@ input[type='date']::-webkit-inner-spin-button {
       font-size: 120px;
       text-transform: uppercase;
       line-height: 113px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         font-size: 64px;
         line-height: 60px;
+      }
+      @media screen and (max-width: 649px) {
+        font-size: 48px;
+        line-height: 45px;
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-bottom: 27px;
       }
     }
     &:first-child .slider-arrow {
@@ -1614,11 +1856,23 @@ input[type='date']::-webkit-inner-spin-button {
         @media screen and (min-width: 1366px) and (max-width: 1599px) {
           margin-left: 30px;
         }
+        @media screen and (max-width: 649px) {
+          margin-left: auto;
+          width: 60px;
+          height: 65px;
+          background-size: 21px auto;
+        }
       }
       &:nth-child(3) {
         margin-left: 5px;
+        @media screen and (max-width: 649px) {
+          margin-right: auto;
+          width: 60px;
+          height: 65px;
+          background-size: 21px auto;
+        }
       }
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 39px;
         height: 41px;
         background-size: 14px auto;
@@ -1640,6 +1894,9 @@ input[type='date']::-webkit-inner-spin-button {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      @media screen and (max-width: 649px) {
+        top: 110px;
+      }
     }
   }
   &:nth-child(4) .container-wrapper .container-box {
@@ -1649,19 +1906,29 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       max-width: 420px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       max-width: 290px;
+    }
+    @media screen and (max-width: 649px) {
+      max-width: 312px;
+      margin: 0 auto;
     }
     &:nth-child(odd) {
       margin-top: 185px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         margin-top: 110px;
+      }
+      @media screen and (max-width: 649px) {
+        margin-top: 0;
       }
     }
     &:nth-child(even) {
       margin-top: 75px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         margin-top: 50px;
+      }
+      @media screen and (max-width: 649px) {
+        display: none;
       }
     }
     &:before {
@@ -1676,10 +1943,15 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         height: 450px;
       }
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         top: -10px;
         right: -15px;
         height: 300px;
+      }
+      @media screen and (max-width: 649px) {
+        top: -10px;
+        right: -13px;
+        height: 310px;
       }
     }
   }
@@ -1700,8 +1972,12 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       height: 410px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       height: 275px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 308px;
+      height: 290px;
     }
   }
   &:nth-child(4) .container-wrapper .container-box .container-img-wrapper .container-img {
@@ -1740,10 +2016,15 @@ input[type='date']::-webkit-inner-spin-button {
       left: calc(50% - 180px);
       top: 330px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       max-width: 230px;
       top: 206px;
       left: calc(50% - 115px);
+    }
+    @media screen and (max-width: 649px) {
+      max-width: 275px;
+      top: 217px;
+      left: calc(50% - 137.5px);
     }
   }
   &:nth-child(4) .container-wrapper .container-box .container__text .container-caption {
@@ -1759,11 +2040,17 @@ input[type='date']::-webkit-inner-spin-button {
       margin: 25px auto 0;
       font-size: 26px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: 33px auto 0;
       font-size: 15px;
       line-height: 16px;
       max-width: 180px;
+    }
+    @media screen and (max-width: 649px) {
+      margin: 23px auto 0;
+      font-size: 16px;
+      line-height: 17px;
+      max-width: 213px;
     }
   }
   &:nth-child(4) .container-wrapper .container-box .container__text .container-img {
@@ -1773,10 +2060,15 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       margin: 32px auto 22px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 39px;
       height: 5.5px;
       margin: 20px auto 15px;
+    }
+    @media screen and (max-width: 649px) {
+      margin: 20px auto;
+      width: 32.17px;
+      height: 5.26px;
     }
   }
   &:nth-child(4) .container-wrapper .container-box .container__text .container-text {
@@ -1789,9 +2081,13 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       margin: 0 auto 20px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 10px;
       margin: 0 auto 20px;
+    }
+    @media screen and (max-width: 649px) {
+      margin: 0 auto 20px;
+      font-size: 12px;
     }
   }
   &:nth-child(5) {
@@ -1807,11 +2103,17 @@ input[type='date']::-webkit-inner-spin-button {
       margin-bottom: 40px;
       background: none;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       max-height: 380px;
       margin: 0 auto 35px;
       background: url("../assets/pictures/svg/shrimp-right.svg") no-repeat calc(100% + 13px) 224px;
       background-size: 120px 150px;
+    }
+    @media screen and (max-width: 649px) {
+      width: calc(100% - 40px);
+      margin: 0 auto 36px;
+      background: none;
+      max-height: 470px;
     }
   }
   &:nth-child(5) .container-wrapper {
@@ -1829,8 +2131,8 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1499px) {
       max-width: 950px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
-      width: calc(100% - 100px);
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      width: 670px;
       margin: 0 auto;
     }
   }
@@ -1840,9 +2142,15 @@ input[type='date']::-webkit-inner-spin-button {
     text-transform: uppercase;
     line-height: 113px;
     margin: 0 0 0 auto;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 64px;
       line-height: 60px;
+    }
+    @media screen and (max-width: 649px) {
+      font-size: 48px;
+      line-height: 45px;
+      text-align: center;
+      margin: 0;
     }
   }
   &:nth-child(5) .container-wrapper .container-box {
@@ -1861,10 +2169,16 @@ input[type='date']::-webkit-inner-spin-button {
       height: 360px;
       top: 260px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 405px;
       height: 215px;
       top: 108px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 275px;
+      height: 192px;
+      left: calc(50% - 137.5px);
+      top: 274px;
     }
   }
   &:nth-child(5) .container-wrapper .container-box .container-text {
@@ -1875,9 +2189,15 @@ input[type='date']::-webkit-inner-spin-button {
       text-transform: uppercase;
       line-height: 34px;
       margin: auto auto 0;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         font-size: 17px;
         line-height: 18px;
+      }
+      @media screen and (max-width: 649px) {
+        margin: 23px auto 0;
+        font-size: 16px;
+        line-height: 17px;
+        max-width: 230px;
       }
     }
     &:nth-child(3) {
@@ -1888,9 +2208,13 @@ input[type='date']::-webkit-inner-spin-button {
       line-height: 19px;
       color: #BA8161;
       margin: 0 auto auto;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         font-size: 9.5px;
         line-height: 10px;
+      }
+      @media screen and (max-width: 649px) {
+        margin: 0 auto 20px;
+        font-size: 12px;
       }
     }
   }
@@ -1898,10 +2222,15 @@ input[type='date']::-webkit-inner-spin-button {
     width: 70px;
     height: 10px;
     margin: 45px auto;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 36px;
       height: 5px;
       margin: 27px auto 21px;
+    }
+    @media screen and (max-width: 649px) {
+      margin: 20px auto;
+      width: 32.17px;
+      height: 5.26px;
     }
   }
   &:nth-child(5) .container-wrapper .container__slider {
@@ -1924,7 +2253,7 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1600px) and (max-width: 1620px) and (height: 900px) {
       left: 30px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       top: 67px;
       width: 285px;
       height: 288px;
@@ -1940,6 +2269,15 @@ input[type='date']::-webkit-inner-spin-button {
         left: 15px;
       }
     }
+    @media screen and (max-width: 649px) {
+      top: 99px;
+      width: 100%;
+      max-width: 335px;
+      height: 256px;
+      &:before {
+        display: none;
+      }
+    }
   }
   &:nth-child(5) .container-wrapper .container__slider .slider-arrow {
     z-index: 5;
@@ -1953,12 +2291,20 @@ input[type='date']::-webkit-inner-spin-button {
       width: 116px;
       background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
       background-size: 100% 28px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 58px;
         height: 62px;
         top: 89px;
         left: -29px;
         background-size: 100% 21px;
+      }
+      @media screen and (max-width: 649px) {
+        width: 64px;
+        height: 60px;
+        top: -32px;
+        left: 161px;
+        background-size: 100% 21px;
+        transform: rotate(90deg);
       }
     }
     &:nth-child(2) {
@@ -1972,12 +2318,20 @@ input[type='date']::-webkit-inner-spin-button {
       width: 116px;
       background: #FFFFFF url("../assets/pictures/svg/arrow.svg") no-repeat 50% 50%;
       background-size: 100% 28px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 58px;
         height: 62px;
         top: 150px;
         left: -29px;
         background-size: 100% 21px;
+      }
+      @media screen and (max-width: 649px) {
+        width: 64px;
+        height: 60px;
+        top: -32px;
+        left: 96px;
+        background-size: 100% 21px;
+        transform: rotate(-90deg);
       }
     }
   }
@@ -1994,12 +2348,20 @@ input[type='date']::-webkit-inner-spin-button {
       background: url("../assets/pictures/svg/shrimp-left.svg") no-repeat 15% 45px;
       background-size: 294px 368px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       background: url("../assets/pictures/svg/shrimp-left.svg") no-repeat 133px 22px;
       background-size: 127px 159px;
       max-height: 337px;
       margin-bottom: 0;
       padding-top: 47px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 100%;
+      margin: 0 auto 40px;
+      height: 162px;
+      background: none;
+      overflow: hidden;
+      padding-top: 0;
     }
   }
   &:nth-child(6) .container-wrapper {
@@ -2016,10 +2378,18 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1499px) {
       max-width: 950px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
-      width: calc(100% - 100px);
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      width: 670px;
       margin: 0 auto;
       height: 290px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 493px;
+      height: 162px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
     }
   }
   &:nth-child(6) .container-wrapper .container-box {
@@ -2027,17 +2397,30 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       max-width: 280px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 182px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 150px;
+      height: 162px;
     }
     &:first-child {
       margin: auto auto 0 0;
+      @media screen and (max-width: 649px) {
+        margin: 0 auto 0 0;
+      }
     }
     &:nth-child(2) {
       margin: auto;
+      @media screen and (max-width: 649px) {
+        margin: 0 auto;
+      }
     }
     &:nth-child(3) {
       margin: 0 0 auto auto;
+      @media screen and (max-width: 649px) {
+        margin: 0 0 0 auto;
+      }
     }
     &:first-child,
     &:nth-child(2),
@@ -2045,8 +2428,11 @@ input[type='date']::-webkit-inner-spin-button {
       cursor: pointer;
       position: relative;
       height: 360px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         height: 200px;
+      }
+      @media screen and (max-width: 649px) {
+        height: 162px;
       }
       &:hover {
         &:first-child .container-link,
@@ -2067,21 +2453,27 @@ input[type='date']::-webkit-inner-spin-button {
       display: flex;
       flex-direction: row;
       align-items: center;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 154px;
         height: 50px;
         top: -25px;
         left: calc(50% - 77px);
+      }
+      @media screen and (max-width: 649px) {
+        display: none;
       }
     }
     &:nth-child(3) .container-box .container-icon {
       width: 35px;
       height: 35px;
       margin: auto 6px auto auto;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 20px;
         height: 20px;
         margin: auto 19px auto auto;
+      }
+      @media screen and (max-width: 649px) {
+        display: none;
       }
     }
     &:nth-child(3) .container-box .container-caption {
@@ -2089,8 +2481,11 @@ input[type='date']::-webkit-inner-spin-button {
       font-size: 38px;
       text-transform: uppercase;
       margin: auto auto auto 0;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         font-size: 18px;
+      }
+      @media screen and (max-width: 649px) {
+        display: none;
       }
     }
     &:nth-child(3) .container-text {
@@ -2108,12 +2503,15 @@ input[type='date']::-webkit-inner-spin-button {
       font-size: 24px;
       color: #BA8161;
       background: #FFFFFF;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 134px;
         height: 34px;
         bottom: -17px;
         left: calc(50% - 67px);
         font-size: 14px;
+      }
+      @media screen and (max-width: 649px) {
+        display: none;
       }
     }
     &:first-child .container-link,
@@ -2131,6 +2529,10 @@ input[type='date']::-webkit-inner-spin-button {
       height: 100%;
       background: rgba(0, 0, 0, 0.5) url("../assets/pictures/svg/inst-white.svg") no-repeat 50% 50%;
       background-size: 76px 76px;
+      @media screen and (max-width: 649px) {
+        background: rgba(0, 0, 0, 0.5) url("../assets/pictures/svg/inst-white.svg") no-repeat 50% 50%;
+        background-size: 36px 36px;
+      }
     }
     &:first-child .container-img-wrapper,
     &:nth-child(2) .container-img-wrapper,
@@ -2160,9 +2562,15 @@ input[type='date']::-webkit-inner-spin-button {
       background: url("../assets/pictures/svg/fish.svg") no-repeat calc(100% + 17px) 206px;
       background-size: 327px 332px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       background: none;
       height: 315px;
+    }
+    @media screen and (max-width: 649px) {
+      width: calc(100% - 40px);
+      margin: 0 auto 60px;
+      height: 1480px;
+      background: none;
     }
   }
   &:nth-child(7) .container-wrapper {
@@ -2179,10 +2587,17 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1499px) {
       max-width: 950px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
-      width: calc(100% - 100px);
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      width: 670px;
       margin: 0 auto 43px;
       height: 340px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
     }
   }
   &:nth-child(7) .container-wrapper .container-box {
@@ -2195,23 +2610,36 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       max-width: 280px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 180px;
       height: 265px;
     }
+    @media screen and (max-width: 649px) {
+      width: 330px;
+      height: 480px;
+    }
     &:first-child {
       margin: auto 0 0 0;
+      @media screen and (max-width: 649px) {
+        margin: 0 auto 14px;
+      }
     }
     &:nth-child(2) {
       margin-top: -15px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         margin-top: 18px;
+      }
+      @media screen and (max-width: 649px) {
+        margin: 0 auto 14px;
       }
     }
     &:nth-child(3) {
       margin-top: -120px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         margin-top: -22px;
+      }
+      @media screen and (max-width: 649px) {
+        margin: 0;
       }
     }
     &:first-child .container-btn,
@@ -2226,7 +2654,7 @@ input[type='date']::-webkit-inner-spin-button {
       margin: 0 auto auto;
       position: relative;
       box-shadow: 0 0 0 1.5px #28304A inset;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 98px;
         height: 30px;
       }
@@ -2264,7 +2692,7 @@ input[type='date']::-webkit-inner-spin-button {
       font-size: 18px;
       text-transform: uppercase;
       margin: auto 5px auto auto;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         font-size: 10px;
         margin: auto 10px auto auto;
       }
@@ -2275,7 +2703,7 @@ input[type='date']::-webkit-inner-spin-button {
       cursor: pointer;
       width: 23px;
       margin: auto auto auto 0;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 13px;
       }
     }
@@ -2284,7 +2712,7 @@ input[type='date']::-webkit-inner-spin-button {
         width: 100px;
         height: 62px;
         margin: auto auto 40px;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           width: 55px;
           height: 34px;
           margin: auto auto 21px;
@@ -2294,7 +2722,7 @@ input[type='date']::-webkit-inner-spin-button {
         width: 60px;
         height: 10px;
         margin: 26px auto 42px;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           width: 32px;
           height: 5px;
           margin: 14px auto 24px;
@@ -2309,7 +2737,7 @@ input[type='date']::-webkit-inner-spin-button {
         line-height: 45px;
         text-align: center;
         margin: 0 auto 10px;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           font-size: 26px;
           line-height: 25px;
           margin: 0 auto 6px;
@@ -2321,7 +2749,7 @@ input[type='date']::-webkit-inner-spin-button {
         font-size: 36px;
         line-height: 34px;
         text-align: center;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           font-size: 20px;
           line-height: 19px;
         }
@@ -2332,7 +2760,7 @@ input[type='date']::-webkit-inner-spin-button {
       height: 3px;
       margin: 0 auto 35px;
       background: #F7EBDD;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 120px;
         height: 2px;
         margin: 0 auto 20px;
@@ -2342,7 +2770,7 @@ input[type='date']::-webkit-inner-spin-button {
       width: 105px;
       height: 60px;
       margin: auto auto 35px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 57px;
         height: 32px;
         margin: auto auto 21px;
@@ -2354,7 +2782,7 @@ input[type='date']::-webkit-inner-spin-button {
         height: 3px;
         background: #F7EBDD;
         margin: 0 auto 47px;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           width: 120px;
           height: 2px;
           margin: 0 auto 26px;
@@ -2365,7 +2793,7 @@ input[type='date']::-webkit-inner-spin-button {
         height: 3px;
         background: #F7EBDD;
         margin: 52px auto 33px;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           width: 120px;
           height: 2px;
           margin: 30px auto 18px;
@@ -2383,7 +2811,7 @@ input[type='date']::-webkit-inner-spin-button {
       text-transform: uppercase;
       color: #BA8161;
       margin-bottom: 20px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         font-size: 14px;
         margin-bottom: 10px;
       }
@@ -2396,7 +2824,7 @@ input[type='date']::-webkit-inner-spin-button {
         height: 7px;
         background: url("../assets/pictures/svg/zigzag-brown.svg") no-repeat 50% 50%;
         background-size: cover;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           left: 32px;
           width: 23px;
           height: 4px;
@@ -2411,7 +2839,7 @@ input[type='date']::-webkit-inner-spin-button {
         height: 7px;
         background: url("../assets/pictures/svg/zigzag-brown.svg") no-repeat 50% 50%;
         background-size: cover;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           right: 32px;
           width: 23px;
           height: 4px;
@@ -2424,7 +2852,7 @@ input[type='date']::-webkit-inner-spin-button {
       font-size: 36px;
       text-align: center;
       text-transform: uppercase;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         line-height: 20px;
         font-size: 19px;
       }
@@ -2434,7 +2862,7 @@ input[type='date']::-webkit-inner-spin-button {
         width: 110px;
         height: 77px;
         margin: auto auto 40px;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           width: 60px;
           height: 43px;
           margin: auto auto 21px;
@@ -2444,7 +2872,7 @@ input[type='date']::-webkit-inner-spin-button {
         width: 60px;
         height: 10px;
         margin: 25px auto 40px;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           width: 33px;
           height: 5.5px;
           margin: 13px auto 4px;
@@ -2459,7 +2887,7 @@ input[type='date']::-webkit-inner-spin-button {
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 10px;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           line-height: 25px;
           font-size: 27px;
           margin-bottom: 7px;
@@ -2471,7 +2899,7 @@ input[type='date']::-webkit-inner-spin-button {
         font-size: 36px;
         text-align: center;
         text-transform: uppercase;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           line-height: 19px;
           font-size: 20px;
         }
@@ -2482,7 +2910,7 @@ input[type='date']::-webkit-inner-spin-button {
       height: 3px;
       background: #F7EBDD;
       margin: 0 auto 35px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 120px;
         height: 2px;
         margin: 0 auto 20px;
@@ -2490,13 +2918,19 @@ input[type='date']::-webkit-inner-spin-button {
     }
   }
   &:nth-child(8) {
-    max-height: 940px;
     overflow: hidden;
-    @media screen and (min-width: 1600px) and (max-width: 1700px) and (height: 900px){
+    @media screen and (min-width: 1700px) {
+      max-height: 940px;
+    }
+    @media screen and (min-width: 1600px) and (max-width: 1700px) and (height: 900px) {
       max-height: 860px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       max-height: 507px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 100%;
+      max-height: 990px;
     }
   }
   &:nth-child(8) .container-wrapper {
@@ -2522,10 +2956,15 @@ input[type='date']::-webkit-inner-spin-button {
       width: 500px;
       height: 680px;
     }
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       right: 0;
       width: 308px;
       height: 407px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 320px;
+      height: 580px;
+      right: calc(50% - 160px);
     }
   }
   &:nth-child(8) .container-map .map-wrapper {
@@ -2542,12 +2981,15 @@ input[type='date']::-webkit-inner-spin-button {
     width: 100%;
     height: 100%;
     max-height: 887px;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       top: 37px;
       left: 0;
       width: 100%;
       height: 100%;
       max-height: 477px;
+    }
+    @media screen and (max-width: 649px) {
+      top: 258px;
     }
   }
   &:nth-child(8) .container-wrapper .container-caption {
@@ -2558,9 +3000,13 @@ input[type='date']::-webkit-inner-spin-button {
       text-align: center;
       text-transform: uppercase;
       margin: auto auto 0;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         line-height: 38px;
         font-size: 40px;
+      }
+      @media screen and (max-width: 649px) {
+        line-height: 45px;
+        font-size: 48px;
       }
     }
     &:nth-child(5) {
@@ -2569,9 +3015,13 @@ input[type='date']::-webkit-inner-spin-button {
       text-align: center;
       color: #BA8161;
       margin: 50px auto 25px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         font-size: 20px;
         margin: 28px auto 14px;
+      }
+      @media screen and (max-width: 649px) {
+        font-size: 24px;
+        margin: 24px auto 44px;
       }
     }
   }
@@ -2579,10 +3029,15 @@ input[type='date']::-webkit-inner-spin-button {
     width: 57px;
     height: 10px;
     margin: 44px auto;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 32px;
       height: 15.5px;
       margin: 25px auto;
+    }
+    @media screen and (max-width: 649px) {
+      width: 56px;
+      height: 10px;
+      margin: 38px auto 41px;
     }
   }
   &:nth-child(8) .container-wrapper .container-text {
@@ -2594,9 +3049,14 @@ input[type='date']::-webkit-inner-spin-button {
       text-transform: uppercase;
       color: #28304A;
       margin-bottom: 14px;
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         font-size: 14px;
         margin-bottom: 7px;
+      }
+      @media screen and (max-width: 649px) {
+        font-size: 24px;
+        margin: 0 auto;
+        max-width: 268px;
       }
     }
     &:nth-child(4) {
@@ -2605,8 +3065,11 @@ input[type='date']::-webkit-inner-spin-button {
       font-size: 18px;
       text-align: center;
       color: rgba(40, 48, 74, 0.4);
-      @media screen and (min-width: 700px) and (max-width: 992px) {
+      @media screen and (min-width: 650px) and (max-width: 992px) {
         font-size: 10px;
+      }
+      @media screen and (max-width: 649px) {
+        display: none;
       }
     }
   }
@@ -2626,10 +3089,15 @@ input[type='date']::-webkit-inner-spin-button {
     margin: 0 auto;
     position: relative;
     box-shadow: 0 0 0 1.5px #28304A inset;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 176px;
       height: 39px;
       font-size: 10px;
+    }
+    @media screen and (max-width: 649px) {
+      width: 215px;
+      height: 55px;
+      font-size: 18px;
     }
     &:before,
     &:after {
@@ -2665,29 +3133,42 @@ input[type='date']::-webkit-inner-spin-button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 115px;
       height: 36px;
       margin: 22px auto auto;
     }
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      margin: 44px auto auto;
+    }
   }
   &:nth-child(8) .container-wrapper .container__box .container-box-icon {
     position: relative;
-    width: 36px;
-    height: 36px;
+    width: 67px;
+    height: 67px;
     cursor: pointer;
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      width: 36px;
+      height: 36px;
+    }
     &:before {
       cursor: pointer;
       position: absolute;
       content: '';
       z-index: 1;
-      top: 3px;
-      left: 3px;
-      width: 30px;
-      height: 30px;
+      top: 7px;
+      left: 7px;
+      width: 53px;
+      height: 53px;
       border-radius: 50%;
       background: #F7EBDD;
       transition: all .2s cubic-bezier(.22,.68,0,1.71);
+      @media screen and (min-width: 650px) and (max-width: 992px) {
+        width: 30px;
+        height: 30px;
+        top: 3px;
+        left: 3px;
+      }
     }
     &:hover {
       &:before {
@@ -2711,7 +3192,7 @@ input[type='date']::-webkit-inner-spin-button {
         height: 11px;
         background: url("../assets/pictures/svg/vk.svg") no-repeat 50% 50%;
         background-size: cover;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           top: calc(50% - 3px);
           left: calc(50% - 6px);
           width: 12px;
@@ -2727,7 +3208,7 @@ input[type='date']::-webkit-inner-spin-button {
         height: 16px;
         background: url("../assets/pictures/svg/instagram-logo.svg") no-repeat 50% 50%;
         background-size: cover;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           top: calc(50% - 4.5px);
           left: calc(50% - 4.5px);
           width: 9px;
@@ -2743,7 +3224,7 @@ input[type='date']::-webkit-inner-spin-button {
         height: 16px;
         background: url("../assets/pictures/svg/facebook-logo.svg") no-repeat 50% 50%;
         background-size: cover;
-        @media screen and (min-width: 700px) and (max-width: 992px) {
+        @media screen and (min-width: 650px) and (max-width: 992px) {
           top: calc(50% - 4.5px);
           left: calc(50% - 2px);
           width: 4px;
@@ -2764,17 +3245,27 @@ input[type='date']::-webkit-inner-spin-button {
   align-items: center;
   justify-content: center;
   background: #ECEFF3;
-  @media screen and (min-width: 700px) and (max-width: 992px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     height: 173px;
+  }
+  @media screen and (max-width: 649px) {
+    height: 222px;
   }
 }
 
 .footer-wrapper--small {
   display: none;
-  @media screen and (min-width: 700px) and (max-width: 992px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     display: flex;
     flex-direction: column;
     height: 173px;
+    width: 100%;
+    position: relative;
+  }
+  @media screen and (max-width: 649px) {
+    display: flex;
+    flex-direction: column;
+    height: 222px;
     width: 100%;
     position: relative;
   }
@@ -2786,7 +3277,7 @@ input[type='date']::-webkit-inner-spin-button {
   justify-content: space-between;
   width: 100%;
   padding: 0 7%;
-  @media screen and (min-width: 700px) and (max-width: 992px) {
+  @media screen  and (max-width: 992px) {
     display: none;
   }
 }
@@ -2850,7 +3341,8 @@ input[type='date']::-webkit-inner-spin-button {
 }
 
 .footer-wrapper--small .footer__container {
-  width: calc(100% - 100px);
+  max-width: 670px;
+  width: 100%;
   margin: 0 auto;
   height: 40px;
   display: flex;
@@ -2858,6 +3350,12 @@ input[type='date']::-webkit-inner-spin-button {
   align-items: flex-end;
   justify-content: space-between;
   border-top: 1px solid #28304A;
+  @media screen and (max-width: 649px) {
+    width: calc(100% - 30px);
+    height: 70px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-wrapper--small .footer__container .footer-text {
@@ -2866,6 +3364,10 @@ input[type='date']::-webkit-inner-spin-button {
   line-height: normal;
   font-size: 14px;
   color: #28304A;
+  @media screen and (max-width: 649px) {
+    opacity: 1;
+    margin: 17px auto 10px;
+  }
 }
 
 .footer-wrapper--small .footer__container .footer__container {
@@ -2876,6 +3378,10 @@ input[type='date']::-webkit-inner-spin-button {
   justify-content: left;
   width: auto;
   margin-right: 0;
+  @media screen and (max-width: 649px) {
+    border: 0;
+    margin: 0 auto;
+  }
 }
 
 .footer-wrapper--small .footer__container .footer__container .footer-made {
@@ -2898,7 +3404,7 @@ html {
   background: url("../assets/pictures/svg/fish.svg") no-repeat calc(100% + 163px) 396px,
               #FAF7F2 url("../assets/pictures/svg/fish.svg") no-repeat 127px 1510px;
   background-size: 327px 332px;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     background: #FAF7F2;
   }
 }
@@ -2910,7 +3416,7 @@ html {
   z-index: 1;
   width: 100%;
   height: 483px;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     height: 240px;
   }
 }
@@ -2937,7 +3443,7 @@ html {
   z-index: 2;
   left: 0;
   top: 270px;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     top: 100px;
   }
 }
@@ -2953,8 +3459,8 @@ html {
   @media screen and (min-width: 1024px) and (max-width: 1500px){
     width: 90%;
   }
-  @media screen and (max-width: 991px) {
-    width: calc(100% - 100px);
+  @media screen and (min-width: 650px) and (max-width: 992px) {
+    width: 670px;
     margin: 0 auto 70px;
   }
 }
@@ -2967,7 +3473,7 @@ html {
   text-align: center;
   text-transform: uppercase;
   color: #BA8161;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     line-height: 10px;
     font-size: 11px;
     margin: 24px auto 16px;
@@ -2984,7 +3490,7 @@ html {
   color: #28304A;
   max-width: 870px;
   width:100%;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     line-height: 19px;
     font-size: 18px;
     max-width: 480px;
@@ -2996,7 +3502,7 @@ html {
   margin: 45px auto 50px;
   width: 70px;
   height: 10px;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     margin: 15px auto 35px;
     width: 39px;
     height: 5.5px;
@@ -3013,7 +3519,7 @@ html {
   max-width: 770px;
   width:100%;
   font-style: italic;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     line-height: 14px;
     font-size: 10px;
     max-width: 480px;
@@ -3028,7 +3534,7 @@ html {
   text-align: center;
   color: #BA8161;
   font-style: italic;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     line-height: 14px;
     font-size: 10px;
   }
@@ -3044,7 +3550,7 @@ html {
   align-items: center;
   position: relative;
   overflow: hidden;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     margin: 30px auto 25px;
     height: 315px;
   }
@@ -3063,7 +3569,7 @@ html {
   height: 47px;
   background: #FFFFFF url("../assets/pictures/svg/arrow-right.svg") no-repeat 50% 50%;
   background-size: 27px auto;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     width: 49px;
     height: 31px;
     background-size: 18px auto;
@@ -3083,7 +3589,7 @@ html {
   height: 84px;
   border: 2px solid #F7EBDD;
   margin-bottom: 55px;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     max-width: 432px;
     height: 46px;
     margin-bottom: 30px;
@@ -3096,7 +3602,7 @@ html {
   align-items: center;
   width: 100%;
   height: 84px;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     height: 46px;
   }
 }
@@ -3110,7 +3616,7 @@ html {
   align-items: center;
   justify-content: space-around;
   border-right: 2px solid #F7EBDD;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     width: 86px;
     height: 22px;
   }
@@ -3125,7 +3631,7 @@ html {
     background: url("../assets/pictures/svg/tw.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    @media screen and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 9px;
       height: 7px;
     }
@@ -3143,7 +3649,7 @@ html {
     background: url("../assets/pictures/svg/fb.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    @media screen and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 3px;
       height: 8px;
     }
@@ -3161,7 +3667,7 @@ html {
     background: url("../assets/pictures/svg/vk-small.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    @media screen and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 10px;
       height: 6px;
     }
@@ -3179,7 +3685,7 @@ html {
     background: url("../assets/pictures/svg/gp.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    @media screen and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 11px;
       height: 7px;
     }
@@ -3197,7 +3703,7 @@ html {
     background: url("../assets/pictures/svg/ok.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    @media screen and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 7px;
       height: 10px;
     }
@@ -3227,7 +3733,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     width: 564px;
     height: 193px;
     left: calc(50% - 282px);
@@ -3268,7 +3774,7 @@ html {
   text-transform: uppercase;
   color: #28304A;
   margin: 0 auto auto;
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     font-size: 20px;
   }
 }
@@ -3333,7 +3839,7 @@ html {
     top: 7px;
     left: 7px;
   }
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     display: none;
   }
 }
@@ -3349,7 +3855,7 @@ html {
     background: #FAF7F2 url("../assets/pictures/svg/dish.svg") no-repeat calc(100% - 58px) 76px;
     background-size: 487px 380px;
   }
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     background: #FAF7F2;
   }
 }
@@ -3377,7 +3883,7 @@ html {
   @media screen and (min-width: 1024px)  and (max-width: 1500px) {
     width: 90%;
   }
-  @media screen  and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     text-align: center;
     line-height: 60px;
     font-size: 63.5px;
@@ -3395,8 +3901,8 @@ html {
   @media screen and (min-width: 1024px)  and (max-width: 1500px) {
     width: 90%;
   }
-  @media screen  and (max-width: 991px) {
-    width: calc(100% - 100px);
+  @media screen and (min-width: 650px) and (max-width: 992px) {
+    width: 670px;
     margin: 0 auto 100px;
   }
 }
@@ -3414,7 +3920,7 @@ html {
   &:hover .menu-item-link {
     color: #FFFFFF;
   }
-  @media screen  and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     padding: 7px 20px;
   }
 }
@@ -3432,7 +3938,7 @@ html {
   &:hover {
     color: #FFFFFF;
   }
-  @media screen  and (max-width: 991px) {
+  @media screen and (min-width: 650px) and (max-width: 992px) {
     font-size: 12px;
   }
 }
@@ -3443,20 +3949,20 @@ html {
   display: flex;
   flex-direction: row;
   margin-bottom: 98px;
-  @media screen  and (max-width: 991px) {
-    width: calc(100% - 100px);
+  @media screen and (min-width: 650px) and (max-width: 992px) {
+    width: 670px;
     margin: 0 auto 88px;
   }
   &:last-child {
     margin-bottom: 0;
   }
   &:nth-child(odd) {
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       flex-direction: column;
     }
   }
   &:nth-child(even) {
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       flex-direction: column-reverse;
     }
   }
@@ -3464,7 +3970,7 @@ html {
   &:nth-child(even) .menu-img-wrapper {
     position: absolute;
     z-index: 1;
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       position: relative;
     }
   }
@@ -3480,7 +3986,7 @@ html {
       height: 690px;
       top: calc(50% - 345px);
     }
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       max-width: 665px;
       width: 100%;
       height: 319px;
@@ -3500,7 +4006,7 @@ html {
       height: 540px;
       top: calc(50% - 270px);
     }
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       max-width: 665px;
       width: 100%;
       height: 319px;
@@ -3515,21 +4021,21 @@ html {
     width: 100%;
     display: flex;
     flex-direction: row;
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       z-index: 4;
       max-width: 565px;
     }
   }
   &:nth-child(odd) .menu__content {
     margin: 0 0 0 auto;
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       max-width: 565px;
       margin: -120px auto 0;
     }
   }
   &:nth-child(even) .menu__content {
     margin: 0 auto 0 0;
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       max-width: 565px;
       margin: -120px auto 0;
     }
@@ -3542,13 +4048,13 @@ html {
   }
   &:nth-child(odd) .menu__content .menu-content-wrapper {
     margin: 0 90px 0 auto;
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: auto;
     }
   }
   &:nth-child(even) .menu__content .menu-content-wrapper {
     margin: 0 auto 0 90px;
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: auto;
     }
   }
@@ -3561,7 +4067,7 @@ html {
     text-transform: uppercase;
     color: #28304A;
     margin: 90px auto 0;
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: 60px auto 0;
     }
   }
@@ -3570,7 +4076,7 @@ html {
     width: 60px;
     height: 10px;
     margin: 33px auto 48px;
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: 24px auto 35px;
       width: 40px;
       height: 7px;
@@ -3591,7 +4097,7 @@ html {
     line-height: 67px;
     font-size: 18px;
     color: #28304A;
-    @media screen  and (max-width: 991px) {
+    @media screen and (min-width: 650px) and (max-width: 992px) {
       line-height: 49px;
     }
   }
@@ -3604,4 +4110,3 @@ html {
     color: #BA8161;
   }
 }
-
