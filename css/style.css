@@ -223,12 +223,16 @@ input[type='date']::-webkit-inner-spin-button {
 .nav--active {
   left: 0; }
 
-.aside-mob-icon {
+.aside-mob-icon:first-child {
   width: 61px;
   height: 34px;
   position: absolute;
   right: 45px;
   top: 28px; }
+.aside-mob-icon:nth-child(3) {
+  width: 39px;
+  height: 5.5px;
+  margin: 0 auto 35px; }
 
 .aside-mob-nav .nav-mob-list {
   margin: 67px auto 37px;
@@ -243,6 +247,44 @@ input[type='date']::-webkit-inner-spin-button {
   text-align: center;
   text-transform: uppercase;
   color: #28304A; }
+
+.aside-mob-nav .aside__container .aside-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 275px;
+  margin: 0 auto 10px; }
+
+.aside-mob-nav .aside__container .aside-wrapper .aside-icon {
+  width: 11px;
+  height: 16px;
+  margin-right: 10px; }
+
+.aside-mob-nav .aside__container .aside-wrapper .aside-text {
+  font-family: 'Merel', sans-serif;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #28304A; }
+
+.aside-mob-nav .aside__container .aside-text:nth-child(2) {
+  font-family: 'Merel', sans-serif;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  text-transform: none;
+  color: #28304A;
+  margin: 0 auto 36px; }
+.aside-mob-nav .aside__container .aside-text:nth-child(3) {
+  font-family: 'Catorze27 Style 1', sans-serif;
+  line-height: 62px;
+  font-size: 24px;
+  text-align: center;
+  color: #28304A;
+  margin: 0 auto 57px; }
+
+.aside-mob-nav .aside-btn {
+  margin: 0 auto; }
 
 .nav-list {
   display: flex;
