@@ -304,11 +304,20 @@ input[type='date']::-webkit-inner-spin-button {
     right: 45px;
     top: 28px;
     z-index: 4;
+    @media screen and (max-width: 649px) {
+      right: 25px;
+      top: 14px;
+      width: 45px;
+      height: 25px;
+    }
   }
   &:nth-child(3) {
     width: 39px;
     height: 5.5px;
     margin: 0 auto 35px;
+    @media screen and (max-width: 649px) {
+      display: none;
+    }
   }
 }
 
@@ -317,6 +326,9 @@ input[type='date']::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 649px) {
+    margin: 41px auto 34px;
+  }
 }
 
 .aside-mob-nav .nav-mob-list .nav-mob-item .nav-mob-item-link {
@@ -326,6 +338,10 @@ input[type='date']::-webkit-inner-spin-button {
   text-align: center;
   text-transform: uppercase;
   color: #28304A;
+  @media screen and (max-width: 649px) {
+    line-height: 45px;
+    font-size: 24px;
+  }
 }
 
 .aside-mob-nav .aside__container .aside-wrapper {
@@ -340,25 +356,32 @@ input[type='date']::-webkit-inner-spin-button {
   width: 11px;
   height: 16px;
   margin-right: 10px;
+  @media screen and (max-width: 649px) {
+    display: none;
+  }
 }
 
 .aside-mob-nav .aside__container .aside-wrapper .aside-text {
-  font-family: 'Merel', sans-serif;
+  font-family: 'Merel Regular', sans-serif;
   line-height: normal;
   font-size: 18px;
   text-align: center;
   color: #28304A;
 }
 
-.aside-mob-nav .aside__container  .aside-text {
+.aside-mob-nav .aside__container .aside-text {
   &:nth-child(2) {
-    font-family: 'Merel', sans-serif;
+    font-family: 'Merel Regular', sans-serif;
     line-height: normal;
     font-size: 18px;
     text-align: center;
     text-transform: none;
     color: #28304A;
     margin: 0 auto 36px;
+    @media screen and (max-width: 649px) {
+      font-size: 14px;
+      margin: 0 auto;
+    }
   }
   &:nth-child(3) {
     font-family: 'Catorze27 Style 1', sans-serif;
@@ -367,6 +390,11 @@ input[type='date']::-webkit-inner-spin-button {
     text-align: center;
     color: #28304A;
     margin: 0 auto 57px;
+    @media screen and (max-width: 649px) {
+      font-size: 24px;
+      line-height: 24px;
+      margin: 23px auto 35px;
+    }
   }
 }
 
