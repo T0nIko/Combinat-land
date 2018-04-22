@@ -21,8 +21,10 @@
 
 <!-- Menu and info -->
 <aside class="aside">
+
+    <div class="aside-logo"></div>
+
     <div class="aside-wrapper">
-        <img src="assets/pictures/svg/logo.svg" class="aside-logo" alt="Лого Комбинат"/>
 
         <nav class="aside-nav">
             <ul class="nav-list">
@@ -349,14 +351,28 @@
     <!-- end -->
 
     <footer class="footer">
+
         <div class="footer-wrapper">
-            <p class="footer-text">© 2001-<span id="year"></span> BB Group. All right reserved.</p>
+            <p class="footer-text">© 2001-<span class="year"></span> BB Group. All right reserved.</p>
             <img src="assets/pictures/svg/bb-logo.svg" class="footer-img" alt="BB Group"/>
             <div class="footer__container">
                 <p class="footer-made">Made in</p>
                 <img src="assets/pictures/svg/flat12-logo.svg" class="footer-logo" alt="Logo Flat12"/>
             </div>
         </div>
+
+        <div class="footer-wrapper--small">
+            <div class="footer-btn-wrapper" onclick="toTop(this)"></div>
+            <img src="assets/pictures/svg/bb-logo.svg" class="footer-img" alt="BB Group"/>
+            <div class="footer__container">
+                <p class="footer-text">© 2001-<span class="year"></span> BB Group. All right reserved.</p>
+                <div class="footer__container">
+                    <p class="footer-made">Made in</p>
+                    <img src="assets/pictures/svg/flat12-logo.svg" class="footer-logo" alt="Logo Flat12"/>
+                </div>
+            </div>
+        </div>
+
     </footer>
 
     <a class="lang"><p class="lang-text">eng</p></a> <!-- Change language -->

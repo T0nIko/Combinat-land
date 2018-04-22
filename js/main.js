@@ -1,9 +1,19 @@
 // Анимация якорей
 $(document).ready(function () {
-    // Для меню и соответствующих блоков
+    // Для навигации
     $('a.nav-item-link').click(function () {
         let elementClick = $(this).attr("href");
         let destination = $(elementClick).offset().top - 20;
+        $('html').animate({
+                scrollTop: destination
+            }
+            , 350);
+        return false;
+    });
+    // Для меню
+    $('a.menu-item-link').click(function () {
+        let elementClick = $(this).attr("href");
+        let destination = $(elementClick).offset().top - 50;
         $('html').animate({
                 scrollTop: destination
             }
@@ -20,8 +30,17 @@ $(document).ready(function () {
             , 350);
         return false;
     });
+
 });
 
+function toTop() {
+    let destination = $('#top').offset().top;
+    $('html').animate({
+            scrollTop: destination
+        }
+        , 350);
+    return false;
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 // Стили для кнопки скролла вверх
