@@ -59,7 +59,7 @@ $(document).ready(function () {
 // N способов скрыть попап
 $(document).ready(function () {
     // Если жмякнули на кнопку с сайд-бара
-    $('#aside_btn').click(function (e) {
+    $('.aside-btn').click(function (e) {
         e.preventDefault();
         $('#pop_up').addClass('pop-up--active');
         $('.aside').addClass('aside--active');
