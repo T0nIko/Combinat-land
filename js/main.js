@@ -134,10 +134,12 @@ $(document).ready(function ($) {
             $('.burger').addClass('cross');
             $('#mob_menu').addClass('nav--active');
             $('.aside').addClass('aside--active');
+            $('.footer-btn-wrapper').css({display: 'none'});
         }
         else {
             $('#mob_menu').removeClass('nav--active');
             $('.burger').removeClass('cross');
+            $('.footer-btn-wrapper').css({display: 'block'});
         }
     });
 });
