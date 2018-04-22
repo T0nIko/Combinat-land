@@ -21,28 +21,75 @@
 
 <!-- Menu and info -->
 <aside class="aside">
+
+    <div class="aside-logo"></div>
+
+    <div class="aside-menu-btn">
+        <div class="burger"><span></span></div>
+    </div>
+
+    <nav class="aside-mob-nav" id="mob_menu">
+
+        <img src="assets/pictures/svg/owl.svg" class="aside-mob-icon" alt="Сова"/>
+
+        <ul class="nav-mob-list">
+            <li class="nav-mob-item">
+                <a href="#restaurant" class="nav-mob-item-link">Ресторан</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#atmosphere" class="nav-mob-item-link">Атмосфера</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#menu" class="nav-mob-item-link">Меню</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#affiche" class="nav-mob-item-link">Афиша</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#action" class="nav-mob-item-link">% Акции</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#contats" class="nav-mob-item-link">Контакты</a>
+            </li>
+        </ul>
+
+        <img src="assets/pictures/svg/zigzag.svg" class="aside-mob-icon" />
+
+        <div class="aside__container">
+            <div class="aside-wrapper">
+                <img src="assets/pictures/svg/placeholder.svg" class="aside-icon" alt="Маркер карты"/>
+                <p class="aside-text">Москва, ул.Автозаводская 18,
+                    <br/>ТРЦ "Ривьера", 3-й этаж</p>
+            </div>
+            <p class="aside-text">11:00 - 24:00</p>
+            <p class="aside-text">+7 926 192-40-35</p>
+        </div>
+
+        <a class="aside-btn">Забронировать столик</a>
+
+    </nav>
+
     <div class="aside-wrapper">
-        <img src="assets/pictures/svg/logo.svg" class="aside-logo" alt="Лого Комбинат"/>
 
         <nav class="aside-nav">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-item-link">Ресторан</a>
+                    <a href="#restaurant" class="nav-item-link">Ресторан</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html" class="nav-item-link">Атмосфера</a>
+                    <a href="#atmosphere" class="nav-item-link">Атмосфера</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html" class="nav-item-link">Меню</a>
+                    <a href="#menu" class="nav-item-link">Меню</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html" class="nav-item-link">Афиша</a>
+                    <a href="#affiche" class="nav-item-link">Афиша</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html" class="nav-item-link">% Акции</a>
+                    <a href="#action" class="nav-item-link">% Акции</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contacts" class="nav-item-link">Контакты</a>
+                    <a href="#contats" class="nav-item-link">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -60,6 +107,7 @@
 
         <a id="aside_btn" class="aside-btn">Забронировать столик</a>
     </div>
+
 </aside>
 <!-- end -->
 
@@ -215,14 +263,28 @@
     </section>
 
     <footer class="footer">
+
         <div class="footer-wrapper">
-            <p class="footer-text">© 2001-<span id="year"></span> BB Group. All right reserved.</p>
+            <p class="footer-text">© 2001-<span class="year"></span> BB Group. All right reserved.</p>
             <img src="assets/pictures/svg/bb-logo.svg" class="footer-img" alt="BB Group"/>
             <div class="footer__container">
                 <p class="footer-made">Made in</p>
                 <img src="assets/pictures/svg/flat12-logo.svg" class="footer-logo" alt="Logo Flat12"/>
             </div>
         </div>
+
+        <div class="footer-wrapper--small">
+            <div class="footer-btn-wrapper" onclick="toTop(this)"></div>
+            <img src="assets/pictures/svg/bb-logo.svg" class="footer-img" alt="BB Group"/>
+            <div class="footer__container">
+                <p class="footer-text">© 2001-<span class="year"></span> BB Group. All right reserved.</p>
+                <div class="footer__container">
+                    <p class="footer-made">Made in</p>
+                    <img src="assets/pictures/svg/flat12-logo.svg" class="footer-logo" alt="Logo Flat12"/>
+                </div>
+            </div>
+        </div>
+
     </footer>
 
     <a href="index.html" class="back"></a> <!-- to hell and back -->
