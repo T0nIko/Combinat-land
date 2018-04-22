@@ -104,13 +104,26 @@ $(document).ready(function () {
     });
 });
 
-// Валидация
-
 // После валидации и отправки формы
 $(document).ready(function () {
     $('#form_btn').click(function () {
         $('#last_pop_up').addClass('last-pop-up--active');
         $(' input ').val('');
+    });
+});
+
+// Открыть мобильное меню
+$(document).ready(function($) {
+    $('.burger').click(function() {
+        if(!$('.burger').hasClass('cross')) {
+            $('.burger').addClass('cross');
+            $('#mob_menu').addClass('nav--active');
+            $('.aside').addClass('aside--active');
+        }
+        else {
+            $('#mob_menu').removeClass('nav--active');
+            $('.burger').removeClass('cross');
+        }
     });
 });
 
