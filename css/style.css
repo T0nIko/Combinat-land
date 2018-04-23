@@ -3686,9 +3686,14 @@ html {
     .main-menu {
       background: #FAF7F2 url("../assets/pictures/svg/dish.svg") no-repeat calc(100% - 58px) 76px;
       background-size: 487px 380px; } }
-  @media screen and (min-width: 650px) and (max-width: 992px) {
+  @media screen and (max-width: 992px) {
     .main-menu {
-      background: #FAF7F2; } }
+      background: #FAF7F2;
+      margin: 56px 0 0; } }
+
+@media screen and (max-width: 649px) {
+  .main-menu .menu-btn {
+    display: none; } }
 
 .menu-wrapper {
   max-width: 1200px;
@@ -3718,6 +3723,12 @@ html {
       line-height: 60px;
       font-size: 63.5px;
       margin: 48px auto 40px; } }
+  @media screen and (max-width: 649px) {
+    .menu-caption {
+      text-align: center;
+      line-height: 45px;
+      font-size: 48px;
+      margin: 40px auto 27px; } }
 
 .menu-list {
   display: flex;
@@ -3733,6 +3744,10 @@ html {
     .menu-list {
       width: 670px;
       margin: 0 auto 100px; } }
+  @media screen and (max-width: 649px) {
+    .menu-list {
+      width: 90%;
+      margin: 0 auto 50px; } }
 
 .menu-item {
   padding: 10px 30px;
@@ -3748,6 +3763,9 @@ html {
   @media screen and (min-width: 650px) and (max-width: 992px) {
     .menu-item {
       padding: 7px 20px; } }
+  @media screen and (max-width: 649px) {
+    .menu-item {
+      padding: 7px 15px; } }
 
 .menu-item-link {
   width: 100%;
@@ -3761,7 +3779,7 @@ html {
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
   .menu-item-link:hover {
     color: #FFFFFF; }
-  @media screen and (min-width: 650px) and (max-width: 992px) {
+  @media screen and (max-width: 992px) {
     .menu-item-link {
       font-size: 12px; } }
 

@@ -4103,8 +4103,15 @@ html {
     background: #FAF7F2 url("../assets/pictures/svg/dish.svg") no-repeat calc(100% - 58px) 76px;
     background-size: 487px 380px;
   }
-  @media screen and (min-width: 650px) and (max-width: 992px) {
+  @media screen and (max-width: 992px) {
     background: #FAF7F2;
+    margin: 56px 0 0;
+  }
+}
+
+.main-menu .menu-btn {
+  @media screen and (max-width: 649px) {
+    display: none;
   }
 }
 
@@ -4137,6 +4144,12 @@ html {
     font-size: 63.5px;
     margin: 48px auto 40px;
   }
+  @media screen and (max-width: 649px) {
+    text-align: center;
+    line-height: 45px;
+    font-size: 48px;
+    margin: 40px auto 27px;
+  }
 }
 
 .menu-list {
@@ -4152,6 +4165,10 @@ html {
   @media screen and (min-width: 650px) and (max-width: 992px) {
     width: 670px;
     margin: 0 auto 100px;
+  }
+  @media screen and (max-width: 649px) {
+    width: 90%;
+    margin: 0 auto 50px;
   }
 }
 
@@ -4171,6 +4188,9 @@ html {
   @media screen and (min-width: 650px) and (max-width: 992px) {
     padding: 7px 20px;
   }
+  @media screen  and (max-width: 649px) {
+    padding: 7px 15px;
+  }
 }
 
 .menu-item-link {
@@ -4186,7 +4206,7 @@ html {
   &:hover {
     color: #FFFFFF;
   }
-  @media screen and (min-width: 650px) and (max-width: 992px) {
+  @media screen and (max-width: 992px) {
     font-size: 12px;
   }
 }
