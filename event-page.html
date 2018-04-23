@@ -194,8 +194,8 @@
                 <br/><br/>Поджаристая картофельно-грибная котлета, хрустящие корнишоны, ломтик помидора соевый майонез и овощи в кляре — торопиться за таким ужином вам точно не захочется </p>
             <div class="content-slider__container">
                 <div class="content-slider__box">
-                    <span class="content-slider-arrow next"></span>
                     <span class="content-slider-arrow prev"></span>
+                    <span class="content-slider-arrow next"></span>
                 </div>
                 <div class="container__slider swiper-container">
                     <ul class="slider-list swiper-wrapper">
@@ -290,9 +290,9 @@
         slidesPerView: 'auto',
         centeredSlides: true,
         spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
+        navigation: {
+            nextEl: '.prev',
+            prevEl: '.next',
         },
     });
 </script>
