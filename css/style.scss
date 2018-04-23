@@ -54,7 +54,7 @@ html {
   height: 100vh;
   background: #FAF7F2;
   @media screen and (max-width: 649px) {
-    background: #FAF7F2;
+    background: #FAF7F2 !important;
   }
 }
 
@@ -3560,6 +3560,9 @@ html {
   @media screen and (min-width: 650px) and (max-width: 992px) {
     height: 240px;
   }
+  @media screen and (max-width: 649px) {
+    height: 240px;
+  }
 }
 
 .header-img-wrapper {
@@ -3576,6 +3579,9 @@ html {
   left: 0;
   right: 0;
   top: -50%;
+  @media screen and (max-width: 649px) {
+    top: 0;
+  }
 }
 
 .content {
@@ -3586,6 +3592,9 @@ html {
   top: 270px;
   @media screen and (min-width: 650px) and (max-width: 992px) {
     top: 100px;
+  }
+  @media screen and (max-width: 649px) {
+    top: 192px;
   }
 }
 
@@ -3604,6 +3613,10 @@ html {
     width: 670px;
     margin: 0 auto 70px;
   }
+  @media screen and (max-width: 649px) {
+    max-width: 325px;
+    margin: 0 auto 36px;
+  }
 }
 
 .content-data {
@@ -3618,6 +3631,11 @@ html {
     line-height: 10px;
     font-size: 11px;
     margin: 24px auto 16px;
+  }
+  @media screen and (max-width: 649px) {
+    margin: 24px auto 16px;
+    line-height: 13px;
+    font-size: 12px;
   }
 }
 
@@ -3637,6 +3655,12 @@ html {
     max-width: 480px;
     margin: 0 auto;
   }
+  @media screen and (max-width: 649px) {
+    line-height: 19px;
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .content-icon {
@@ -3647,6 +3671,11 @@ html {
     margin: 15px auto 35px;
     width: 39px;
     height: 5.5px;
+  }
+  @media screen and (max-width: 649px) {
+    margin: 24px auto;
+    width: 31px;
+    height: 5px;
   }
 }
 
@@ -3666,6 +3695,11 @@ html {
     max-width: 480px;
     margin: 0 auto;
   }
+  @media screen and (max-width: 649px) {
+    width: 90%;
+    line-height: 14px;
+    font-size: 14px;
+  }
 }
 
 .content-text---gold {
@@ -3678,6 +3712,10 @@ html {
   @media screen and (min-width: 650px) and (max-width: 992px) {
     line-height: 14px;
     font-size: 10px;
+  }
+  @media screen and (max-width: 649px) {
+    line-height: 14px;
+    font-size: 14px;
   }
 }
 
@@ -3695,12 +3733,20 @@ html {
     margin: 30px auto 25px;
     height: 315px;
   }
+  @media screen and (max-width: 649px) {
+    margin: 40px auto 27px;
+    height: 243px;
+  }
 }
 
 .content-slider__box {
   position: relative;
   height: 425px;
   width: 100%;
+  @media screen and (max-width: 649px) {
+    height: 176px;
+    width: 100%;
+  }
 }
 
 .content-slider__box .content-slider-arrow {
@@ -3715,12 +3761,24 @@ html {
     height: 31px;
     background-size: 18px auto;
   }
+  @media screen and (max-width: 649px) {
+    height: 31px;
+    width: 49px;
+    background-size: 18px auto;
+    top: 72px;
+  }
   &:first-child {
     right: 220px;
+    @media screen and (max-width: 649px) {
+      right: 23px;
+    }
   }
   &:nth-child(2) {
     left: 220px;
     transform: scale(-1,-1);
+    @media screen and (max-width: 649px) {
+      left: 23px;
+    }
   }
 }
 
@@ -3735,6 +3793,11 @@ html {
     height: 46px;
     margin-bottom: 30px;
   }
+  @media screen and (max-width: 649px) {
+    max-width: 275px;
+    height: 46px;
+    margin-bottom: 40px;
+  }
 }
 
 .container-footer-list {
@@ -3744,7 +3807,10 @@ html {
   width: 100%;
   height: 84px;
   @media screen and (min-width: 650px) and (max-width: 992px) {
-    height: 46px;
+    height: 42px;
+  }
+  @media screen and (max-width: 649px) {
+    height: 42px;
   }
 }
 
@@ -3761,6 +3827,10 @@ html {
     width: 86px;
     height: 22px;
   }
+  @media screen and (max-width: 649px) {
+    width: 55px;
+    height: 22px;
+  }
   &:last-child {
     border: 0;
   }
@@ -3772,7 +3842,7 @@ html {
     background: url("../assets/pictures/svg/tw.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       width: 9px;
       height: 7px;
     }
@@ -3790,7 +3860,7 @@ html {
     background: url("../assets/pictures/svg/fb.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       width: 3px;
       height: 8px;
     }
@@ -3808,7 +3878,7 @@ html {
     background: url("../assets/pictures/svg/vk-small.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       width: 10px;
       height: 6px;
     }
@@ -3826,7 +3896,7 @@ html {
     background: url("../assets/pictures/svg/gp.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       width: 11px;
       height: 7px;
     }
@@ -3844,7 +3914,7 @@ html {
     background: url("../assets/pictures/svg/ok.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       width: 7px;
       height: 10px;
     }
@@ -3878,6 +3948,11 @@ html {
     width: 564px;
     height: 193px;
     left: calc(50% - 282px);
+  }
+  @media screen and (max-width: 649px) {
+    width: 320px;
+    height: 180px;
+    left: calc(50% - 160px);
   }
 }
 
@@ -3918,6 +3993,10 @@ html {
   @media screen and (min-width: 650px) and (max-width: 992px) {
     font-size: 20px;
   }
+  @media screen and (max-width: 649px) {
+    font-style: 20px;
+    font-size: 18px;
+  }
 }
 
 .content-map {
@@ -3926,6 +4005,10 @@ html {
   left: 0;
   width: 100%;
   height: 410px;
+  @media screen and (max-width: 649px) {
+    top: 66px;
+    height: 462px;
+  }
 }
 
 .content-map-wrapper {
@@ -3933,6 +4016,10 @@ html {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.content-map .content-map-wrapper iframe {
+  height: 100%;
 }
 
 .back {
@@ -3955,6 +4042,12 @@ html {
     background: #FFFFFF;
     border-radius: 50%;
     transition: all .2s cubic-bezier(.22,.68,0,1.71);
+    @media screen and (max-width: 649px) {
+      width: 45px;
+      height: 45px;
+      top: 5px;
+      left: 5px;
+    }
   }
   &:after {
     cursor: pointer;
@@ -3967,6 +4060,13 @@ html {
     height: 64px;
     background: url("../assets/pictures/svg/arrow-back.svg") no-repeat 50% 50%;
     background-size: 9px 18px;
+    @media screen and (max-width: 649px) {
+      width: 45px;
+      height: 45px;
+      background-size: 6px 12px;
+      top: 5px;
+      left: 5px;
+    }
   }
   &:hover {
     &:before {
@@ -3982,6 +4082,13 @@ html {
   }
   @media screen and (min-width: 650px) and (max-width: 992px) {
     display: none;
+  }
+  @media screen and (max-width: 649px) {
+    width: 55px;
+    height: 55px;
+    top:81px;
+    left: calc(50% - 27.5px);
+    z-index: 1;
   }
 }
 /*end*/

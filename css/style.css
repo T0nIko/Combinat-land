@@ -38,7 +38,7 @@ html {
   background: #FAF7F2; }
   @media screen and (max-width: 649px) {
     html {
-      background: #FAF7F2; } }
+      background: #FAF7F2 !important; } }
 
 body {
   width: 100%;
@@ -3189,6 +3189,9 @@ html {
   @media screen and (min-width: 650px) and (max-width: 992px) {
     .header {
       height: 240px; } }
+  @media screen and (max-width: 649px) {
+    .header {
+      height: 240px; } }
 
 .header-img-wrapper {
   position: relative;
@@ -3203,6 +3206,9 @@ html {
   left: 0;
   right: 0;
   top: -50%; }
+  @media screen and (max-width: 649px) {
+    .header-img {
+      top: 0; } }
 
 .content {
   position: absolute;
@@ -3213,6 +3219,9 @@ html {
   @media screen and (min-width: 650px) and (max-width: 992px) {
     .content {
       top: 100px; } }
+  @media screen and (max-width: 649px) {
+    .content {
+      top: 192px; } }
 
 .content-wrapper {
   max-width: 1200px;
@@ -3229,6 +3238,10 @@ html {
     .content-wrapper {
       width: 670px;
       margin: 0 auto 70px; } }
+  @media screen and (max-width: 649px) {
+    .content-wrapper {
+      max-width: 325px;
+      margin: 0 auto 36px; } }
 
 .content-data {
   margin: 43px auto 32px;
@@ -3243,6 +3256,11 @@ html {
       line-height: 10px;
       font-size: 11px;
       margin: 24px auto 16px; } }
+  @media screen and (max-width: 649px) {
+    .content-data {
+      margin: 24px auto 16px;
+      line-height: 13px;
+      font-size: 12px; } }
 
 .content-caption {
   margin: 0 auto;
@@ -3260,6 +3278,12 @@ html {
       font-size: 18px;
       max-width: 480px;
       margin: 0 auto; } }
+  @media screen and (max-width: 649px) {
+    .content-caption {
+      line-height: 19px;
+      font-size: 18px;
+      width: 90%;
+      margin: 0 auto; } }
 
 .content-icon {
   margin: 45px auto 50px;
@@ -3270,6 +3294,11 @@ html {
       margin: 15px auto 35px;
       width: 39px;
       height: 5.5px; } }
+  @media screen and (max-width: 649px) {
+    .content-icon {
+      margin: 24px auto;
+      width: 31px;
+      height: 5px; } }
 
 .content-text {
   margin: 0 auto;
@@ -3287,6 +3316,11 @@ html {
       font-size: 10px;
       max-width: 480px;
       margin: 0 auto; } }
+  @media screen and (max-width: 649px) {
+    .content-text {
+      width: 90%;
+      line-height: 14px;
+      font-size: 14px; } }
 
 .content-text---gold {
   font-family: 'Georgia', serif;
@@ -3299,6 +3333,10 @@ html {
     .content-text---gold {
       line-height: 14px;
       font-size: 10px; } }
+  @media screen and (max-width: 649px) {
+    .content-text---gold {
+      line-height: 14px;
+      font-size: 14px; } }
 
 .content-slider__container {
   width: 100%;
@@ -3314,11 +3352,19 @@ html {
     .content-slider__container {
       margin: 30px auto 25px;
       height: 315px; } }
+  @media screen and (max-width: 649px) {
+    .content-slider__container {
+      margin: 40px auto 27px;
+      height: 243px; } }
 
 .content-slider__box {
   position: relative;
   height: 425px;
   width: 100%; }
+  @media screen and (max-width: 649px) {
+    .content-slider__box {
+      height: 176px;
+      width: 100%; } }
 
 .content-slider__box .content-slider-arrow {
   position: absolute;
@@ -3332,11 +3378,23 @@ html {
       width: 49px;
       height: 31px;
       background-size: 18px auto; } }
+  @media screen and (max-width: 649px) {
+    .content-slider__box .content-slider-arrow {
+      height: 31px;
+      width: 49px;
+      background-size: 18px auto;
+      top: 72px; } }
   .content-slider__box .content-slider-arrow:first-child {
     right: 220px; }
+    @media screen and (max-width: 649px) {
+      .content-slider__box .content-slider-arrow:first-child {
+        right: 23px; } }
   .content-slider__box .content-slider-arrow:nth-child(2) {
     left: 220px;
     transform: scale(-1, -1); }
+    @media screen and (max-width: 649px) {
+      .content-slider__box .content-slider-arrow:nth-child(2) {
+        left: 23px; } }
 
 .container-footer {
   max-width: 764px;
@@ -3349,6 +3407,11 @@ html {
       max-width: 432px;
       height: 46px;
       margin-bottom: 30px; } }
+  @media screen and (max-width: 649px) {
+    .container-footer {
+      max-width: 275px;
+      height: 46px;
+      margin-bottom: 40px; } }
 
 .container-footer-list {
   display: flex;
@@ -3358,7 +3421,10 @@ html {
   height: 84px; }
   @media screen and (min-width: 650px) and (max-width: 992px) {
     .container-footer-list {
-      height: 46px; } }
+      height: 42px; } }
+  @media screen and (max-width: 649px) {
+    .container-footer-list {
+      height: 42px; } }
 
 .container-footer-list .container-footer-item {
   cursor: pointer;
@@ -3373,6 +3439,10 @@ html {
     .container-footer-list .container-footer-item {
       width: 86px;
       height: 22px; } }
+  @media screen and (max-width: 649px) {
+    .container-footer-list .container-footer-item {
+      width: 55px;
+      height: 22px; } }
   .container-footer-list .container-footer-item:last-child {
     border: 0; }
   .container-footer-list .container-footer-item:first-child .container-footer-item-link {
@@ -3383,7 +3453,7 @@ html {
     background: url("../assets/pictures/svg/tw.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover; }
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       .container-footer-list .container-footer-item:first-child .container-footer-item-link {
         width: 9px;
         height: 7px; } }
@@ -3399,7 +3469,7 @@ html {
     background: url("../assets/pictures/svg/fb.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover; }
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       .container-footer-list .container-footer-item:nth-child(2) .container-footer-item-link {
         width: 3px;
         height: 8px; } }
@@ -3415,7 +3485,7 @@ html {
     background: url("../assets/pictures/svg/vk-small.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover; }
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       .container-footer-list .container-footer-item:nth-child(3) .container-footer-item-link {
         width: 10px;
         height: 6px; } }
@@ -3431,7 +3501,7 @@ html {
     background: url("../assets/pictures/svg/gp.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover; }
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       .container-footer-list .container-footer-item:nth-child(4) .container-footer-item-link {
         width: 11px;
         height: 7px; } }
@@ -3447,7 +3517,7 @@ html {
     background: url("../assets/pictures/svg/ok.svg") no-repeat 50% 50%;
     -webkit-background-size: cover;
     background-size: cover; }
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       .container-footer-list .container-footer-item:nth-child(5) .container-footer-item-link {
         width: 7px;
         height: 10px; } }
@@ -3478,6 +3548,11 @@ html {
       width: 564px;
       height: 193px;
       left: calc(50% - 282px); } }
+  @media screen and (max-width: 649px) {
+    .content-box-wrapper {
+      width: 320px;
+      height: 180px;
+      left: calc(50% - 160px); } }
 
 .content-box-wrapper .content-icon {
   width: 25px;
@@ -3511,6 +3586,10 @@ html {
   @media screen and (min-width: 650px) and (max-width: 992px) {
     .content-box-wrapper .content-text {
       font-size: 20px; } }
+  @media screen and (max-width: 649px) {
+    .content-box-wrapper .content-text {
+      font-style: 20px;
+      font-size: 18px; } }
 
 .content-map {
   position: absolute;
@@ -3518,12 +3597,19 @@ html {
   left: 0;
   width: 100%;
   height: 410px; }
+  @media screen and (max-width: 649px) {
+    .content-map {
+      top: 66px;
+      height: 462px; } }
 
 .content-map-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden; }
+
+.content-map .content-map-wrapper iframe {
+  height: 100%; }
 
 .back {
   position: absolute;
@@ -3545,6 +3631,12 @@ html {
     background: #FFFFFF;
     border-radius: 50%;
     transition: all 0.2s cubic-bezier(0.22, 0.68, 0, 1.71); }
+    @media screen and (max-width: 649px) {
+      .back:before {
+        width: 45px;
+        height: 45px;
+        top: 5px;
+        left: 5px; } }
   .back:after {
     cursor: pointer;
     position: absolute;
@@ -3556,6 +3648,13 @@ html {
     height: 64px;
     background: url("../assets/pictures/svg/arrow-back.svg") no-repeat 50% 50%;
     background-size: 9px 18px; }
+    @media screen and (max-width: 649px) {
+      .back:after {
+        width: 45px;
+        height: 45px;
+        background-size: 6px 12px;
+        top: 5px;
+        left: 5px; } }
   .back:hover:before {
     width: 100%;
     height: 100%;
@@ -3568,6 +3667,13 @@ html {
   @media screen and (min-width: 650px) and (max-width: 992px) {
     .back {
       display: none; } }
+  @media screen and (max-width: 649px) {
+    .back {
+      width: 55px;
+      height: 55px;
+      top: 81px;
+      left: calc(50% - 27.5px);
+      z-index: 1; } }
 
 /*end*/
 /*menu*/
