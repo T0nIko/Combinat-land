@@ -1042,14 +1042,21 @@ input[type='date']::-webkit-inner-spin-button {
 /*end*/
 /*content*/
 @media screen and (max-width: 649px) {
-  #desktop {
+  #desktop_1,
+  #desktop_2 {
     display: none; } }
 
-#mobil {
+#mobil_1 {
   display: none; }
   @media screen and (max-width: 649px) {
-    #mobil {
+    #mobil_1 {
       display: block; } }
+
+#mobil_2 {
+  display: none; }
+  @media screen and (max-width: 649px) {
+    #mobil_2 {
+      display: flex; } }
 
 .main .container {
   width: 100%;
@@ -2388,11 +2395,7 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (max-width: 649px) {
       .main .container:nth-child(6) .container-wrapper {
         width: 500px;
-        height: 162px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: nowrap; } }
+        height: 162px; } }
   .main .container:nth-child(6) .container-wrapper .container-box {
     width: 330px; }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
@@ -2429,7 +2432,9 @@ input[type='date']::-webkit-inner-spin-button {
           height: 200px; } }
       @media screen and (max-width: 649px) {
         .main .container:nth-child(6) .container-wrapper .container-box:first-child, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2), .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3) {
-          height: 162px; } }
+          height: 162px;
+          width: 150px;
+          overflow: hidden; } }
       .main .container:nth-child(6) .container-wrapper .container-box:first-child:hover:first-child .container-link, .main .container:nth-child(6) .container-wrapper .container-box:first-child:hover:nth-child(2) .container-link, .main .container:nth-child(6) .container-wrapper .container-box:first-child:hover:nth-child(3) .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2):hover:first-child .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2):hover:nth-child(2) .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(2):hover:nth-child(3) .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3):hover:first-child .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3):hover:nth-child(2) .container-link, .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3):hover:nth-child(3) .container-link {
         opacity: 1; }
     .main .container:nth-child(6) .container-wrapper .container-box:nth-child(3) .container-box {

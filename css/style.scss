@@ -1176,15 +1176,23 @@ input[type='date']::-webkit-inner-spin-button {
 /*end*/
 
 /*content*/
-#desktop {
+#desktop_1,
+#desktop_2 {
   @media screen and (max-width: 649px){
     display: none;
   }
 }
-#mobil {
+#mobil_1 {
   display: none;
   @media screen and (max-width: 649px){
     display: block;
+  }
+}
+
+#mobil_2 {
+  display: none;
+  @media screen and (max-width: 649px){
+    display: flex;
   }
 }
 
@@ -2642,10 +2650,6 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (max-width: 649px) {
       width: 500px;
       height: 162px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      flex-wrap: nowrap;
     }
   }
   &:nth-child(6) .container-wrapper .container-box {
@@ -2689,6 +2693,8 @@ input[type='date']::-webkit-inner-spin-button {
       }
       @media screen and (max-width: 649px) {
         height: 162px;
+        width: 150px;
+        overflow: hidden;
       }
       &:hover {
         &:first-child .container-link,
