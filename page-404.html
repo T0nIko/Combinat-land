@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Комбинат</title>
+
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+
+<span id="top"></span>
+
+<!-- Menu and info -->
+<aside class="aside">
+
+    <div class="aside-logo"></div>
+
+    <div class="aside-menu-btn">
+        <div class="burger"><span></span></div>
+    </div>
+
+
+    <a class="aside-menu-lang"><p class="aside-menu-lang-text">eng</p></a> <!-- Change language -->
+
+    <nav class="aside-mob-nav" id="mob_menu">
+
+        <img src="assets/pictures/svg/owl.svg" class="aside-mob-icon" alt="Сова"/>
+
+        <ul class="nav-mob-list">
+            <li class="nav-mob-item">
+                <a href="#restaurant" class="nav-mob-item-link">Ресторан</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#atmosphere" class="nav-mob-item-link">Атмосфера</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#menu" class="nav-mob-item-link">Меню</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#affiche" class="nav-mob-item-link">Афиша</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#action" class="nav-mob-item-link">% Акции</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#contats" class="nav-mob-item-link">Контакты</a>
+            </li>
+        </ul>
+
+        <img src="assets/pictures/svg/zigzag.svg" class="aside-mob-icon" />
+
+        <div class="aside__container">
+            <div class="aside-wrapper">
+                <img src="assets/pictures/svg/placeholder.svg" class="aside-icon" alt="Маркер карты"/>
+                <p class="aside-text">Москва, ул.Автозаводская 18,
+                    <br/>ТРЦ "Ривьера", 3-й этаж</p>
+            </div>
+            <p class="aside-text">11:00 - 24:00</p>
+            <p class="aside-text">+7 926 192-40-35</p>
+        </div>
+
+        <a class="aside-btn">Забронировать столик</a>
+
+    </nav>
+
+    <div class="aside-wrapper">
+
+        <nav class="aside-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#restaurant" class="nav-item-link">Ресторан</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#atmosphere" class="nav-item-link">Атмосфера</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-item-link">Меню</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#affiche" class="nav-item-link">Афиша</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#action" class="nav-item-link">% Акции</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contats" class="nav-item-link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="aside__container">
+            <img src="assets/pictures/svg/placeholder.svg" class="aside-icon" alt="Маркер карты"/>
+            <p class="aside-text">Москва,
+                <br/>ул.Автозаводская 18,
+                <br/>ТРЦ "Ривьера", 3-й этаж</p>
+            <p class="aside-text">11:00 - 24:00</p>
+            <p class="aside-text">+7 926 192-40-35</p>
+        </div>
+
+        <img src="assets/pictures/svg/owl.svg" class="aside-img" alt="Морда совы"/>
+
+        <a id="aside_btn" class="aside-btn">Забронировать столик</a>
+    </div>
+
+</aside>
+<!-- end -->
+
+<!-- Pop-up -->
+<section class="pop-up" id="pop_up">
+
+    <span class="pop-up-close" id="pop_up_btn"></span> <!-- Close pop-up -->
+
+    <!-- First pop-up. Reserved form -->
+    <div class="pop-up__container" id="first_pop_up">
+        <h1 class="pop-up-caption">Заказать банкет</h1>
+        <p class="pop-up-text">Для лиц старше 18 лет</p>
+        <form class="pop-up-form" id="order_form" action="" method="post">
+            <div class="field__container">
+                <div class="field-wrapper">
+                    <label class="field-label" for="date">Дата и время</label>
+                    <input type="date" class="field" id="date" placeholder="__ __ ____"/>
+                </div>
+                <div class="field-wrapper">
+                    <label class="field-label" for="count">Кол-во гостей</label>
+                    <span class="field-btn" id="add">+</span>
+                    <input type="number" class="field" min="1" id="count"/>
+                    <span class="field-btn" id="remove">-</span>
+                </div>
+            </div>
+            <div class="field__container">
+                <div class="field-wrapper">
+                    <label class="field-label" for="name">Ваше имя и фамилия</label>
+                    <input type="text" class="field" id="name" placeholder="Например, Мария Иванова"/>
+                </div>
+                <div class="field-wrapper">
+                    <label class="field-label" for="phone">Контактный телефон</label>
+                    <input type="tel" class="field" id="phone" placeholder="+7___ ___-__-__"/>
+                </div>
+                <div class="field-wrapper">
+                    <label class="field-label" for="email">Электорнная почта</label>
+                    <input type="email" class="field" id="email" placeholder="Например, maryivanova@example.ru"/>
+                </div>
+                <div class="field-wrapper">
+                    <label class="field-label" for="comment">Комментарий</label>
+                    <textarea class="field-text" id="comment" placeholder="Ваш текст"></textarea>
+                </div>
+                <button type="submit" class="form-btn" id="form_btn" form>Отправить</button>
+            </div>
+        </form>
+        <p class="pop-up-text">Нажимая на кнопку вы соглашаетесь с
+            <a href="" class="pop-up-text--gold">правилами сайта</a>
+        </p>
+    </div>
+    <!-- end -->
+
+    <!-- FLast pop-up -->
+    <div class="pop-up__container" id="last_pop_up">
+        <img src="assets/pictures/svg/send.svg" class="pop-up-img" alt="Запрос отправлен"/>
+        <h2 class="pop-up-caption">Спасибо!</h2>
+        <p class="pop-up-text">Мы свяжемся с вами втечение 24 часов</p>
+        <a id="close_pop_up" class="pop-up-btn">Закрыть</a>
+    </div>
+    <!-- end -->
+
+</section>
+<!-- end -->
+
+<main class="main main-error">
+    
+    <div class="wrapper">
+        <img src="assets/pictures/svg/404.svg" class="main-img" />
+        <h1 class="main-caption">Сожалеем, страница не найдена</h1>
+        <a href="index.html" class="main-btn">Вернуться на главную</a>
+    </div>
+
+    <a class="lang"><p class="lang-text">eng</p></a> <!-- Change language -->
+    <a href="#top" class="button-up"></a> <!-- Scroll to top -->
+
+</main>
+
+</body>
+</html>

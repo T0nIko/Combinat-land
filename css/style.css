@@ -3692,6 +3692,68 @@ html {
       background: #FAF7F2;
       margin: 56px 0 0; } }
 
+.main-error {
+  height: 100vh;
+  background: #FAF7F2 url("../assets/pictures/svg/fish.svg") no-repeat 50% 67px;
+  background-size: 730px 741px;
+  display: flex; }
+
+.wrapper {
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main-img {
+  width: 376px;
+  height: 243px;
+  margin: 0 auto 60px; }
+
+.main-caption {
+  text-align: center;
+  width: 100%;
+  font-family: 'Catorze27 Style 1', sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 0 auto 60px; }
+
+.main-btn {
+  cursor: pointer;
+  width: 234px;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Catorze27 Style 1', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #28304A;
+  margin: 0 auto auto;
+  position: relative;
+  box-shadow: 0 0 0 1.5px #28304A inset; }
+  .main-btn:before, .main-btn:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 1.5px;
+    transition: height 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
+  .main-btn::before {
+    box-shadow: 2px 2px 0 #F1DAC2 inset;
+    bottom: 0;
+    left: 0; }
+  .main-btn::after {
+    box-shadow: -2px -2px 0 #F1DAC2 inset;
+    top: 0;
+    right: 0; }
+  .main-btn:hover::before, .main-btn:hover::after {
+    height: 100%;
+    width: 100%;
+    transition: height 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
+
 @media screen and (max-width: 649px) {
   .main-menu .menu-btn,
   .main-menu .button-up {
