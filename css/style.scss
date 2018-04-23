@@ -1629,26 +1629,16 @@ input[type='date']::-webkit-inner-spin-button {
   &:nth-child(3) {
     max-height: 860px;
     margin-bottom: 140px;
-    background: url("../assets/pictures/svg/dish.svg") no-repeat 150px 46px;
-    background-size: 487px 380px;
-    @media screen and (min-width: 1600px) and (max-width: 1700px)  {
-      background: url("../assets/pictures/svg/dish.svg") no-repeat 75px 0;
-      background-size: 487px 380px;
-    }
     @media screen and (min-width: 1600px) and (max-width: 1700px) and (height: 900px){
       max-height: 820px;
       margin-bottom: 100px;
     }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
-      background: url("../assets/pictures/svg/dish.svg") no-repeat 75px 0;
-      background-size: 430px auto;
       max-height: 710px;
       margin-bottom: 110px;
     }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       padding: 33px 0 0;
-      background: url("../assets/pictures/svg/dish.svg") no-repeat 33px 0;
-      background-size: 237px 185px;
       width: 670px;
       max-height: 485px;
       margin: 0 auto 76px;
@@ -1658,6 +1648,30 @@ input[type='date']::-webkit-inner-spin-button {
       margin: 0 auto 50px;
       background: none;
       max-height: 525px;
+    }
+  }
+  &:nth-child(3) .container-bg {
+    position: absolute;
+    left: 150px;
+    top: 350px;
+    width: 487px;
+    height: 380px;
+    @media screen and (min-width: 1600px) and (max-width: 1700px)  {
+      left: 75px;
+    }
+    @media screen and (min-width: 1366px) and (max-width: 1599px) {
+      left: 75px;
+      width: 430px;
+      height: auto;
+    }
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      left: 33px;
+      top: 150px;
+      width: 237px;
+      height: 185px;
+    }
+    @media screen and (max-width: 649px) {
+      display: none;
     }
   }
   &:nth-child(3) .container-wrapper {
@@ -2236,27 +2250,34 @@ input[type='date']::-webkit-inner-spin-button {
   &:nth-child(5) {
     max-height: 730px;
     margin-bottom: 80px;
-    background: url("../assets/pictures/svg/shrimp-right.svg") no-repeat calc(100% - 7px) 308px;
-    background-size: 294px 368px;
-    @media screen and (min-width: 1600px) and (max-width: 1700px) {
-      background: none;
-    }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       max-width: 950px;
       margin-bottom: 40px;
-      background: none;
     }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       max-height: 380px;
       margin: 0 auto 35px;
-      background: url("../assets/pictures/svg/shrimp-right.svg") no-repeat calc(100% + 13px) 224px;
-      background-size: 120px 150px;
     }
     @media screen and (max-width: 649px) {
       width: calc(100% - 40px);
       margin: 0 auto 36px;
-      background: none;
       max-height: 470px;
+    }
+  }
+  &:nth-child(5) .container-bg {
+    position: absolute;
+    width: 294px;
+    height: 368px;
+    right: 7px;
+    top: 30px;
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      width: 120px;
+      height: 150px;
+      right: -13px;
+      top: 30px;
+    }
+    @media screen and (max-width: 649px) {
+      display: none;
     }
   }
   &:nth-child(5) .container-wrapper {
@@ -2482,19 +2503,7 @@ input[type='date']::-webkit-inner-spin-button {
   &:nth-child(6) {
     padding-top: 80px;
     height: 650px;
-    background: url("../assets/pictures/svg/shrimp-left.svg") no-repeat 22% 45px;
-    background-size: 294px 368px;
-    @media screen and (min-width: 1600px) and (max-width: 1700px)  {
-      background: url("../assets/pictures/svg/shrimp-left.svg") no-repeat 15% 45px;
-      background-size: 294px 368px;
-    }
-    @media screen and (min-width: 1366px) and (max-width: 1599px)  {
-      background: url("../assets/pictures/svg/shrimp-left.svg") no-repeat 15% 45px;
-      background-size: 294px 368px;
-    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
-      background: url("../assets/pictures/svg/shrimp-left.svg") no-repeat 133px 22px;
-      background-size: 127px 159px;
       max-height: 337px;
       margin-bottom: 0;
       padding-top: 47px;
@@ -2503,9 +2512,27 @@ input[type='date']::-webkit-inner-spin-button {
       width: 100%;
       margin: 0 auto 40px;
       height: 162px;
-      background: none;
       overflow: hidden;
       padding-top: 0;
+    }
+  }
+  &:nth-child(6) .container-bg {
+    position: absolute;
+    width: 294px;
+    height: 368px;
+    top: 845px;
+    left: 22%;
+    @media screen and (min-width: 1366px) and (max-width: 1700px)  {
+      left: 15%;
+    }
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      top: 345px;
+      left: 133px;
+      width: 127px;
+      height: 159px;
+    }
+    @media screen and (max-width: 649px) {
+      display: none;
     }
   }
   &:nth-child(6) .container-wrapper {
@@ -2826,7 +2853,6 @@ input[type='date']::-webkit-inner-spin-button {
         right: 0;
       }
       &:hover {
-        color: #F1DAC2;
         &::before, &::after {
           height: 100%;
           width: 100%;
@@ -2843,9 +2869,13 @@ input[type='date']::-webkit-inner-spin-button {
       font-size: 18px;
       text-transform: uppercase;
       margin: auto 5px auto auto;
+      transition: all 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1);
       @media screen and (min-width: 650px) and (max-width: 992px) {
         font-size: 10px;
         margin: auto 10px auto auto;
+      }
+      &:hover {
+        color: #F1DAC2;
       }
     }
     &:first-child .container-btn .container-btn-icon,

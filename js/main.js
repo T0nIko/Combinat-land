@@ -167,50 +167,72 @@ $(document).ready(function () {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-// Мувы объектов
+
 $(document).ready(function () {
+    if ($(window).width() >= '768'){
 
-    $(window).scroll(function (e) {
-        parallaxScroll();
-    });
+        console.log($(window).width());
 
-    function parallaxScroll() {
-        let scrolled = $(window).scrollTop();
-
-        // Блиц, Блиц - скорость без границ
-        this.speed03 = .05 * $(this).scrollTop();
-        this.speed1 = .1 * $(this).scrollTop();
-        this.speed2 = .2 * $(this).scrollTop();
-        this.speed3 = .15 * $(this).scrollTop();
-        this.speed4 = .4 * $(this).scrollTop();
-
-        // Первый заголовок
-        $('#parallax_caption_1').css({
-            transform: "translate3d(0," + this.speed3 + "px,0)",
-            "-webkit-transform": "translate3d(0," + this.speed3 + "px,0)",
-            "-moz-transform": "translate3d(0," + this.speed3 + "px,0)",
-            "-o-transform": "translate3d(0," + this.speed3 + "px,0)",
-            "-ms-transform": "translate3d(0," + this.speed3 + "px,0)"
-        });
-        // Белый блок на первом экране
-        $('#parallax_obj_1').css({
-            transform: "translate3d(0%," + this.speed1 + "px,0)",
-            "-webkit-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)",
-            "-moz-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)",
-            "-o-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)",
-            "-ms-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)"
-        });
-        // Второй заголовок
-        $('#parallax_caption_2').css({
-            transform: "translate3d(0," + this.speed03 + "px,0)",
-            "-webkit-transform": "translate3d(0," + this.speed03 + "px,0)",
-            "-moz-transform": "translate3d(0," + this.speed03 + "px,0)",
-            "-o-transform": "translate3d(0," + this.speed03 + "px,0)",
-            "-ms-transform": "translate3d(0," + this.speed03 + "px,0)"
+        $(window).scroll(function (e) {
+            parallaxScroll();
         });
 
+        function parallaxScroll() {
+            let scrolled = $(window).scrollTop();
+
+            // Блиц, Блиц - скорость без границ
+            this.speed03 = .05 * $(this).scrollTop();
+            this.speed1 = .1 * $(this).scrollTop();
+            this.speed2 = .2 * $(this).scrollTop();
+            this.speed3 = .15 * $(this).scrollTop();
+            this.speed4 = .4 * $(this).scrollTop();
+
+            // Первый заголовок
+            $('#parallax_caption_1').css({
+                transform: "translate3d(0," + this.speed3 + "px,0)",
+                "-webkit-transform": "translate3d(0," + this.speed3 + "px,0)",
+                "-moz-transform": "translate3d(0," + this.speed3 + "px,0)",
+                "-o-transform": "translate3d(0," + this.speed3 + "px,0)",
+                "-ms-transform": "translate3d(0," + this.speed3 + "px,0)"
+            });
+            // Белый блок на первом экране
+            $('#parallax_obj_1').css({
+                transform: "translate3d(0%," + this.speed1 + "px,0)",
+                "-webkit-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)",
+                "-moz-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)",
+                "-o-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)",
+                "-ms-transform": "translate3d(0%," + (-1) * this.speed1 + "px,0)"
+            });
+            // Блюдо
+            $('#menu-bg').css({
+                transform: "translate3d(0," + (-1) * this.speed2 + "px,0)",
+                "-webkit-transform": "translate3d(0," + (-1) * this.speed2 + "px,0)",
+                "-moz-transform": "translate3d(0," + (-1) * this.speed2 + "px,0)",
+                "-o-transform": "translate3d(0," + (-1) * this.speed2 + "px,0)",
+                "-ms-transform": "translate3d(0," + (-1) * this.speed2 + "px,0)"
+            });
+            // Креведка н.1
+            $('#action-bg').css({
+                transform: "translate3d(0," + this.speed1 + "px,0)",
+                "-webkit-transform": "translate3d(0," + this.speed1 + "px,0)",
+                "-moz-transform": "translate3d(0," + this.speed1 + "px,0)",
+                "-o-transform": "translate3d(0," + this.speed1 + "px,0)",
+                "-ms-transform": "translate3d(0," + this.speed1 + "px,0)"
+            });
+            // Креведка н.2
+            $('#slider-bg').css({
+                transform: "translate3d(0," + (-1) * this.speed2 + "px,0)",
+                "-webkit-transform": "translate3d(0," + (-1) * this.speed2 + "px,0)",
+                "-moz-transform": "translate3d(0," + (-1) * this.speed2 + "px,0)",
+                "-o-transform": "translate3d(0," + (-1) * this.speed2 + "px,0)",
+                "-ms-transform": "translate3d(0," + (-1) * this.speed2 + "px,0)"
+            });
+
+        }
     }
 });
+
+
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
