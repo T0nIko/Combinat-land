@@ -1176,8 +1176,7 @@ input[type='date']::-webkit-inner-spin-button {
 /*end*/
 
 /*content*/
-#desktop_1,
-#desktop_2 {
+#desktop_1 {
   @media screen and (max-width: 649px){
     display: none;
   }
@@ -1186,13 +1185,6 @@ input[type='date']::-webkit-inner-spin-button {
   display: none;
   @media screen and (max-width: 649px){
     display: block;
-  }
-}
-
-#mobil_2 {
-  display: none;
-  @media screen and (max-width: 649px){
-    display: flex;
   }
 }
 
@@ -2608,6 +2600,17 @@ input[type='date']::-webkit-inner-spin-button {
       overflow: hidden;
       padding-top: 0;
     }
+    @media screen and (max-width: 375px) {
+      width: 100%;
+      max-width: 375px;
+      overflow-x: scroll;
+      &::-webkit-scrollbar,
+      &::-webkit-scrollbar-track,
+      &::-webkit-scrollbar-thumb,
+      &::-webkit-scrollbar-thumb:hover {
+        opacity: 0;
+      }
+    }
   }
   &:nth-child(6) .container-bg {
     position: absolute;
@@ -3860,6 +3863,44 @@ html {
   align-items: center;
   position: relative;
   overflow: hidden;
+  &:before {
+    z-index: 4;
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 110%;
+    left: 0;
+    top: 0;
+    background: rgba(247, 235, 221,.9);
+  }
+  &:after {
+    z-index: 4;
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 110%;
+    right: 0;
+    top: 0;
+    background: rgba(247, 235, 221,.9);
+  }
+  @media screen and (min-width: 1401px) and (max-width: 1660px) {
+    &:before,
+    &:after {
+      width: 20%;
+    }
+  }
+  @media screen and (min-width: 1366px) and (max-width: 1400px) {
+    &:before,
+    &:after {
+      width: 15%;
+    }
+  }
+  @media screen and (min-width: 993px) and (max-width: 1365px) {
+    &:before,
+    &:after {
+      width: 10%;
+    }
+  }
   @media screen and (min-width: 650px) and (max-width: 992px) {
     margin: 30px auto 25px;
     height: 315px;
@@ -3867,6 +3908,12 @@ html {
   @media screen and (max-width: 649px) {
     margin: 40px auto 27px;
     height: 243px;
+    width: 375px;
+    left: calc(50% - 187.5px);
+    &:before,
+    &:after {
+      width: 5%;
+    }
   }
 }
 
@@ -3874,6 +3921,9 @@ html {
   position: relative;
   height: 425px;
   width: 100%;
+  @media screen and (min-width: 650px) and (max-width: 992px) {
+    height: 235px;
+  }
   @media screen and (max-width: 649px) {
     height: 176px;
     width: 100%;
@@ -3882,7 +3932,8 @@ html {
 
 .content-slider__box .content-slider-arrow {
   position: absolute;
-  top: 253px;
+  z-index: 15;
+  top: 187px;
   width: 74px;
   height: 47px;
   background: #FFFFFF url("../assets/pictures/svg/arrow-right.svg") no-repeat 50% 50%;
@@ -3891,6 +3942,7 @@ html {
     width: 49px;
     height: 31px;
     background-size: 18px auto;
+    top: 118px;
   }
   @media screen and (max-width: 649px) {
     height: 31px;
@@ -3900,6 +3952,15 @@ html {
   }
   &:first-child {
     right: 220px;
+    @media screen and (min-width: 1366px) and (max-width: 1400px) {
+      right: 145px;
+    }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      right: 5%;
+    }
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      right: 115px;
+    }
     @media screen and (max-width: 649px) {
       right: 23px;
     }
@@ -3907,10 +3968,59 @@ html {
   &:nth-child(2) {
     left: 220px;
     transform: scale(-1,-1);
+    @media screen and (min-width: 1366px) and (max-width: 1400px) {
+      left: 145px;
+    }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      left: 5%;
+    }
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      left: 115px;
+    }
     @media screen and (max-width: 649px) {
       left: 23px;
     }
   }
+}
+
+.content-slider__container .container__slider {
+  position: absolute;
+  width: 100%;
+  height: 425px;
+  overflow: hidden;
+  z-index: 3;
+  @media screen and (min-width: 650px) and (max-width: 992px) {
+    height: 235px;
+  }
+  @media screen and (max-width: 649px) {
+    height: 176px;
+  }
+}
+
+
+.content-slider__container .container__slider .slider-list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.content-slider__container .container__slider .slider-list .slider-item {
+  position: relative;
+  overflow: hidden;
+  width: 668px;
+  height: 100%;
+  @media screen and (min-width: 650px) and (max-width: 992px) {
+    width: 370px;
+  }
+  @media screen and (max-width: 649px) {
+    width: 277px;
+  }
+}
+
+.content-slider__container .container__slider .slider-list .slider-item .slider-item-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .container-footer {

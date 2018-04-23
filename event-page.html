@@ -7,6 +7,8 @@
 
     <!-- css -->
     <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/swiper.min.css" rel="stylesheet"/>
+
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -195,6 +197,22 @@
                     <span class="content-slider-arrow next"></span>
                     <span class="content-slider-arrow prev"></span>
                 </div>
+                <div class="container__slider swiper-container">
+                    <ul class="slider-list swiper-wrapper">
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/1.png" class="slider-item-img" />
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/2.png" class="slider-item-img" />
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/1.png" class="slider-item-img" />
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/2.png" class="slider-item-img" />
+                        </li>
+                    </ul>
+                </div>
             </div>
             <footer class="container-footer">
                 <ul class="container-footer-list">
@@ -262,6 +280,22 @@
     <a href="#top" class="button-up"></a> <!-- Scroll to top -->
 
 </main>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
 
 </body>
 </html>

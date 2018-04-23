@@ -1042,8 +1042,7 @@ input[type='date']::-webkit-inner-spin-button {
 /*end*/
 /*content*/
 @media screen and (max-width: 649px) {
-  #desktop_1,
-  #desktop_2 {
+  #desktop_1 {
     display: none; } }
 
 #mobil_1 {
@@ -1051,12 +1050,6 @@ input[type='date']::-webkit-inner-spin-button {
   @media screen and (max-width: 649px) {
     #mobil_1 {
       display: block; } }
-
-#mobil_2 {
-  display: none; }
-  @media screen and (max-width: 649px) {
-    #mobil_2 {
-      display: flex; } }
 
 .main .container {
   width: 100%;
@@ -2355,6 +2348,13 @@ input[type='date']::-webkit-inner-spin-button {
         height: 162px;
         overflow: hidden;
         padding-top: 0; } }
+    @media screen and (max-width: 375px) {
+      .main .container:nth-child(6) {
+        width: 100%;
+        max-width: 375px;
+        overflow-x: scroll; }
+        .main .container:nth-child(6)::-webkit-scrollbar, .main .container:nth-child(6)::-webkit-scrollbar-track, .main .container:nth-child(6)::-webkit-scrollbar-thumb, .main .container:nth-child(6)::-webkit-scrollbar-thumb:hover {
+          opacity: 0; } }
   .main .container:nth-child(6) .container-bg {
     position: absolute;
     width: 294px;
@@ -3462,6 +3462,33 @@ html {
   align-items: center;
   position: relative;
   overflow: hidden; }
+  .content-slider__container:before {
+    z-index: 4;
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 110%;
+    left: 0;
+    top: 0;
+    background: rgba(247, 235, 221, 0.9); }
+  .content-slider__container:after {
+    z-index: 4;
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 110%;
+    right: 0;
+    top: 0;
+    background: rgba(247, 235, 221, 0.9); }
+  @media screen and (min-width: 1401px) and (max-width: 1660px) {
+    .content-slider__container:before, .content-slider__container:after {
+      width: 20%; } }
+  @media screen and (min-width: 1366px) and (max-width: 1400px) {
+    .content-slider__container:before, .content-slider__container:after {
+      width: 15%; } }
+  @media screen and (min-width: 993px) and (max-width: 1365px) {
+    .content-slider__container:before, .content-slider__container:after {
+      width: 10%; } }
   @media screen and (min-width: 650px) and (max-width: 992px) {
     .content-slider__container {
       margin: 30px auto 25px;
@@ -3469,12 +3496,19 @@ html {
   @media screen and (max-width: 649px) {
     .content-slider__container {
       margin: 40px auto 27px;
-      height: 243px; } }
+      height: 243px;
+      width: 375px;
+      left: calc(50% - 187.5px); }
+      .content-slider__container:before, .content-slider__container:after {
+        width: 5%; } }
 
 .content-slider__box {
   position: relative;
   height: 425px;
   width: 100%; }
+  @media screen and (min-width: 650px) and (max-width: 992px) {
+    .content-slider__box {
+      height: 235px; } }
   @media screen and (max-width: 649px) {
     .content-slider__box {
       height: 176px;
@@ -3482,7 +3516,8 @@ html {
 
 .content-slider__box .content-slider-arrow {
   position: absolute;
-  top: 253px;
+  z-index: 15;
+  top: 187px;
   width: 74px;
   height: 47px;
   background: #FFFFFF url("../assets/pictures/svg/arrow-right.svg") no-repeat 50% 50%;
@@ -3491,7 +3526,8 @@ html {
     .content-slider__box .content-slider-arrow {
       width: 49px;
       height: 31px;
-      background-size: 18px auto; } }
+      background-size: 18px auto;
+      top: 118px; } }
   @media screen and (max-width: 649px) {
     .content-slider__box .content-slider-arrow {
       height: 31px;
@@ -3500,15 +3536,68 @@ html {
       top: 72px; } }
   .content-slider__box .content-slider-arrow:first-child {
     right: 220px; }
+    @media screen and (min-width: 1366px) and (max-width: 1400px) {
+      .content-slider__box .content-slider-arrow:first-child {
+        right: 145px; } }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      .content-slider__box .content-slider-arrow:first-child {
+        right: 5%; } }
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      .content-slider__box .content-slider-arrow:first-child {
+        right: 115px; } }
     @media screen and (max-width: 649px) {
       .content-slider__box .content-slider-arrow:first-child {
         right: 23px; } }
   .content-slider__box .content-slider-arrow:nth-child(2) {
     left: 220px;
     transform: scale(-1, -1); }
+    @media screen and (min-width: 1366px) and (max-width: 1400px) {
+      .content-slider__box .content-slider-arrow:nth-child(2) {
+        left: 145px; } }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      .content-slider__box .content-slider-arrow:nth-child(2) {
+        left: 5%; } }
+    @media screen and (min-width: 650px) and (max-width: 992px) {
+      .content-slider__box .content-slider-arrow:nth-child(2) {
+        left: 115px; } }
     @media screen and (max-width: 649px) {
       .content-slider__box .content-slider-arrow:nth-child(2) {
         left: 23px; } }
+
+.content-slider__container .container__slider {
+  position: absolute;
+  width: 100%;
+  height: 425px;
+  overflow: hidden;
+  z-index: 3; }
+  @media screen and (min-width: 650px) and (max-width: 992px) {
+    .content-slider__container .container__slider {
+      height: 235px; } }
+  @media screen and (max-width: 649px) {
+    .content-slider__container .container__slider {
+      height: 176px; } }
+
+.content-slider__container .container__slider .slider-list {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.content-slider__container .container__slider .slider-list .slider-item {
+  position: relative;
+  overflow: hidden;
+  width: 668px;
+  height: 100%; }
+  @media screen and (min-width: 650px) and (max-width: 992px) {
+    .content-slider__container .container__slider .slider-list .slider-item {
+      width: 370px; } }
+  @media screen and (max-width: 649px) {
+    .content-slider__container .container__slider .slider-list .slider-item {
+      width: 277px; } }
+
+.content-slider__container .container__slider .slider-list .slider-item .slider-item-img {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
 
 .container-footer {
   max-width: 764px;
