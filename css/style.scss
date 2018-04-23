@@ -1559,7 +1559,7 @@ input[type='date']::-webkit-inner-spin-button {
       top: 102px;
       width: 325px;
       height: 256px;
-      left: 2.5px;
+      left: calc(50% - 162.5px);
       &:before {
         display: none;
       }
@@ -1850,7 +1850,7 @@ input[type='date']::-webkit-inner-spin-button {
       top: 102px;
       width: 325px;
       height: 256px;
-      left: 2.5px;
+      left: calc(50% - 162.5px);
     }
   }
   &:nth-child(3) .container-wrapper .container__slider .slider-arrow {
@@ -2413,6 +2413,7 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (max-width: 649px) {
       top: 99px;
       width: 100%;
+      left: calc(50% - 167.5px);
       max-width: 335px;
       height: 256px;
       &:before {
@@ -3994,7 +3995,7 @@ html {
     font-size: 20px;
   }
   @media screen and (max-width: 649px) {
-    font-style: 20px;
+    line-height: 20px;
     font-size: 18px;
   }
 }
@@ -4109,7 +4110,8 @@ html {
   }
 }
 
-.main-menu .menu-btn {
+.main-menu .menu-btn,
+.main-menu .button-up {
   @media screen and (max-width: 649px) {
     display: none;
   }
@@ -4123,6 +4125,9 @@ html {
   flex-direction: column;
   @media screen and (min-width: 1024px) and (max-width: 1500px) {
     width: 90%;
+  }
+  @media screen and (max-width: 649px) {
+    margin: 0 auto 45px;
   }
 }
 
@@ -4169,6 +4174,7 @@ html {
   @media screen and (max-width: 649px) {
     width: 90%;
     margin: 0 auto 50px;
+    justify-content: space-around;
   }
 }
 
@@ -4225,12 +4231,15 @@ html {
     margin-bottom: 0;
   }
   &:nth-child(odd) {
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       flex-direction: column;
+    }
+    @media screen and (max-width: 649px) {
+      margin-bottom: 38px;
     }
   }
   &:nth-child(even) {
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       flex-direction: column-reverse;
     }
   }
@@ -4238,8 +4247,13 @@ html {
   &:nth-child(even) .menu-img-wrapper {
     position: absolute;
     z-index: 1;
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       position: relative;
+    }
+    @media screen  and (max-width: 649px) {
+      position: relative;
+      width: 100%;
+      height: 320px;
     }
   }
   &:nth-child(odd) .menu-img-wrapper {
@@ -4261,6 +4275,12 @@ html {
       background: url("../assets/pictures/png/1.png") no-repeat 50% 50%;
       background-size: 100% auto;
     }
+    @media screen  and (max-width: 649px) {
+      width: 100%;
+      height: 320px;
+      background: url("../assets/pictures/png/1.png") no-repeat 50% 50%;
+      background-size: auto 100%;
+    }
   }
   &:nth-child(even) .menu-img-wrapper {
     top: calc(50% - 301px);
@@ -4281,6 +4301,12 @@ html {
       background: url("../assets/pictures/png/1.png") no-repeat 50% 50%;
       background-size: 100% auto;
     }
+    @media screen  and (max-width: 649px) {
+      background: url("../assets/pictures/png/1.png") no-repeat 50% 50%;
+      background-size: auto 100%;
+      height: 320px;
+      width: 100%;
+    }
   }
   &:nth-child(odd) .menu__content,
   &:nth-child(even) .menu__content {
@@ -4291,7 +4317,10 @@ html {
     flex-direction: row;
     @media screen and (min-width: 650px) and (max-width: 992px) {
       z-index: 4;
-      max-width: 565px;
+    }
+    @media screen  and (max-width: 649px) {
+      width: calc(100% - 50px);
+      z-index: 4;
     }
   }
   &:nth-child(odd) .menu__content {
@@ -4300,11 +4329,17 @@ html {
       max-width: 565px;
       margin: -120px auto 0;
     }
+    @media screen  and (max-width: 649px) {
+      margin: -120px auto 0;
+    }
   }
   &:nth-child(even) .menu__content {
     margin: 0 auto 0 0;
     @media screen and (min-width: 650px) and (max-width: 992px) {
       max-width: 565px;
+      margin: -120px auto 0;
+    }
+    @media screen  and (max-width: 649px) {
       margin: -120px auto 0;
     }
   }
@@ -4316,13 +4351,13 @@ html {
   }
   &:nth-child(odd) .menu__content .menu-content-wrapper {
     margin: 0 90px 0 auto;
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       margin: auto;
     }
   }
   &:nth-child(even) .menu__content .menu-content-wrapper {
     margin: 0 auto 0 90px;
-    @media screen and (min-width: 650px) and (max-width: 992px) {
+    @media screen and (max-width: 992px) {
       margin: auto;
     }
   }
@@ -4338,6 +4373,11 @@ html {
     @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: 60px auto 0;
     }
+    @media screen  and (max-width: 649px) {
+      margin: 30px auto 0;
+      line-height: 28px;
+      font-size: 30px;
+    }
   }
   &:nth-child(odd) .menu__content .menu-content-wrapper .menu-content-img,
   &:nth-child(even) .menu__content .menu-content-wrapper .menu-content-img {
@@ -4349,12 +4389,20 @@ html {
       width: 40px;
       height: 7px;
     }
+    @media screen  and (max-width: 649px) {
+      margin: 16px auto 23px;
+      width: 32px;
+      height: 5px;
+    }
   }
   &:nth-child(odd) .menu__content .menu-content-wrapper .menu-content-list,
   &:nth-child(even) .menu__content .menu-content-wrapper .menu-content-list {
     display: flex;
     flex-direction: column;
     margin-bottom: 103px;
+    @media screen  and (max-width: 649px) {
+      margin-bottom: 38px;
+    }
   }
   &:nth-child(odd) .menu__content .menu-content-wrapper .menu-content-list .menu-content-item,
   &:nth-child(even) .menu__content .menu-content-wrapper .menu-content-list .menu-content-item{
@@ -4368,6 +4416,10 @@ html {
     @media screen and (min-width: 650px) and (max-width: 992px) {
       line-height: 49px;
     }
+    @media screen  and (max-width: 649px) {
+      line-height: 49px;
+      font-size: 14px;
+    }
   }
   &:nth-child(odd) .menu__content .menu-content-wrapper .menu-content-list .menu-content-item .menu-content-item--gold,
   &:nth-child(even) .menu__content .menu-content-wrapper .menu-content-list .menu-content-item .menu-content-item--gold{
@@ -4376,5 +4428,8 @@ html {
     font-style: italic;
     font-size: 18px;
     color: #BA8161;
+    @media screen  and (max-width: 649px) {
+      font-size: 14px;
+    }
   }
 }
