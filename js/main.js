@@ -1,9 +1,31 @@
 // Анимация якорей
 $(document).ready(function () {
-    // Для меню и соответствующих блоков
+    // Для навигации
     $('a.nav-item-link').click(function () {
         let elementClick = $(this).attr("href");
         let destination = $(elementClick).offset().top - 20;
+        $('html').animate({
+                scrollTop: destination
+            }
+            , 350);
+        return false;
+    });
+    // Для мобильной навигации
+    $('a.nav-mob-item-link').click(function () {
+        $('#mob_menu').removeClass('nav--active');
+        $('.burger').removeClass('cross');
+        let elementClick = $(this).attr("href");
+        let destination = $(elementClick).offset().top - 70;
+        $('html').animate({
+                scrollTop: destination
+            }
+            , 350);
+        return false;
+    });
+    // Для меню
+    $('a.menu-item-link').click(function () {
+        let elementClick = $(this).attr("href");
+        let destination = $(elementClick).offset().top - 50;
         $('html').animate({
                 scrollTop: destination
             }
@@ -20,7 +42,17 @@ $(document).ready(function () {
             , 350);
         return false;
     });
+
 });
+
+function toTop() {
+    let destination = $('#top').offset().top;
+    $('html').animate({
+            scrollTop: destination
+        }
+        , 350);
+    return false;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -40,7 +72,7 @@ $(document).ready(function () {
 // N способов скрыть попап
 $(document).ready(function () {
     // Если жмякнули на кнопку с сайд-бара
-    $('#aside_btn').click(function (e) {
+    $('.aside-btn').click(function (e) {
         e.preventDefault();
         $('#pop_up').addClass('pop-up--active');
         $('.aside').addClass('aside--active');
@@ -69,6 +101,8 @@ $(document).ready(function () {
         $('#pop_up').removeClass('pop-up--active');
         $('.aside').removeClass('aside--active');
         $('#last_pop_up').removeClass('last-pop-up--active');
+        $('#mob_menu').removeClass('nav--active');
+        $('.burger').removeClass('cross');
     });
 });
 
@@ -85,13 +119,28 @@ $(document).ready(function () {
     });
 });
 
-// Валидация
-
 // После валидации и отправки формы
 $(document).ready(function () {
     $('#form_btn').click(function () {
         $('#last_pop_up').addClass('last-pop-up--active');
         $(' input ').val('');
+    });
+});
+
+// Открыть мобильное меню
+$(document).ready(function ($) {
+    $('.burger').click(function () {
+        if (!$('.burger').hasClass('cross')) {
+            $('.burger').addClass('cross');
+            $('#mob_menu').addClass('nav--active');
+            $('.aside').addClass('aside--active');
+            $('.footer-btn-wrapper').css({display: 'none'});
+        }
+        else {
+            $('#mob_menu').removeClass('nav--active');
+            $('.burger').removeClass('cross');
+            $('.footer-btn-wrapper').css({display: 'block'});
+        }
     });
 });
 

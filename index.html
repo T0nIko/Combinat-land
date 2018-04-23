@@ -17,10 +17,62 @@
 </head>
 <body>
 
+<span id="top"></span>
+
 <!-- Menu and info -->
 <aside class="aside">
+
+    <div class="aside-logo"></div>
+
+    <div class="aside-menu-btn">
+        <div class="burger"><span></span></div>
+    </div>
+
+
+    <a class="aside-menu-lang"><p class="aside-menu-lang-text">eng</p></a> <!-- Change language -->
+
+    <nav class="aside-mob-nav" id="mob_menu">
+
+        <img src="assets/pictures/svg/owl.svg" class="aside-mob-icon" alt="Сова"/>
+
+        <ul class="nav-mob-list">
+            <li class="nav-mob-item">
+                <a href="#restaurant" class="nav-mob-item-link">Ресторан</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#atmosphere" class="nav-mob-item-link">Атмосфера</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#menu" class="nav-mob-item-link">Меню</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#affiche" class="nav-mob-item-link">Афиша</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#action" class="nav-mob-item-link">% Акции</a>
+            </li>
+            <li class="nav-mob-item">
+                <a href="#contats" class="nav-mob-item-link">Контакты</a>
+            </li>
+        </ul>
+
+        <img src="assets/pictures/svg/zigzag.svg" class="aside-mob-icon" />
+
+        <div class="aside__container">
+            <div class="aside-wrapper">
+                <img src="assets/pictures/svg/placeholder.svg" class="aside-icon" alt="Маркер карты"/>
+                <p class="aside-text">Москва, ул.Автозаводская 18,
+                    <br/>ТРЦ "Ривьера", 3-й этаж</p>
+            </div>
+            <p class="aside-text">11:00 - 24:00</p>
+            <p class="aside-text">+7 926 192-40-35</p>
+        </div>
+
+        <a class="aside-btn">Забронировать столик</a>
+
+    </nav>
+
     <div class="aside-wrapper">
-        <img src="assets/pictures/svg/logo.svg" class="aside-logo" alt="Лого Комбинат"/>
 
         <nav class="aside-nav">
             <ul class="nav-list">
@@ -58,6 +110,7 @@
 
         <a id="aside_btn" class="aside-btn">Забронировать столик</a>
     </div>
+
 </aside>
 <!-- end -->
 
@@ -126,8 +179,12 @@
     <!-- First -->
     <section class="container" id="restaurant">
         <h1 class="container-caption" id="parallax_caption_1">Рыба<br/>и не<br/>только</h1>
+        <h1 class="container-caption--small">Рыба<br/>и не только</h1>
+        <div class="container-block" id="parallax_obj_1"></div>
         <div class="container-wrapper">
             <p class="container-text">Главное место в меню занимает <span class="gold">рыба и <br/>морепродукты</span> в
+                любых интерпретациях.</p>
+            <p class="container-text">Главное место в меню занимает <span class="gold">рыба и морепродукты</span> в
                 любых интерпретациях.</p>
             <img src="assets/pictures/svg/zigzag.svg" class="container-img"/>
             <p class="container-text">Открытая кухня, большое
@@ -136,8 +193,10 @@
                 <br/>грамотное освещение и очень
                 <br/>живая, непринужденная амосфера —
                 <br/>совершенно <span class="gold">западный дух.</span></p>
+            <p class="container-text">Открытая кухня, большое сложноорганизованное пространство с огромными витринными
+                окнами, стильная мебель, грамотное освещение и очень живая, непринужденная амосфера — совершенно
+                <span class="gold">западный дух.</span></p>
         </div>
-        <div class="container-block" id="parallax_obj_1"></div>
         <div class="container-block"></div>
     </section>
     <!-- end -->
@@ -179,7 +238,7 @@
                     <br/>которые <span class="gold">вы можете попробовать</span>,
                     <br/>оказавшись у нас в гостях</p>
                 <img src="assets/pictures/svg/zigzag.svg" class="container-img"/>
-                <a href="" class="container-btn">Полное меню</a>
+                <a href="menu.html" class="container-btn">Полное меню</a>
             </div>
             <div class="container__slider">
                 <span class="slider-arrow prev"></span>
@@ -347,18 +406,32 @@
     <!-- end -->
 
     <footer class="footer">
+
         <div class="footer-wrapper">
-            <p class="footer-text">© 2001-<span id="year"></span> BB Group. All right reserved.</p>
+            <p class="footer-text">© 2001-<span class="year"></span> BB Group. All right reserved.</p>
             <img src="assets/pictures/svg/bb-logo.svg" class="footer-img" alt="BB Group"/>
             <div class="footer__container">
                 <p class="footer-made">Made in</p>
                 <img src="assets/pictures/svg/flat12-logo.svg" class="footer-logo" alt="Logo Flat12"/>
             </div>
         </div>
+
+        <div class="footer-wrapper--small">
+            <div class="footer-btn-wrapper" onclick="toTop(this)"></div>
+            <img src="assets/pictures/svg/bb-logo.svg" class="footer-img" alt="BB Group"/>
+            <div class="footer__container">
+                <p class="footer-text">© 2001-<span class="year"></span> BB Group. All right reserved.</p>
+                <div class="footer__container">
+                    <p class="footer-made">Made in</p>
+                    <img src="assets/pictures/svg/flat12-logo.svg" class="footer-logo" alt="Logo Flat12"/>
+                </div>
+            </div>
+        </div>
+
     </footer>
 
     <a class="lang"><p class="lang-text">eng</p></a> <!-- Change language -->
-    <a href="#restaurant" class="button-up"></a> <!-- Scroll to top -->
+    <a href="#top" class="button-up"></a> <!-- Scroll to top -->
 
 </main>
 
