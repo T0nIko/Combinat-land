@@ -7,6 +7,7 @@
 
     <!-- css -->
     <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/swiper.min.css" rel="stylesheet"/>
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -215,14 +216,22 @@
                 <br/>ресторана — <span class="gold">«места по соседству»</span></p>
         </div>
         <div class="container__slider">
-            <span class="slider-arrow prev"></span>
-            <span class="slider-arrow next"></span>
-            <div class="slider-wrapper">
-                <ul class="slider-list" id="slider">
-                    <li class="slider-item"></li>
-                    <li class="slider-item"></li>
-                    <li class="slider-item"></li>
-                    <li class="slider-item"></li>
+            <span class="slider-arrow prev" id="arrow_next_1"></span>
+            <span class="slider-arrow next" id="arrow_prev_1"></span>
+            <div class="slider-wrapper swiper-container swiper-container-1 swiper-container-vertical">
+                <ul class="slider-list swiper-wrapper">
+                    <li class="slider-item swiper-slide">
+                        <img src="assets/pictures/png/1.png" class="slider-img" />
+                    </li>
+                    <li class="slider-item swiper-slide">
+                        <img src="assets/pictures/png/2.png" class="slider-img" />
+                    </li>
+                    <li class="slider-item swiper-slide">
+                        <img src="assets/pictures/png/3.png" class="slider-img" />
+                    </li>
+                    <li class="slider-item swiper-slide">
+                        <img src="assets/pictures/png/2.png" class="slider-img" />
+                    </li>
                 </ul>
             </div>
         </div>
@@ -242,8 +251,24 @@
                 <a href="menu.html" class="container-btn">Полное меню</a>
             </div>
             <div class="container__slider">
-                <span class="slider-arrow prev"></span>
-                <span class="slider-arrow next"></span>
+                <span class="slider-arrow prev" id="arrow_next_2"></span>
+                <span class="slider-arrow next" id="arrow_prev_2"></span>
+                <div class="slider-wrapper swiper-container swiper-container-2 swiper-container-vertical">
+                    <ul class="slider-list swiper-wrapper">
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/1.png" class="slider-img" />
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/2.png" class="slider-img" />
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/3.png" class="slider-img" />
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/2.png" class="slider-img" />
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -305,8 +330,24 @@
                 <p class="container-text">23 ноября - 3 декабря</p>
             </div>
             <div class="container__slider">
-                <span class="slider-arrow prev"></span>
-                <span class="slider-arrow next"></span>
+                <span class="slider-arrow prev" id="arrow_next_3"></span>
+                <span class="slider-arrow next" id="arrow_prev_3"></span>
+                <div class="slider-wrapper swiper-container swiper-container-3 swiper-container-vertical">
+                    <ul class="slider-list swiper-wrapper">
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/1.png" class="slider-img" />
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/2.png" class="slider-img" />
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/3.png" class="slider-img" />
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <img src="assets/pictures/png/2.png" class="slider-img" />
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -442,8 +483,30 @@
 
 <!-- Initialize Swiper -->
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30
+    var swiper = new Swiper('.swiper-container-1', {
+        direction: 'vertical',
+        navigation: {
+            nextEl: '#arrow_prev_1',
+            prevEl: '#arrow_next_1',
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container-2', {
+        direction: 'vertical',
+        navigation: {
+            nextEl: '#arrow_prev_2',
+            prevEl: '#arrow_next_2',
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container-3', {
+        direction: 'vertical',
+        navigation: {
+            nextEl: '#arrow_prev_3',
+            prevEl: '#arrow_next_3',
+        },
     });
 </script>
 </body>
