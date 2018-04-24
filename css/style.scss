@@ -5240,13 +5240,13 @@ html {
 
 .empty {
   &::placeholder {
-    color: rgba(255,36,92,1) !important;
+    color: rgba(244, 101, 0, 1) !important;
     transition: color .4s ease-in-out;
   }
   &::-webkit-input-placeholder,
   &::-moz-placeholder,
   &:-moz-placeholder {
-    color: rgba(255,36,92,1) !important;
+    color: rgba(244, 101, 0, 1) !important;
     transition: color .4s ease-in-out;
   }
 }
