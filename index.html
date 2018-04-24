@@ -9,11 +9,14 @@
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/swiper.min.css" rel="stylesheet"/>
 
+
+
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
 
 </head>
 <body>
@@ -127,28 +130,39 @@
         <form class="pop-up-form" id="order_form" action="" method="post">
             <div class="field__container">
                 <div class="field-wrapper">
+
                     <label class="field-label" for="date">Дата и время</label>
-                    <input type="text" name="filter-date" class="field" id="date" placeholder="__ __ ____"/>
+                    <input type="text" class="field validate" id="date" placeholder="__ __ ____" required/>
+
+                    <section class="data__container">
+                        <div class="data-calendar-wrapper" id="calendar"></div>
+                        <div class="data-time-wrapper">
+                            <p class="data-text" onclick="getTime(morning)">Утро</p>
+                            <p class="data-text" onclick="getTime(day)">День</p>
+                            <p class="data-text" onclick="getTime(evening)">Вечер</p>
+                        </div>
+                    </section>
+
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="count">Кол-во гостей</label>
                     <span class="field-btn" id="add">+</span>
-                    <input type="number" class="field" min="1" id="count"/>
+                    <input type="number" class="field validate" min="1" id="count" required/>
                     <span class="field-btn" id="remove">-</span>
                 </div>
             </div>
             <div class="field__container">
                 <div class="field-wrapper">
                     <label class="field-label" for="name">Ваше имя и фамилия</label>
-                    <input type="text" class="field" id="name" placeholder="Например, Мария Иванова"/>
+                    <input type="text" class="field validate" id="name" placeholder="Например, Мария Иванова" required/>
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="phone">Контактный телефон</label>
-                    <input type="tel" class="field" id="phone" placeholder="+7___ ___-__-__"/>
+                    <input type="tel" class="field validate" id="phone" placeholder="+7___ ___-__-__"/>
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="email">Электорнная почта</label>
-                    <input type="email" class="field" id="email" placeholder="Например, maryivanova@example.ru"/>
+                    <input type="email" class="field validate" id="email" placeholder="Например, maryivanova@example.ru" required/>
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="comment">Комментарий</label>
@@ -604,6 +618,10 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/swiper.js"></script>
 
+
+<script>
+
+</script>
 
 </body>
 </html>

@@ -120,13 +120,33 @@ $(document).ready(function () {
     });
 });*/
 
-// После валидации и отправки формы
+// Валидация
 $(document).ready(function () {
+    $('#form_btn').click(function () {
+        $('#order_form input').each(function() {
+            if ($('#order_form input').val()!== '') {
+                $('#last_pop_up').addClass('last-pop-up--active');
+                $(' input ').val(''); // Очистить все формы
+                console.log($('#order_form input').val());
+            } else {
+                console.log($('#order_form input').val());
+                $('#order_form input').addClass('empty');
+                setTimeout( function () {
+                    $('#order_form input').removeClass('empty');
+                }, 410);
+            }
+        });
+    });
+});
+
+
+// После валидации и отправки формы
+/*$(document).ready(function () {
     $('#form_btn').click(function () {
         $('#last_pop_up').addClass('last-pop-up--active');
         $(' input ').val(''); // Очистить все формы
     });
-});
+});*/
 
 // Открыть мобильное меню
 $(document).ready(function ($) {
@@ -141,6 +161,8 @@ $(document).ready(function ($) {
             $('#mob_menu').removeClass('nav--active');
             $('.burger').removeClass('cross');
             $('.footer-btn-wrapper').css({display: 'block'});
+            $('#last_pop_up').removeClass('last-pop-up--active');
+            $('#pop_up').removeClass('pop-up--active');
         }
     });
 });
@@ -171,7 +193,7 @@ $(document).ready(function () {
 
 // Анимация блоков только для дисплеев, чья ширина больше или равна 768
 $(document).ready(function () {
-    if ($(window).width() >= '768'){
+    if ($(window).width() >= '768') {
 
         $(window).scroll(function (e) {
             parallaxScroll();
@@ -233,4 +255,9 @@ $(document).ready(function () {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-
+//Дата и время
+$(document).ready(function () {
+    $('#date').click(function () {
+        $('.data__container').css({display: 'flex'})
+    });
+});
