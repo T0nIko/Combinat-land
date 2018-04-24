@@ -136,9 +136,9 @@
                     <section class="data__container">
                         <div class="data-calendar-wrapper" id="calendar"></div>
                         <div class="data-time-wrapper">
-                            <p class="data-text" onclick="getTime('утро')">Утро</p>
-                            <p class="data-text" onclick="getTime('день')">День</p>
-                            <p class="data-text" onclick="getTime('вечер')">Вечер</p>
+                            <p class="data-text" onclick="getTime('morning')">Утро</p>
+                            <p class="data-text" onclick="getTime('day')">День</p>
+                            <p class="data-text" onclick="getTime('evening')">Вечер</p>
                         </div>
                     </section>
 
@@ -167,7 +167,7 @@
                     <label class="field-label" for="comment">Комментарий</label>
                     <textarea class="field-text" id="comment" placeholder="Ваш текст"></textarea>
                 </div>
-                <button type="submit" class="form-btn" id="form_btn" form>Отправить</button>
+                <button type="submit" class="form-btn--active" id="form_btn" form>Отправить</button>
             </div>
         </form>
         <p class="pop-up-text">Нажимая на кнопку вы соглашаетесь с
@@ -622,14 +622,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 <script src="js/clndr.js"></script>
 <script>
+    // Календарь
     $(document).ready(function () {
         $('#calendar').clndr({
             clickEvents: {
                 click: function(target) {
-                    console.log(target);
                     console.log(target.date._i);
+                    $('#date').attr('value',target.date._i);
                     $(target.element).addClass('active-day');
-
                 },
                 onMonthChange: function(month) {
                     console.log('you just went to ' + month.format('MMMM, YYYY'));
@@ -640,6 +640,12 @@
             }
         });
     });
+
+    // Получить время посещения и перезаписать value
+    function getTime(e) {
+        console.log(e);
+        $('#date').attr('value', $('#date').val() + ' ' + e);
+    }
 </script>
 
 </body>

@@ -120,35 +120,85 @@ $(document).ready(function () {
     });
 });*/
 
-// Получить время помещения
-function getTime(e) {
-    console.log(e);
-}
+/*--------------------------------------------------------------------------------------------------------------------*/
 
 // Валидация
 $(document).ready(function () {
     $('#form_btn').click(function () {
         $('#order_form input').each(function() {
-            if ($('#order_form input').val()!== '') {
-
-                // После валидации и отправки формы
-                setTimeout( function () {
-                    $('#last_pop_up').addClass('last-pop-up--active');
-                    $(' input ').val(''); // Очистить все формы
-                }, 100);
-
-            } else {
-
-                console.log($('#order_form input').val());
+            if ($('#order_form input').val() === '') {
                 $('#order_form input').addClass('empty');
                 setTimeout( function () {
                     $('#order_form input').removeClass('empty');
                 }, 410);
+            }
+            else if ($('#order_form input#date').val() === '') {
+                $('#order_form input').addClass('empty');
+                setTimeout( function () {
+                    $('#order_form input').removeClass('empty');
+                }, 410);
+            }
+            else if ($('#order_form input#name').val() === '') {
+                $('#order_form input').addClass('empty');
+                setTimeout( function () {
+                    $('#order_form input').removeClass('empty');
+                }, 410);
+            }
+            else if ($('#order_form input#phone').val() === '') {
+                $('#order_form input').addClass('empty');
+                setTimeout( function () {
+                    $('#order_form input').removeClass('empty');
+                }, 410);
+            }
+            else if ($('#order_form input#email').val() === '') {
+                $('#order_form input').addClass('empty');
+                setTimeout( function () {
+                    $('#order_form input').removeClass('empty');
+                }, 410);
+            }
+            else {
+                // После валидации и отправки формы
+                setTimeout( function () {
+                    $('#last_pop_up').addClass('last-pop-up--active');
+                    $('#order_form input').val(''); // Очистить все формы
+                }, 100);
+            }
+        });
+    });
+});
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+// Показать блок с временем и датой, анимация
+$(document).ready(function () {
+    $('#date').click(function () {
+        $('.data__container').addClass('data--active');
+        $('.data__container').removeClass('data--hide');
+    });
+});
+
+// Чтобы закрыть окно с датой и временем
+$(document).ready(function () {
+
+    $(function ($) {
+        $(document).mouseup(function (e) {
+            let popup = $('#calendar');
+            if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+                popup.removeClass('pop-up--active');
+                $('.data__container').removeClass('data--active');
+
+                // Подчистить стили после выбора
+                if ($('td.day').hasClass('active-day')) {
+                    $('td.day').removeClass('active-day');
+                }
 
             }
         });
     });
 });
+
+/*--------------------------------------------------------------------------------------------------------------------*/
 
 // Открыть мобильное меню
 $(document).ready(function ($) {
@@ -257,9 +307,3 @@ $(document).ready(function () {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-//Дата и время
-$(document).ready(function () {
-    $('#date').click(function () {
-        $('.data__container').css({display: 'flex'})
-    });
-});

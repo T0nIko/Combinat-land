@@ -700,10 +700,12 @@ input[type='date']::-webkit-inner-spin-button {
         }
       }
       &:first-child .field {
-        width: 100px;
+        width: 80px;
+        margin-right: 20px;
         position: relative;
         @media screen and (max-width: 649px) {
           width: 60px;
+          margin-right: 0;
         }
       }
       &:nth-child(2) {
@@ -756,7 +758,7 @@ input[type='date']::-webkit-inner-spin-button {
         height: 30px;
       }
     }
-    &:nth-child(2) .form-btn {
+    &:nth-child(2) .form-btn--active {
       cursor: pointer;
       background: #FFFFFF;
       outline: none;
@@ -5127,10 +5129,31 @@ html {
 /*end*/
 
 /*date and time*/
+.form-btn--unactive {
+  cursor: pointer;
+  background: #FFFFFF;
+  outline: none;
+  margin: 0 auto;
+  border: 0;
+  width: 180px;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Catorze27 Style 1', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  box-shadow: 0 0 0 1.5px #28304A inset;
+  opacity: .3;
+}
+
 .data__container {
   position: absolute;
   z-index: 5;
-  top: 62px;
+  top: 42px;
   right: 0;
   width: 300px;
   height: 265px;
@@ -5139,6 +5162,51 @@ html {
   display: none;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  @media screen and (max-width: 649px) {
+    right: auto;
+    left: 0;
+    top: 32px;
+  }
+  @media screen and (max-width: 375px) {
+    left: 10px
+  }
+}
+
+.data--active {
+  display: flex;
+  opacity: 0;
+  top: 42px;
+  animation: showCalendar .3s ease-in-out forwards;
+  @media screen and (max-width: 649px) {
+    top: 32px;
+  }
+}
+
+@keyframes showCalendar {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 42px;
+  }
+  100% {
+    opacity: 1;
+    top: 62px;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  @keyframes showCalendar {
+    0% {
+      display: none;
+      opacity: 0;
+      top: 22px;
+    }
+    100% {
+      opacity: 1;
+      top: 32px;
+    }
+  }
 }
 
 .data-time-wrapper {
@@ -5255,6 +5323,7 @@ tbody tr {
 
 td.day.today .day-contents {
   color: #BA8161;
+  cursor: pointer;
 }
 
 td.day.active-day {
@@ -5276,6 +5345,7 @@ td.day.active-day {
 
 td.day.active-day .day-contents {
   position: absolute;
+  cursor: pointer;
   top: 0;
   left: 0;
   width: 100%;
