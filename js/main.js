@@ -120,6 +120,11 @@ $(document).ready(function () {
     });
 });*/
 
+// Получить время помещения
+function getTime(e) {
+    console.log(e);
+}
+
 // Валидация
 $(document).ready(function () {
     $('#form_btn').click(function () {
