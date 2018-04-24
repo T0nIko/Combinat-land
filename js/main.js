@@ -45,6 +45,7 @@ $(document).ready(function () {
 
 });
 
+// Для кнопки скролла вверх
 function toTop() {
     let destination = $('#top').offset().top;
     $('html').animate({
@@ -106,8 +107,8 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    // Если мимо жмякнули
+// Если мимо жмякнули. Пока недоступно из-за проблем с календарем(
+/*$(document).ready(function () {
     $(function ($) {
         $(document).mouseup(function (e) {
             let popup = $('#pop_up');
@@ -117,13 +118,13 @@ $(document).ready(function () {
             }
         });
     });
-});
+});*/
 
 // После валидации и отправки формы
 $(document).ready(function () {
     $('#form_btn').click(function () {
         $('#last_pop_up').addClass('last-pop-up--active');
-        $(' input ').val('');
+        $(' input ').val(''); // Очистить все формы
     });
 });
 
@@ -146,6 +147,7 @@ $(document).ready(function ($) {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
+// Какая-то неудача(((
 $(document).ready(function () {
     let count = 1;
     $('#count').attr('value', count);
@@ -167,11 +169,9 @@ $(document).ready(function () {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-
+// Анимация блоков только для дисплеев, чья ширина больше или равна 768
 $(document).ready(function () {
     if ($(window).width() >= '768'){
-
-        console.log($(window).width());
 
         $(window).scroll(function (e) {
             parallaxScroll();
@@ -227,12 +227,9 @@ $(document).ready(function () {
                 "-o-transform": "translate3d(0," + (-1) * this.speed2 + "px,0)",
                 "-ms-transform": "translate3d(0," + (-1) * this.speed2 + "px,0)"
             });
-
         }
     }
 });
-
-
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 

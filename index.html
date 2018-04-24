@@ -8,6 +8,7 @@
     <!-- css -->
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/swiper.min.css" rel="stylesheet"/>
+    <link href="css/jquery.datetimepicker.min.css" rel="stylesheet" />
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -127,8 +128,8 @@
         <form class="pop-up-form" id="order_form" action="" method="post">
             <div class="field__container">
                 <div class="field-wrapper">
-                    <label class="field-label" for="date">Дата и время</label>
-                    <input type="date" class="field" id="date" placeholder="__ __ ____"/>
+                    <label class="field-label" for="filter-date">Дата и время</label>
+                    <input type="text" name="filter-date" class="field" id="filter-date" placeholder="__ __ ____"/>
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="count">Кол-во гостей</label>
@@ -602,43 +603,18 @@
 </main>
 <!-- Swiper JS -->
 <script src="js/swiper.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/jquery.datetimepicker.full.js"></script>
+<script>
+    /*jslint browser:true*/
+    /*global jQuery, document*/
 
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper('.swiper-container-1', {
-        direction: 'vertical',
-        navigation: {
-            nextEl: '#arrow_prev_1',
-            prevEl: '#arrow_next_1',
-        },
+    jQuery(document).ready(function () {
+        'use strict';
+
+        jQuery('#filter-date').datetimepicker();
     });
 </script>
-<script>
-    var swiper = new Swiper('.swiper-container-2', {
-        direction: 'vertical',
-        navigation: {
-            nextEl: '#arrow_prev_2',
-            prevEl: '#arrow_next_2',
-        },
-    });
-</script>
-<script>
-    var swiper = new Swiper('.swiper-container-3', {
-        direction: 'horizontal',
-        navigation: {
-            nextEl: '#arrow_prev_3',
-            prevEl: '#arrow_next_3',
-        },
-    });
-</script>
-<script>
-    var swiper = new Swiper('.swiper-container-4', {
-        direction: 'vertical',
-        navigation: {
-            nextEl: '#arrow_prev_4',
-            prevEl: '#arrow_next_4',
-        },
-    });
-</script>
+
 </body>
 </html>
