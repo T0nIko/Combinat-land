@@ -1232,7 +1232,7 @@ input[type='date']::-webkit-inner-spin-button {
       margin: 56px auto 49px;
       display: flex;
       flex-direction: column;
-      max-height: 705px;
+      height:auto;
     }
   }
   &:first-child .container-caption {
@@ -1270,7 +1270,6 @@ input[type='date']::-webkit-inner-spin-button {
       line-height: 45px;
       text-align: center;
       margin: 49px auto 22px;
-      min-width: 324px;
     }
   }
   &:first-child .container-wrapper {
@@ -1301,6 +1300,7 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (max-width: 649px) {
       position: relative;
       width: calc(100% - 60px);
+      max-width: 275px;
       margin: -56px auto 0;
       height: 100%;
       padding: 20px;
@@ -1413,6 +1413,7 @@ input[type='date']::-webkit-inner-spin-button {
         width: 100%;
         max-width: 330px;
         min-height: 256px;
+        max-height: 256px;
         margin: 0 auto;
         top: 0;
         left: 0;
@@ -1441,7 +1442,7 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (max-width: 649px) {
       width: calc(100% - 40px);
       margin: 0 auto 50px;
-      max-height: 540px;
+      height: 540px;
     }
   }
   &:nth-child(2) .container-caption {
@@ -1479,7 +1480,7 @@ input[type='date']::-webkit-inner-spin-button {
     }
     @media screen and (max-width: 649px) {
       width: 275px;
-      height: 265px;
+      height: auto;
       left: calc(50% - 137.5px);
       top: 274px;
     }
@@ -1530,7 +1531,7 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (max-width: 649px) {
       width: 32px;
       height: 5.5px;
-      margin: auto;
+      margin: 30px auto;
     }
   }
   &:nth-child(2) .container__slider {
@@ -1576,6 +1577,15 @@ input[type='date']::-webkit-inner-spin-button {
         display: none;
       }
     }
+    @media screen and (max-width: 320px) {
+      top: 102px;
+      width: 320px;
+      height: 250px;
+      left: calc(50% - 160px);
+      &:before {
+        display: none;
+      }
+    }
   }
   &:nth-child(2) .container__slider .slider-wrapper {
     position: relative;
@@ -1594,6 +1604,9 @@ input[type='date']::-webkit-inner-spin-button {
     position: absolute;
     top: 0;
     bottom: 0;
+    @media screen and (max-width: 649px) {
+      height: 100%;
+    }
   }
   &:nth-child(2) .container__slider .slider-arrow {
     z-index: 5;
@@ -1621,9 +1634,9 @@ input[type='date']::-webkit-inner-spin-button {
         width: 64px;
         height: 60px;
         top: -32px;
-        left: 161px;
+        left: 96px;
         background-size: 100% 21px;
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
       }
     }
     &:nth-child(2) {
@@ -1650,9 +1663,9 @@ input[type='date']::-webkit-inner-spin-button {
         width: 64px;
         height: 60px;
         top: -32px;
-        left: 96px;
+        left: 161px;
         background-size: 100% 21px;
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
       }
     }
   }
@@ -1898,6 +1911,12 @@ input[type='date']::-webkit-inner-spin-button {
       height: 256px;
       left: calc(50% - 162.5px);
     }
+    @media screen and (max-width: 320px) {
+      top: 102px;
+      width: 320px;
+      height: 250px;
+      left: calc(50% - 160px);
+    }
   }
   &:nth-child(3) .container-wrapper .container__slider .slider-wrapper {
     position: relative;
@@ -2007,6 +2026,9 @@ input[type='date']::-webkit-inner-spin-button {
       margin: 0 auto 50px;
       max-height: 470px;
     }
+    @media screen and (max-width: 320px) {
+      width:100%;
+    }
   }
   &:nth-child(4) .container__slider {
     position: absolute;
@@ -2037,6 +2059,9 @@ input[type='date']::-webkit-inner-spin-button {
     }
     @media screen and (max-width: 649px) {
       padding: 10px 13px 0 1px;
+    }
+    @media screen and (max-width: 320px) {
+      padding: 10px 15px 0;
     }
   }
   &:nth-child(4) .container__slider .slider-wrapper .slider-item .container-box {
@@ -2117,6 +2142,10 @@ input[type='date']::-webkit-inner-spin-button {
     }
     @media screen and (max-width: 649px) {
       width: 308px;
+      height: 290px;
+    }
+    @media screen and (max-width: 320px) {
+      width: 290px;
       height: 290px;
     }
   }
@@ -2329,6 +2358,9 @@ input[type='date']::-webkit-inner-spin-button {
       margin: 0 auto 36px;
       max-height: 470px;
     }
+    @media screen and (max-width: 320px) {
+      width: 100%;
+    }
   }
   &:nth-child(5) .container-bg {
     position: absolute;
@@ -2509,6 +2541,10 @@ input[type='date']::-webkit-inner-spin-button {
         display: none;
       }
     }
+    @media screen and (max-width: 320px) {
+      width: 100%;
+      left: 0;
+    }
   }
   &:nth-child(5) .container-wrapper .container__slider .slider-wrapper {
     position: relative;
@@ -2528,6 +2564,10 @@ input[type='date']::-webkit-inner-spin-button {
     left: -25%;
     top: 0;
     bottom: 0;
+    @media screen and (max-width: 320px) {
+      left: 0;
+      right: 0;
+    }
   }
   &:nth-child(5) .container-wrapper .container__slider .slider-arrow {
     z-index: 5;
@@ -2552,9 +2592,9 @@ input[type='date']::-webkit-inner-spin-button {
         width: 64px;
         height: 60px;
         top: -32px;
-        left: 161px;
+        left: 96px;
         background-size: 100% 21px;
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
       }
     }
     &:nth-child(2) {
@@ -2579,9 +2619,9 @@ input[type='date']::-webkit-inner-spin-button {
         width: 64px;
         height: 60px;
         top: -32px;
-        left: 96px;
+        left: 161px;
         background-size: 100% 21px;
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
       }
     }
   }
@@ -2841,6 +2881,9 @@ input[type='date']::-webkit-inner-spin-button {
       height: 1480px;
       background: none;
     }
+    @media screen and (max-width: 320px) {
+      width: 100%;
+    }
   }
   &:nth-child(7) .container-wrapper {
     max-width: 1200px;
@@ -2886,6 +2929,9 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (max-width: 649px) {
       width: 330px;
       height: 480px;
+    }
+    @media screen and (max-width: 320px) {
+      width: 300px;
     }
     &:first-child {
       margin: auto 0 0 0;
@@ -3908,8 +3954,28 @@ html {
   @media screen and (max-width: 649px) {
     margin: 40px auto 27px;
     height: 243px;
+    width: 414px;
+    left: calc(50% - 207px);
+    &:before,
+    &:after {
+      width: 10%;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    margin: 40px auto 27px;
+    height: 243px;
     width: 375px;
     left: calc(50% - 187.5px);
+    &:before,
+    &:after {
+      width: 5%;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    margin: 40px auto 27px;
+    height: 243px;
+    width: 320px;
+    left: calc(50% - 160px);
     &:before,
     &:after {
       width: 5%;
@@ -3963,7 +4029,10 @@ html {
       right: 115px;
     }
     @media screen and (max-width: 649px) {
-      right: 23px;
+      right: 25px;
+    }
+    @media screen and (max-width: 320px) {
+      right: 15px;
     }
   }
   &:nth-child(2) {
@@ -3979,7 +4048,10 @@ html {
       left: 115px;
     }
     @media screen and (max-width: 649px) {
-      left: 23px;
+      left: 25px;
+    }
+    @media screen and (max-width: 320px) {
+      left: 15px;
     }
   }
 }
@@ -4652,6 +4724,10 @@ html {
       width: calc(100% - 50px);
       z-index: 4;
     }
+    @media screen and (max-width: 320px) {
+      width: calc(100% - 20px);
+      padding: 0 10px;
+    }
   }
   &:nth-child(odd) .menu__content {
     margin: 0 0 0 auto;
@@ -4750,6 +4826,10 @@ html {
       line-height: 49px;
       font-size: 14px;
     }
+    @media screen  and (max-width: 320px) {
+      line-height: 15px;
+      font-size: 14px;
+    }
   }
   &:nth-child(odd) .menu__content .menu-content-wrapper .menu-content-list .menu-content-item .menu-content-item--gold,
   &:nth-child(even) .menu__content .menu-content-wrapper .menu-content-list .menu-content-item .menu-content-item--gold{
@@ -4840,6 +4920,7 @@ html {
   }
   @media screen and (max-width: 649px){
     margin-top: 36px;
+    justify-content: space-around;
   }
 }
 
@@ -4975,6 +5056,10 @@ html {
   }
   @media screen and (max-width: 649px){
     width: 275px;
+    margin: -92px auto 0;
+  }
+  @media screen and (max-width: 320px){
+    width: 250px;
     margin: -92px auto 0;
   }
 }
