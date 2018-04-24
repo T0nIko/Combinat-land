@@ -674,7 +674,7 @@ input[type='date']::-webkit-inner-spin-button {
         .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper {
           margin-bottom: 10px;
           height: 30px; } }
-    .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn--active {
+    .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn {
       cursor: pointer;
       background: #FFFFFF;
       outline: none;
@@ -691,25 +691,28 @@ input[type='date']::-webkit-inner-spin-button {
       text-align: center;
       text-transform: uppercase;
       position: relative;
-      box-shadow: 0 0 0 1.5px #28304A inset; }
-      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn--active:before, .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn--active:after {
+      box-shadow: 0 0 0 1.5px #28304A inset;
+      transition: all 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
+      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn:before, .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn:after {
         content: "";
         position: absolute;
         height: 0;
         width: 1.5px;
         transition: height 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
-      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn--active::before {
+      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn::before {
         box-shadow: 2px 2px 0 #F1DAC2 inset;
         bottom: 0;
         left: 0; }
-      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn--active::after {
+      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn::after {
         box-shadow: -2px -2px 0 #F1DAC2 inset;
         top: 0;
         right: 0; }
-      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn--active:hover::before, .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn--active:hover::after {
-        height: 100%;
-        width: 100%;
-        transition: height 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
+      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn:hover {
+        color: #F1DAC2; }
+        .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn:hover::before, .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .form-btn:hover::after {
+          height: 100%;
+          width: 100%;
+          transition: height 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
     .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper .field-label {
       width: 207px; }
       @media screen and (max-width: 649px) {

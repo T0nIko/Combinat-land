@@ -29,3 +29,13 @@ var swiper_4 = new Swiper('.swiper-container-4', {
         prevEl: '#arrow_next_4',
     },
 });
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.prev',
+        prevEl: '.next',
+    },
+});

@@ -758,7 +758,7 @@ input[type='date']::-webkit-inner-spin-button {
         height: 30px;
       }
     }
-    &:nth-child(2) .form-btn--active {
+    &:nth-child(2) .form-btn {
       cursor: pointer;
       background: #FFFFFF;
       outline: none;
@@ -776,6 +776,7 @@ input[type='date']::-webkit-inner-spin-button {
       text-transform: uppercase;
       position: relative;
       box-shadow: 0 0 0 1.5px #28304A inset;
+      transition: all 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1);
       &:before,
       &:after {
         content: "";
@@ -795,6 +796,7 @@ input[type='date']::-webkit-inner-spin-button {
         right: 0;
       }
       &:hover {
+        color: #F1DAC2;
         &::before, &::after {
           height: 100%;
           width: 100%;

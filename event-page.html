@@ -128,7 +128,17 @@
             <div class="field__container">
                 <div class="field-wrapper">
                     <label class="field-label" for="date">Дата и время</label>
-                    <input type="date" class="field" id="date" placeholder="__ __ ____"/>
+                    <input type="text" class="field validate" id="date" placeholder="__ __ ____" required/>
+
+                    <section class="data__container">
+                        <div class="data-calendar-wrapper" id="calendar"></div>
+                        <div class="data-time-wrapper">
+                            <p class="data-text" onclick="getTime('morning')">Утро</p>
+                            <p class="data-text" onclick="getTime('day')">День</p>
+                            <p class="data-text" onclick="getTime('evening')">Вечер</p>
+                        </div>
+                    </section>
+
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="count">Кол-во гостей</label>
@@ -283,18 +293,37 @@
 
 <!-- Swiper JS -->
 <script src="js/swiper.min.js"></script>
+<script src="js/swiper.js"></script>
 
-<!-- Initialize Swiper -->
+<!-- Calendar -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+<script src="js/clndr.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
-        centeredSlides: true,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.prev',
-            prevEl: '.next',
-        },
+    // Календарь
+    $(document).ready(function () {
+        $('#calendar').clndr({
+            clickEvents: {
+                click: function(target) {
+                    console.log(target.date._i);
+                    $('#date').attr('value',target.date._i);
+                    $(target.element).addClass('active-day');
+                },
+                onMonthChange: function(month) {
+                    console.log('you just went to ' + month.format('MMMM, YYYY'));
+                }
+            },
+            doneRendering: function() {
+                console.log('this would be a fine place to attach custom event handlers.');
+            }
+        });
     });
+
+    // Получить время посещения и перезаписать value
+    function getTime(e) {
+        console.log(e);
+        $('#date').attr('value', $('#date').val() + ' ' + e);
+    }
 </script>
 
 </body>
