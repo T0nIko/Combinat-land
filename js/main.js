@@ -125,28 +125,25 @@ $(document).ready(function () {
     $('#form_btn').click(function () {
         $('#order_form input').each(function() {
             if ($('#order_form input').val()!== '') {
-                $('#last_pop_up').addClass('last-pop-up--active');
-                $(' input ').val(''); // Очистить все формы
-                console.log($('#order_form input').val());
+
+                // После валидации и отправки формы
+                setTimeout( function () {
+                    $('#last_pop_up').addClass('last-pop-up--active');
+                    $(' input ').val(''); // Очистить все формы
+                }, 100);
+
             } else {
+
                 console.log($('#order_form input').val());
                 $('#order_form input').addClass('empty');
                 setTimeout( function () {
                     $('#order_form input').removeClass('empty');
                 }, 410);
+
             }
         });
     });
 });
-
-
-// После валидации и отправки формы
-/*$(document).ready(function () {
-    $('#form_btn').click(function () {
-        $('#last_pop_up').addClass('last-pop-up--active');
-        $(' input ').val(''); // Очистить все формы
-    });
-});*/
 
 // Открыть мобильное меню
 $(document).ready(function ($) {
