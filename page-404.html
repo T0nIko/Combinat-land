@@ -130,7 +130,19 @@
 <!-- Pop-up -->
 <section class="pop-up" id="pop_up">
 
-    <span class="pop-up-close" id="pop_up_btn"></span> <!-- Close pop-up -->
+    <!-- Close pop-up -->
+    <div class="close-wrapper">
+        <a href="#" class="close-button" id="pop_up_btn">
+            <div class="in">
+                <div class="close-button-block"></div>
+                <div class="close-button-block"></div>
+            </div>
+            <div class="out">
+                <div class="close-button-block"></div>
+                <div class="close-button-block"></div>
+            </div>
+        </a>
+    </div>
 
     <!-- First pop-up. Reserved form -->
     <div class="pop-up__container" id="first_pop_up">
@@ -139,8 +151,10 @@
         <form class="pop-up-form" id="order_form" action="" method="post">
             <div class="field__container">
                 <div class="field-wrapper">
+
                     <label class="field-label" for="date">Дата и время</label>
                     <input type="text" class="field validate" id="date" placeholder="__ __ ____" required/>
+                    <span class="error-message" id="error-date">Выберите дату и время</span>
 
                     <section class="data__container">
                         <div class="data-calendar-wrapper" id="calendar"></div>
@@ -155,22 +169,26 @@
                 <div class="field-wrapper">
                     <label class="field-label" for="count">Кол-во гостей</label>
                     <span class="field-btn" id="add">+</span>
-                    <input type="number" class="field" min="1" id="count"/>
+                    <input type="number" class="field validate" min="1" id="count" required/>
                     <span class="field-btn" id="remove">-</span>
                 </div>
             </div>
             <div class="field__container">
                 <div class="field-wrapper">
                     <label class="field-label" for="name">Ваше имя и фамилия</label>
-                    <input type="text" class="field" id="name" placeholder="Например, Мария Иванова"/>
+                    <input type="text" class="field validate" id="name" placeholder="Например, Мария Иванова" required/>
+                    <span class="error-message" id="error-name">Введите Ваши данные</span>
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="phone">Контактный телефон</label>
-                    <input type="tel" class="field" id="phone" placeholder="+7___ ___-__-__"/>
+                    <input type="tel" class="field validate" id="phone" placeholder="+7___ ___-__-__"/>
+                    <span class="error-message" id="error-phone">Введите номер телефона</span>
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="email">Электорнная почта</label>
-                    <input type="email" class="field" id="email" placeholder="Например, maryivanova@example.ru"/>
+                    <input type="email" class="field validate" id="email" onkeyup="onlyLatin(this);" placeholder="Например, maryivanova@example.ru"
+                           required/>
+                    <span class="error-message" id="error-mail">Введите Ваш e-mail</span>
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="comment">Комментарий</label>
@@ -211,6 +229,18 @@
 
     <!-- Background image -->
     <img src="assets/pictures/svg/fish.svg" class="main-error-bg" />
+
+    <!-- Aside labels -->
+    <div class="label__container">
+        <!-- Delivery Club -->
+        <a href="" class="label-img-link">
+            <img src="assets/pictures/svg/delivery.svg" class="label-img" alt="Delivery Club" />
+        </a>
+        <!-- Yandex Food -->
+        <a href="https://eda.yandex/" class="label-img-link">
+            <img src="assets/pictures/svg/yandex-meal.svg" class="label-img" alt="Яндекс Еда" />
+        </a>
+    </div>
 
 </main>
 

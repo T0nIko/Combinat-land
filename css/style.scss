@@ -472,6 +472,13 @@ input[type='date']::-webkit-inner-spin-button {
   }
 }
 
+.aside__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .aside__container .aside-text {
   cursor: pointer;
   text-align: center;
@@ -622,20 +629,88 @@ input[type='date']::-webkit-inner-spin-button {
   }
 }
 
-.pop-up-close {
-  cursor: pointer;
-  width: 33px;
-  height: 35px;
+.close-wrapper {
   position: absolute;
-  z-index: 10;
+  cursor: pointer;
+  top: 22px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 90;
+}
+
+.close-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.close-button-block {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.close-button-block:before, .close-button-block:after {
+  cursor: pointer;
   content: '';
-  top: 32px;
-  right: 40px;
-  background: url("../assets/pictures/svg/close.svg") no-repeat 50% 50%;
-  background-size: cover;
-  @media screen and (max-width: 992px) {
-    display: none;
-  }
+  position: absolute;
+  bottom: 0;
+  left: calc(55% - 3px);
+  display: block;
+  width: 2px;
+  height: 25px;
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  background: #28304A;
+  transition: all ease-out 280ms;
+}
+.close-button-block:last-of-type {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.close-button .in .close-button-block:before {
+  transition-delay: 280ms;
+  -webkit-transform: translateX(20px) translateY(-20px) rotate(45deg);
+  transform: translateX(20px) translateY(-20px) rotate(45deg);
+}
+.close-button .in .close-button-block:after {
+  transition-delay: 280ms;
+  -webkit-transform: translateX(-22px) translateY(-22px) rotate(-45deg);
+  transform: translateX(-22px) translateY(-22px) rotate(-45deg);
+}
+.close-button .out {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.close-button .out .close-button-block:before {
+  -webkit-transform: translateX(-5px) translateY(5px) rotate(45deg);
+  transform: translateX(-5px) translateY(5px) rotate(45deg);
+}
+.close-button .out .close-button-block:after {
+  -webkit-transform: translateX(5px) translateY(5px) rotate(-45deg);
+  transform: translateX(5px) translateY(5px) rotate(-45deg);
+}
+.close-button:hover .in .close-button-block:before {
+  -webkit-transform: translateX(-5px) translateY(5px) rotate(45deg);
+  transform: translateX(-5px) translateY(5px) rotate(45deg);
+}
+.close-button:hover .in .close-button-block:after {
+  -webkit-transform: translateX(5px) translateY(5px) rotate(-45deg);
+  transform: translateX(5px) translateY(5px) rotate(-45deg);
+}
+.close-button:hover .out .close-button-block:before {
+  -webkit-transform: translateX(-20px) translateY(20px) rotate(45deg);
+  transform: translateX(-20px) translateY(20px) rotate(45deg);
+}
+.close-button:hover .out .close-button-block:after {
+  -webkit-transform: translateX(20px) translateY(20px) rotate(-45deg);
+  transform: translateX(20px) translateY(20px) rotate(-45deg);
 }
 
 .pop-up--active {

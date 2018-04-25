@@ -106,13 +106,13 @@
                     <a href="#action" class="nav-item-link">% Акции</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contats" class="nav-item-link">Контакты</a>
+                    <a href="#contacts" class="nav-item-link">Контакты</a>
                 </li>
             </ul>
         </nav>
 
         <div class="aside__container">
-            <a href="#contats" class="aside-contacts-link">
+            <a href="#contacts" class="aside-contacts-link">
                 <img src="assets/pictures/svg/placeholder.svg" class="aside-icon" alt="Маркер карты"/>
                 <p class="aside-text">Москва,
                     <br/>ул.Автозаводская 18,
@@ -137,7 +137,19 @@
 <!-- Pop-up -->
 <section class="pop-up" id="pop_up">
 
-    <span class="pop-up-close" id="pop_up_btn"></span> <!-- Close pop-up -->
+    <!-- Close pop-up -->
+    <div class="close-wrapper">
+        <a href="#" class="close-button" id="pop_up_btn">
+            <div class="in">
+                <div class="close-button-block"></div>
+                <div class="close-button-block"></div>
+            </div>
+            <div class="out">
+                <div class="close-button-block"></div>
+                <div class="close-button-block"></div>
+            </div>
+        </a>
+    </div>
 
     <!-- First pop-up. Reserved form -->
     <div class="pop-up__container" id="first_pop_up">
@@ -582,7 +594,7 @@
     <!-- end -->
 
     <!-- Eighth. Container for map and contacts -->
-    <section class="container" id="contats">
+    <section class="container" id="contacts">
         <div class="container-wrapper">
             <h2 class="container-caption">Контакты</h2>
             <img src="assets/pictures/svg/zigzag-bold.svg" class="container-img"/>
@@ -636,10 +648,13 @@
     <a class="lang"><p class="lang-text">eng</p></a> <!-- Change language -->
     <a href="#top" class="button-up"></a> <!-- Scroll to top -->
 
+    <!-- Aside labels -->
     <div class="label__container">
+        <!-- Delivery Club -->
         <a href="" class="label-img-link">
             <img src="assets/pictures/svg/delivery.svg" class="label-img" alt="Delivery Club" />
         </a>
+        <!-- Yandex Food -->
         <a href="https://eda.yandex/" class="label-img-link">
             <img src="assets/pictures/svg/yandex-meal.svg" class="label-img" alt="Яндекс Еда" />
         </a>
