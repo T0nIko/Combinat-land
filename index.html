@@ -9,7 +9,6 @@
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/swiper.min.css" rel="stylesheet"/>
 
-
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -19,20 +18,23 @@
 </head>
 <body>
 
+<!-- Top anchor -->
 <span id="top"></span>
 
 <!-- Menu and info -->
 <aside class="aside">
 
+    <!-- Container for logo -->
     <div class="aside-logo"></div>
 
     <div class="aside-menu-btn">
         <div class="burger"><span></span></div>
     </div>
 
+    <!-- Change language -->
+    <a class="aside-menu-lang"><p class="aside-menu-lang-text">eng</p></a>
 
-    <a class="aside-menu-lang"><p class="aside-menu-lang-text">eng</p></a> <!-- Change language -->
-
+    <!-- Mobil navigation -->
     <nav class="aside-mob-nav" id="mob_menu">
 
         <a href="https://www.tripadvisor.ru/" class="aside-mob-icon"></a>
@@ -73,7 +75,9 @@
         <a class="aside-btn">Забронировать столик</a>
 
     </nav>
+    <!-- end -->
 
+    <!-- Main navigation -->
     <div class="aside-wrapper">
 
         <nav class="aside-nav">
@@ -117,6 +121,7 @@
         </div>
 
     </div>
+    <!-- end -->
 
 </aside>
 <!-- end -->
@@ -564,7 +569,7 @@
     </section>
     <!-- end -->
 
-    <!-- Eighth -->
+    <!-- Eighth. Container for map and contacts -->
     <section class="container" id="contats">
         <div class="container-wrapper">
             <h2 class="container-caption">Контакты</h2>
@@ -615,10 +620,21 @@
 
     </footer>
 
+    <!-- Some button -->
     <a class="lang"><p class="lang-text">eng</p></a> <!-- Change language -->
     <a href="#top" class="button-up"></a> <!-- Scroll to top -->
 
+    <div class="label__container">
+        <a href="https://www.delivery-club.ru/" class="label-img-link">
+            <img src="assets/pictures/svg/delivery.svg" class="label-img" alt="Delivery Club" />
+        </a>
+        <a href="https://eda.yandex/" class="label-img-link">
+            <img src="assets/pictures/svg/yandex-meal.svg" class="label-img" alt="Яндекс Еда" />
+        </a>
+    </div>
+
 </main>
+
 <!-- Swiper JS -->
 <script src="js/swiper.min.js"></script>
 <script src="js/swiper.js"></script>

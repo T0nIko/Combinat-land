@@ -4926,4 +4926,28 @@ td.day.next-month,
 td.day.last-month {
   opacity: 0; }
 
+/*end*/
+/*label, Delivery and Yandex*/
+.label__container {
+  position: fixed;
+  overflow: hidden;
+  width: 162px;
+  height: 120px;
+  right: 0;
+  top: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.label-img {
+  width: 172px;
+  height: 53px;
+  margin-left: 100px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.51, 0.92, 0.24, 1.15); }
+  .label-img:hover {
+    margin-left: 0; }
+
+/*end*/
+
 /*# sourceMappingURL=style.css.map */

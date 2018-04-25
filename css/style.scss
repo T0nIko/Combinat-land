@@ -5496,7 +5496,6 @@ td.day.active-day {
     opacity: 1;
     z-index: 1;
   }
-
 }
 
 td.day.active-day .day-contents {
@@ -5524,3 +5523,29 @@ td.day.next-month,
 td.day.last-month {
   opacity: 0;
 }
+/*end*/
+
+/*label, Delivery and Yandex*/
+.label__container {
+  position: fixed;
+  overflow: hidden;
+  width: 162px;
+  height: 120px;
+  right: 0;
+  top: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.label-img {
+  width: 172px;
+  height: 53px;
+  margin-left: 100px;
+  cursor: pointer;
+  transition: all .25s cubic-bezier(.51,.92,.24,1.15);
+  &:hover {
+    margin-left: 0;
+  }
+}
+/*end*/
