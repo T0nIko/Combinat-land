@@ -665,14 +665,12 @@ input[type='date']::-webkit-inner-spin-button {
         max-width: 300px;
         width: 100%;
         justify-content: space-between; }
-        .pop-up__container:nth-child(2) .pop-up-form .field__container:first-child .field-wrapper:first-child:before {
-          position: absolute;
-          content: 'Нужно выбрать дату';
-          top: 53px; }
         @media screen and (max-width: 649px) {
           .pop-up__container:nth-child(2) .pop-up-form .field__container:first-child .field-wrapper:first-child {
             max-width: 175px;
             height: 30px; } }
+      .pop-up__container:nth-child(2) .pop-up-form .field__container:first-child .field-wrapper:first-child .error-message {
+        right: 30px; }
       .pop-up__container:nth-child(2) .pop-up-form .field__container:first-child .field-wrapper:first-child .field-label {
         width: 150px;
         position: relative; }
@@ -732,6 +730,7 @@ input[type='date']::-webkit-inner-spin-button {
         text-align: center; }
     .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper {
       height: 52px;
+      position: relative;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -741,6 +740,12 @@ input[type='date']::-webkit-inner-spin-button {
       transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
       .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper:hover, .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper:focus {
         background: #faf7f2; }
+      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper:first-child .error-message {
+        right: 85px; }
+      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper:nth-child(2) .error-message {
+        right: 75px; }
+      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper:nth-child(3) .error-message {
+        right: 94px; }
       .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper:nth-child(4) {
         margin-bottom: 40px; }
       @media screen and (max-width: 649px) {
@@ -4847,9 +4852,17 @@ input[type='date']::-webkit-inner-spin-button {
     color: #BA8161; }
 
 .empty {
-  border: 2px solid #D66565 !important;
-  transition: color .4s ease-in-out; }
+  animation: showBorder 2.2s ease-in-out !important; }
 
+@keyframes showBorder {
+  0% {
+    border: 2px solid rgba(214, 101, 101, 0); }
+  15% {
+    border: 2px solid #d66565; }
+  95% {
+    border: 2px solid #d66565; }
+  100% {
+    border: 2px solid rgba(214, 101, 101, 0); } }
 .data-calendar-wrapper {
   width: 100%;
   height: 190px; }
@@ -4974,6 +4987,46 @@ td.day.last-month {
   .label-img:hover {
     margin-left: 0; }
 
+/*end*/
+/*error message*/
+.error-message {
+  position: absolute;
+  display: none;
+  z-index: 20;
+  padding: 8px 15px;
+  background: #D66565;
+  color: #FFFFFF;
+  font-family: 'Merel Regular', sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+  text-align: center;
+  top: 42px;
+  opacity: 0; }
+  .error-message:before {
+    position: absolute;
+    content: '';
+    top: -9px;
+    left: calc(50% - 3px);
+    border: 3px solid transparent;
+    border-bottom: 6px solid #D66565; }
+
+.error-message--active {
+  display: block;
+  top: 62px;
+  animation: showAlert 2.2s cubic-bezier(0.51, 0.92, 0.24, 1.15); }
+
+@keyframes showAlert {
+  0% {
+    opacity: 0;
+    top: 42px; }
+  15% {
+    opacity: 1;
+    top: 62px; }
+  95% {
+    opacity: 1;
+    top: 62px; }
+  100% {
+    opacity: 0; } }
 /*end*/
 
 /*# sourceMappingURL=style.css.map */

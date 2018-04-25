@@ -757,15 +757,13 @@ input[type='date']::-webkit-inner-spin-button {
         max-width: 300px;
         width: 100%;
         justify-content: space-between;
-        &:before {
-          position: absolute;
-          content: 'Нужно выбрать дату';
-          top: 53px;
-        }
         @media screen and (max-width: 649px) {
           max-width: 175px;
           height: 30px;
         }
+      }
+      &:first-child .error-message {
+        right: 30px;
       }
       &:first-child .field-label {
         width: 150px;
@@ -836,6 +834,7 @@ input[type='date']::-webkit-inner-spin-button {
     }
     &:nth-child(2) .field-wrapper {
       height: 52px;
+      position: relative;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -846,6 +845,15 @@ input[type='date']::-webkit-inner-spin-button {
       &:hover,
       &:focus {
         background: rgba(250,247,242,1);
+      }
+      &:first-child .error-message {
+        right: 85px;
+      }
+      &:nth-child(2) .error-message {
+        right: 75px;
+      }
+      &:nth-child(3) .error-message {
+        right: 94px;
       }
       &:nth-child(4) {
         margin-bottom: 40px;
@@ -5432,8 +5440,22 @@ input[type='date']::-webkit-inner-spin-button {
 }
 
 .empty {
-  border: 2px solid #D66565 !important;
-  transition: color .4s ease-in-out;
+  animation: showBorder 2.2s ease-in-out !important;
+}
+
+@keyframes showBorder {
+  0% {
+    border: 2px solid rgba(214,101,101,0);
+  }
+  15% {
+    border: 2px solid rgba(214,101,101,1);
+  }
+  95% {
+    border: 2px solid rgba(214,101,101,1);
+  }
+  100% {
+    border: 2px solid rgba(214,101,101,0);
+  }
 }
 
 .data-calendar-wrapper {
@@ -5578,6 +5600,55 @@ td.day.last-month {
   transition: all .25s cubic-bezier(.51,.92,.24,1.15);
   &:hover {
     margin-left: 0;
+  }
+}
+/*end*/
+
+/*error message*/
+.error-message {
+  position: absolute;
+  display: none;
+  z-index: 20;
+  padding: 8px 15px;
+  background: #D66565;
+  color: #FFFFFF;
+  font-family: 'Merel Regular', sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+  text-align: center;
+  top: 42px;
+  opacity: 0;
+  &:before {
+    position: absolute;
+    content: '';
+    top: -9px;
+    left: calc(50% - 3px);
+    border: 3px solid transparent;
+    border-bottom: 6px solid #D66565;
+  }
+}
+
+.error-message--active {
+  display: block;
+  top: 62px;
+  animation: showAlert 2.2s  cubic-bezier(.51,.92,.24,1.15);
+}
+
+@keyframes showAlert {
+  0% {
+    opacity: 0;
+    top: 42px;
+  }
+  15% {
+    opacity: 1;
+    top: 62px;
+  }
+  95% {
+    opacity: 1;
+    top: 62px;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /*end*/

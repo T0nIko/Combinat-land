@@ -149,6 +149,7 @@
 
                     <label class="field-label" for="date">Дата и время</label>
                     <input type="text" class="field validate" id="date" placeholder="__ __ ____" required/>
+                    <span class="error-message" id="error-date">Выберите дату и время</span>
 
                     <section class="data__container">
                         <div class="data-calendar-wrapper" id="calendar"></div>
@@ -171,15 +172,18 @@
                 <div class="field-wrapper">
                     <label class="field-label" for="name">Ваше имя и фамилия</label>
                     <input type="text" class="field validate" id="name" placeholder="Например, Мария Иванова" required/>
+                    <span class="error-message" id="error-name">Введите Ваши данные</span>
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="phone">Контактный телефон</label>
                     <input type="tel" class="field validate" id="phone" placeholder="+7___ ___-__-__"/>
+                    <span class="error-message" id="error-phone">Введите номер телефона</span>
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="email">Электорнная почта</label>
                     <input type="email" class="field validate" id="email" onkeyup="onlyLatin(this);" placeholder="Например, maryivanova@example.ru"
                            required/>
+                    <span class="error-message" id="error-mail">Введите Ваш e-mail</span>
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="comment">Комментарий</label>

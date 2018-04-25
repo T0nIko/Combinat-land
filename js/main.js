@@ -137,30 +137,38 @@ $(document).ready(function () {
             // Для даты и времени
             if ($('#order_form input#date').val() === '') {
                 $('#order_form input#date').parent('.field-wrapper').addClass('empty');
+                $('#error-date').addClass('error-message--active');
                 setTimeout( function () {
                     $('#order_form input#date').parent('.field-wrapper').removeClass('empty');
-                }, 410);
+                    $('#error-date').removeClass('error-message--active');
+                }, 2200);
             }
             // Для имени
             else if ($('#order_form input#name').val() === '') {
                 $('#order_form input#name').parent('.field-wrapper').addClass('empty');
+                $('#error-name').addClass('error-message--active');
                 setTimeout( function () {
                     $('#order_form input#name').parent('.field-wrapper').removeClass('empty');
-                }, 410);
+                    $('#error-name').removeClass('error-message--active');
+                }, 2200);
             }
             // Для телефона
             else if ($('#order_form input#phone').val() === '') {
                 $('#order_form input#phone').parent('.field-wrapper').addClass('empty');
+                $('#error-phone').addClass('error-message--active');
                 setTimeout( function () {
                     $('#order_form input#phone').parent('.field-wrapper').removeClass('empty');
-                }, 410);
+                    $('#error-phone').removeClass('error-message--active');
+                }, 2200);
             }
             // Для e-mail
             else if ($('#order_form input#email').val() === '') {
                 $('#order_form input#email').parent('.field-wrapper').addClass('empty');
+                $('#error-mail').addClass('error-message--active');
                 setTimeout( function () {
                     $('#order_form input#email').parent('.field-wrapper').removeClass('empty');
-                }, 410);
+                    $('#error-mail').removeClass('error-message--active');
+                }, 2200);
             }
             // Если заполнены все поля, то кнопка отправки становится активной
             else {
@@ -198,6 +206,7 @@ function onlyNumbers(obj) {
     }
 }
 
+// Маска для поля ввода телефона
 $(document).ready(function () {
     $('#phone').on('keydown', function(event) {
         if( !(event.key == 'ArrowLeft' || event.key == 'ArrowRight' || event.key == 'Backspace' || event.key == 'Tab')) {
@@ -227,6 +236,17 @@ $(document).ready(function () {
     });
 });
 
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+// Смена заливки бекграунда у контейнера с полем, если есть фокус
+$(document).ready(function () {
+    $('.field-wrapper').click(function (e) {
+        e.preventDefault();
+        $('div.field-wrapper').css({background: 'rgba(250,247,242,.4)'});
+        $(this).css({background: 'rgba(250,247,242,1)'});
+    });
+});
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
