@@ -811,8 +811,7 @@ input[type='date']::-webkit-inner-spin-button {
     width: calc(100% - 246px);
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 18px;
-    line-height: 20px;
-    text-transform: uppercase; }
+    line-height: 20px; }
     @media screen and (max-width: 649px) {
       .pop-up__container:nth-child(2) .pop-up-form .field__container .field-wrapper .field {
         height: 20px;
@@ -846,13 +845,16 @@ input[type='date']::-webkit-inner-spin-button {
     background: transparent;
     outline: none;
     border: none;
-    height: 28px;
+    max-height: 28px;
     width: calc(100% - 246px);
     margin-left: 20px;
     padding-top: 5px;
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 18px;
-    line-height: 20px; }
+    line-height: 20px;
+    resize: none; }
+    .pop-up__container:nth-child(2) .pop-up-form .field__container .field-wrapper .field-text::-webkit-resizer, .pop-up__container:nth-child(2) .pop-up-form .field__container .field-wrapper .field-text::-webkit-scrollbar, .pop-up__container:nth-child(2) .pop-up-form .field__container .field-wrapper .field-text::-webkit-scrollbar-button {
+      opacity: 0; }
     @media screen and (max-width: 649px) {
       .pop-up__container:nth-child(2) .pop-up-form .field__container .field-wrapper .field-text {
         height: 20px;
