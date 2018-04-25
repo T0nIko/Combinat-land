@@ -10,6 +10,15 @@ $(document).ready(function () {
             , 350);
         return false;
     });
+    $('a.aside-contacts-link').click(function () {
+        let elementClick = $(this).attr("href");
+        let destination = $(elementClick).offset().top - 20;
+        $('html').animate({
+                scrollTop: destination
+            }
+            , 350);
+        return false;
+    });
     // Для мобильной навигации
     $('a.nav-mob-item-link').click(function () {
         $('#mob_menu').removeClass('nav--active');
@@ -307,4 +316,11 @@ $(document).ready(function () {
 });
 
 /*--------------------------------------------------------------------------------------------------------------------*/
+
+$(document).ready(function () {
+    $('.header-img').addClass('header-menu--active');
+});
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
 

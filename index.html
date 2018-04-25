@@ -16,7 +16,6 @@
             crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 
-
 </head>
 <body>
 
@@ -36,7 +35,7 @@
 
     <nav class="aside-mob-nav" id="mob_menu">
 
-        <img src="assets/pictures/svg/owl.svg" class="aside-mob-icon" alt="Сова"/>
+        <a href="https://www.tripadvisor.ru/" class="aside-mob-icon"></a>
 
         <ul class="nav-mob-list">
             <li class="nav-mob-item">
@@ -59,7 +58,7 @@
             </li>
         </ul>
 
-        <img src="assets/pictures/svg/zigzag.svg" class="aside-mob-icon" />
+        <img src="assets/pictures/svg/zigzag.svg" class="aside-mob-icon"/>
 
         <div class="aside__container">
             <div class="aside-wrapper">
@@ -68,7 +67,7 @@
                     <br/>ТРЦ "Ривьера", 3-й этаж</p>
             </div>
             <p class="aside-text">11:00 - 24:00</p>
-            <p class="aside-text">+7 926 192-40-35</p>
+            <a href="tel:+7 (962) 192-40-35" class="aside-text">+7 926 192-40-35</a>
         </div>
 
         <a class="aside-btn">Забронировать столик</a>
@@ -101,17 +100,22 @@
         </nav>
 
         <div class="aside__container">
-            <img src="assets/pictures/svg/placeholder.svg" class="aside-icon" alt="Маркер карты"/>
-            <p class="aside-text">Москва,
-                <br/>ул.Автозаводская 18,
-                <br/>ТРЦ "Ривьера", 3-й этаж</p>
-            <p class="aside-text">11:00 - 24:00</p>
-            <p class="aside-text">+7 926 192-40-35</p>
+            <a href="#contats" class="aside-contacts-link">
+                <img src="assets/pictures/svg/placeholder.svg" class="aside-icon" alt="Маркер карты"/>
+                <p class="aside-text">Москва,
+                    <br/>ул.Автозаводская 18,
+                    <br/>ТРЦ "Ривьера", 3-й этаж</p>
+                <p class="aside-text">11:00 - 24:00</p>
+            </a>
+            <a href="tel:+7 (962) 192-40-35" class="aside-tel aside-text">+7 926 192-40-35</a>
         </div>
 
-        <img src="assets/pictures/svg/owl.svg" class="aside-img" alt="Морда совы"/>
+        <a href="https://www.tripadvisor.ru/" class="aside-img-link"></a>
 
-        <a id="aside_btn" class="aside-btn">Забронировать столик</a>
+        <div class="aside-btn-wrapper">
+            <a id="aside_btn" class="aside-btn">Забронировать столик</a>
+        </div>
+
     </div>
 
 </aside>
@@ -161,7 +165,8 @@
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="email">Электорнная почта</label>
-                    <input type="email" class="field validate" id="email" placeholder="Например, maryivanova@example.ru" required/>
+                    <input type="email" class="field validate" id="email" placeholder="Например, maryivanova@example.ru"
+                           required/>
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="comment">Комментарий</label>
@@ -234,16 +239,16 @@
             <div class="slider-wrapper swiper-container swiper-container-1 swiper-container-vertical">
                 <ul class="slider-list swiper-wrapper">
                     <li class="slider-item swiper-slide">
-                        <img src="assets/pictures/png/1.png" class="slider-img" />
+                        <img src="assets/pictures/png/1.png" class="slider-img"/>
                     </li>
                     <li class="slider-item swiper-slide">
-                        <img src="assets/pictures/png/2.png" class="slider-img" />
+                        <img src="assets/pictures/png/2.png" class="slider-img"/>
                     </li>
                     <li class="slider-item swiper-slide">
-                        <img src="assets/pictures/png/3.png" class="slider-img" />
+                        <img src="assets/pictures/png/3.png" class="slider-img"/>
                     </li>
                     <li class="slider-item swiper-slide">
-                        <img src="assets/pictures/png/2.png" class="slider-img" />
+                        <img src="assets/pictures/png/2.png" class="slider-img"/>
                     </li>
                 </ul>
             </div>
@@ -253,7 +258,7 @@
 
     <!-- Third -->
     <section class="container" id="menu">
-        <img src="assets/pictures/svg/dish.svg" class="container-bg" id="menu-bg" />
+        <img src="assets/pictures/svg/dish.svg" class="container-bg" id="menu-bg"/>
         <div class="container-wrapper">
             <h1 class="container-caption">Меню</h1>
             <div class="container-box">
@@ -269,16 +274,16 @@
                 <div class="slider-wrapper swiper-container swiper-container-2 swiper-container-vertical">
                     <ul class="slider-list swiper-wrapper">
                         <li class="slider-item swiper-slide">
-                            <img src="assets/pictures/png/1.png" class="slider-img" />
+                            <img src="assets/pictures/png/1.png" class="slider-img"/>
                         </li>
                         <li class="slider-item swiper-slide">
-                            <img src="assets/pictures/png/2.png" class="slider-img" />
+                            <img src="assets/pictures/png/2.png" class="slider-img"/>
                         </li>
                         <li class="slider-item swiper-slide">
-                            <img src="assets/pictures/png/3.png" class="slider-img" />
+                            <img src="assets/pictures/png/3.png" class="slider-img"/>
                         </li>
                         <li class="slider-item swiper-slide">
-                            <img src="assets/pictures/png/2.png" class="slider-img" />
+                            <img src="assets/pictures/png/2.png" class="slider-img"/>
                         </li>
                     </ul>
                 </div>
@@ -454,13 +459,13 @@
 
     <!-- Fifth -->
     <section class="container" id="action">
-        <img src="assets/pictures/svg/shrimp-right.svg" class="container-bg" id="action-bg" />
+        <img src="assets/pictures/svg/shrimp-right.svg" class="container-bg" id="action-bg"/>
         <div class="container-wrapper">
             <h1 class="container-caption">% Акции</h1>
             <div class="container-box">
-                <p class="container-text">Весна преображает все вокруг. И
+                <a href="" class="container-text">Весна преображает все вокруг. И
                     <br/>овощной салат из меню Bora Bora —
-                    <br/>не исключение</p>
+                    <br/>не исключение</a>
                 <img src="assets/pictures/svg/zigzag.svg" class="container-img"/>
                 <p class="container-text">23 ноября - 3 декабря</p>
             </div>
@@ -470,16 +475,16 @@
                 <div class="slider-wrapper swiper-container swiper-container-4 swiper-container-vertical">
                     <ul class="slider-list swiper-wrapper">
                         <li class="slider-item swiper-slide">
-                            <img src="assets/pictures/png/1.png" class="slider-img" />
+                            <img src="assets/pictures/png/1.png" class="slider-img"/>
                         </li>
                         <li class="slider-item swiper-slide">
-                            <img src="assets/pictures/png/2.png" class="slider-img" />
+                            <img src="assets/pictures/png/2.png" class="slider-img"/>
                         </li>
                         <li class="slider-item swiper-slide">
-                            <img src="assets/pictures/png/3.png" class="slider-img" />
+                            <img src="assets/pictures/png/3.png" class="slider-img"/>
                         </li>
                         <li class="slider-item swiper-slide">
-                            <img src="assets/pictures/png/2.png" class="slider-img" />
+                            <img src="assets/pictures/png/2.png" class="slider-img"/>
                         </li>
                     </ul>
                 </div>
@@ -490,7 +495,7 @@
 
     <!-- Sixth -->
     <section class="container">
-        <img src="assets/pictures/svg/shrimp-left.svg" class="container-bg" id="slider-bg" />
+        <img src="assets/pictures/svg/shrimp-left.svg" class="container-bg" id="slider-bg"/>
         <div class="container-wrapper">
             <div class="container-box">
                 <a href="" class="container-link instagram"></a>
@@ -539,7 +544,7 @@
                 <p class="container-text">Ресторан</p>
                 <h3 class="container-caption">На tripadviser</h3>
                 <span class="container-line"></span>
-                <a href="" class="container-btn">
+                <a href="https://www.tripadvisor.ru/" class="container-btn">
                     <p class="container-btn-text">Перейти</p>
                     <img src="assets/pictures/svg/arrow-right.svg" class="container-btn-icon"/>
                 </a>
@@ -578,7 +583,8 @@
 
         <div class="container-map" id="map">
             <div class="map-wrapper">
-                <iframe src="https://snazzymaps.com/embed/65618" width="100%" height="887px" style="border:none;"></iframe>
+                <iframe src="https://snazzymaps.com/embed/65618" width="100%" height="887px"
+                        style="border:none;"></iframe>
             </div>
         </div>
     </section>
@@ -589,10 +595,10 @@
         <div class="footer-wrapper">
             <p class="footer-text">© 2001-<span class="year"></span> BB Group. All right reserved.</p>
             <img src="assets/pictures/svg/bb-logo.svg" class="footer-img" alt="BB Group"/>
-            <div class="footer__container">
+            <a href="https://flat12.ru/" class="footer__container">
                 <p class="footer-made">Made in</p>
                 <img src="assets/pictures/svg/flat12-logo.svg" class="footer-logo" alt="Logo Flat12"/>
-            </div>
+            </a>
         </div>
 
         <div class="footer-wrapper--small">
@@ -600,10 +606,10 @@
             <img src="assets/pictures/svg/bb-logo.svg" class="footer-img" alt="BB Group"/>
             <div class="footer__container">
                 <p class="footer-text">© 2001-<span class="year"></span> BB Group. All right reserved.</p>
-                <div class="footer__container">
+                <a href="https://flat12.ru/" class="footer__container">
                     <p class="footer-made">Made in</p>
                     <img src="assets/pictures/svg/flat12-logo.svg" class="footer-logo" alt="Logo Flat12"/>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -626,16 +632,16 @@
     $(document).ready(function () {
         $('#calendar').clndr({
             clickEvents: {
-                click: function(target) {
+                click: function (target) {
                     console.log(target.date._i);
-                    $('#date').attr('value',target.date._i);
+                    $('#date').attr('value', target.date._i);
                     $(target.element).addClass('active-day');
                 },
-                onMonthChange: function(month) {
+                onMonthChange: function (month) {
                     console.log('you just went to ' + month.format('MMMM, YYYY'));
                 }
             },
-            doneRendering: function() {
+            doneRendering: function () {
                 console.log('this would be a fine place to attach custom event handlers.');
             }
         });

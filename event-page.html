@@ -34,7 +34,7 @@
 
     <nav class="aside-mob-nav" id="mob_menu">
 
-        <img src="assets/pictures/svg/owl.svg" class="aside-mob-icon" alt="Сова"/>
+        <a href="https://www.tripadvisor.ru/" class="aside-mob-icon"></a>
 
         <ul class="nav-mob-list">
             <li class="nav-mob-item">
@@ -66,7 +66,7 @@
                     <br/>ТРЦ "Ривьера", 3-й этаж</p>
             </div>
             <p class="aside-text">11:00 - 24:00</p>
-            <p class="aside-text">+7 926 192-40-35</p>
+            <a href="tel:+7 (962) 192-40-35" class="aside-tel aside-text">+7 926 192-40-35</a>
         </div>
 
         <a class="aside-btn">Забронировать столик</a>
@@ -99,17 +99,22 @@
         </nav>
 
         <div class="aside__container">
-            <img src="assets/pictures/svg/placeholder.svg" class="aside-icon" alt="Маркер карты"/>
-            <p class="aside-text">Москва,
-                <br/>ул.Автозаводская 18,
-                <br/>ТРЦ "Ривьера", 3-й этаж</p>
-            <p class="aside-text">11:00 - 24:00</p>
-            <p class="aside-text">+7 926 192-40-35</p>
+            <a href="#contats" class="aside-contacts-link">
+                <img src="assets/pictures/svg/placeholder.svg" class="aside-icon" alt="Маркер карты"/>
+                <p class="aside-text">Москва,
+                    <br/>ул.Автозаводская 18,
+                    <br/>ТРЦ "Ривьера", 3-й этаж</p>
+                <p class="aside-text">11:00 - 24:00</p>
+            </a>
+            <a href="tel:+7 (962) 192-40-35" class="aside-tel aside-text">+7 926 192-40-35</a>
         </div>
 
-        <img src="assets/pictures/svg/owl.svg" class="aside-img" alt="Морда совы"/>
+        <a href="https://www.tripadvisor.ru/" class="aside-img-link"></a>
 
-        <a id="aside_btn" class="aside-btn">Забронировать столик</a>
+        <div class="aside-btn-wrapper">
+            <a id="aside_btn" class="aside-btn">Забронировать столик</a>
+        </div>
+
     </div>
 
 </aside>
@@ -200,7 +205,7 @@
             <h1 class="content-caption">Поджаристая картофельно-грибная котлета, хрустящие корнишоны, ломтик помидора соевый майонез </h1>
             <img src="assets/pictures/svg/zigzag.svg" class="content-icon" />
             <p class="content-text">В 2010-м году японец Такеру Кобаящи установил рекорд и съел 10 бургеров за три минуты
-                <br/><br/>Мы в <span class="content-text---gold">Bora Bora</span> уверены: если бы на соревновании подавали наши постные бургеры, участник бы растянул удовольствие
+                <br/><br/>Мы в <a href="" class="content-text-link content-text---gold">Bora Bora</a> уверены: если бы на соревновании подавали наши постные бургеры, участник бы растянул удовольствие
                 <br/><br/>Поджаристая картофельно-грибная котлета, хрустящие корнишоны, ломтик помидора соевый майонез и овощи в кляре — торопиться за таким ужином вам точно не захочется </p>
             <div class="content-slider__container">
                 <div class="content-slider__box">
@@ -263,10 +268,10 @@
             <div class="footer-wrapper">
                 <p class="footer-text">© 2001-<span class="year"></span> BB Group. All right reserved.</p>
                 <img src="assets/pictures/svg/bb-logo.svg" class="footer-img" alt="BB Group"/>
-                <div class="footer__container">
+                <a href="https://flat12.ru/" class="footer__container">
                     <p class="footer-made">Made in</p>
                     <img src="assets/pictures/svg/flat12-logo.svg" class="footer-logo" alt="Logo Flat12"/>
-                </div>
+                </a>
             </div>
 
             <div class="footer-wrapper--small">
@@ -274,16 +279,19 @@
                 <img src="assets/pictures/svg/bb-logo.svg" class="footer-img" alt="BB Group"/>
                 <div class="footer__container">
                     <p class="footer-text">© 2001-<span class="year"></span> BB Group. All right reserved.</p>
-                    <div class="footer__container">
+                    <a href="https://flat12.ru/" class="footer__container">
                         <p class="footer-made">Made in</p>
                         <img src="assets/pictures/svg/flat12-logo.svg" class="footer-logo" alt="Logo Flat12"/>
-                    </div>
+                    </a>
                 </div>
             </div>
 
         </footer>
 
     </section>
+
+    <div class="main-event-bg"></div>
+    <img src="assets/pictures/svg/fish.svg" class="main-event-bg" />
 
     <a href="index.html" class="back"></a> <!-- to hell and back -->
     <a class="lang"><p class="lang-text">eng</p></a> <!-- Change language -->
