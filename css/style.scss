@@ -52,7 +52,7 @@
 html {
   width: 100%;
   height: 100vh;
-  background: repeating-linear-gradient(90deg, #FAF7F2, #FAF7F2 112px, #F7EBDD 113px, #F7EBDD 113px);
+  background: repeating-linear-gradient(90deg, #FAF7F2, #FAF7F2 112px, #F7EBDD 113px, #F7EBDD 114px);
 }
 
 body {
@@ -452,6 +452,11 @@ input[type='date']::-webkit-inner-spin-button {
   @media screen and (min-height: 768px) and (max-height: 799px) {
     line-height: 42px;
   }
+}
+
+.aside-nav--active {
+  transition: all .35s cubic-bezier(.51, .92, .24, 1.15);
+  color: rgba(241, 218, 194, 1) !important;
 }
 
 .aside__container .aside-contacts-link {
@@ -1206,7 +1211,7 @@ input[type='date']::-webkit-inner-spin-button {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background: repeating-linear-gradient(90deg, #FAF7F2, #FAF7F2 112px, #F7EBDD 113px, #F7EBDD 113px);
+  background: repeating-linear-gradient(90deg, #FAF7F2, #FAF7F2 112px, #F7EBDD 113px, #F7EBDD 114px);
   background-size: 295px 368px;
   @media screen and (min-width: 1366px) and (max-width: 1599px) {
     margin-left: 240px;
@@ -4256,7 +4261,7 @@ input[type='date']::-webkit-inner-spin-button {
 }
 
 .content-slider__box .content-slider-arrow {
-  cursor: pointer;
+  cursor: pointerзнаешь;
   position: absolute;
   z-index: 15;
   top: 187px;
