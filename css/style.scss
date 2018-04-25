@@ -90,7 +90,7 @@ input[type='date']::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   transition: all .3s cubic-bezier(0.42, 2.12, 0.35, 0.55);
-  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+  @media screen and (min-width: 993px) and (max-width: 1599px) {
     width: 240px;
   }
   @media screen and (min-width: 480px) and (max-width: 992px) {
@@ -547,7 +547,7 @@ input[type='date']::-webkit-inner-spin-button {
   overflow: hidden;
   width: 241px;
   height: 55px;
-  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+  @media screen and (min-width: 993px) and (max-width: 1599px) {
     width: 210px;
   }
 }
@@ -595,7 +595,7 @@ input[type='date']::-webkit-inner-spin-button {
   &:hover:after {
     color: #fff;
   }
-  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+  @media screen and (min-width: 993px) and (max-width: 1599px) {
     width: 210px;
   }
 }
@@ -1418,6 +1418,13 @@ input[type='date']::-webkit-inner-spin-button {
       max-height: 740px;
       margin-bottom: 80px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      background: url("../assets/pictures/svg/fish.svg") no-repeat 80px 37px;
+      background-size: 240px auto;
+      max-width: 700px;
+      max-height: 660px;
+      margin: 40px auto 120px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       background: url("../assets/pictures/svg/fish.svg") no-repeat 58px 50px;
       background-size: 180px auto;
@@ -1448,6 +1455,13 @@ input[type='date']::-webkit-inner-spin-button {
       left: auto;
       top: 160px;
       right: 180px;
+    }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      left: auto;
+      top: 160px;
+      right: 70px;
+      font-size: 90px;
+      line-height: 92px;
     }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       top: 133px;
@@ -1491,6 +1505,11 @@ input[type='date']::-webkit-inner-spin-button {
       width: 500px;
       height: 350px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      top: 310px;
+      width: 400px;
+      height: 320px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       top: 272px;
       width: 302px;
@@ -1526,6 +1545,10 @@ input[type='date']::-webkit-inner-spin-button {
     &:nth-child(4) {
       margin: 0 auto auto;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 10px;
       line-height: 14px;
@@ -1553,6 +1576,9 @@ input[type='date']::-webkit-inner-spin-button {
     width: 60px;
     height: 10px;
     margin: 34px auto;
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      margin: 24px auto;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: auto;
       width: 33px;
@@ -1579,6 +1605,12 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         top: 352px;
       }
+      @media screen and (min-width: 993px) and (max-width: 1365px) {
+        top: 372px;
+        left: 100px;
+        width: 500px;
+        height: 282px;
+      }
       @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 363px;
         height: 211px;
@@ -1602,6 +1634,11 @@ input[type='date']::-webkit-inner-spin-button {
         top: 70px;
         width: 390px;
         height: 540px;
+      }
+      @media screen and (min-width: 993px) and (max-width: 1365px) {
+        top: 70px;
+        width: 280px;
+        height: 420px;
       }
       @media screen and (min-width: 650px) and (max-width: 992px) {
         top: 54px;
@@ -1634,6 +1671,11 @@ input[type='date']::-webkit-inner-spin-button {
       max-height: 720px;
       margin-bottom: 105px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      max-width: 700px;
+      max-height: 625px;
+      margin: 0 auto 100px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 670px;
       max-height: 400px;
@@ -1651,6 +1693,11 @@ input[type='date']::-webkit-inner-spin-button {
     text-transform: uppercase;
     line-height: 113px;
     margin: 0 auto auto 0;
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      font-size: 90px;
+      line-height: 92px;
+      margin: 0 auto auto 30px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 64px;
       line-height: 60px;
@@ -1673,6 +1720,11 @@ input[type='date']::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      top: 330px;
+      width: 375px;
+      height: 295px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       top: 133px;
       width: 235px;
@@ -1696,6 +1748,10 @@ input[type='date']::-webkit-inner-spin-button {
     }
     &:last-child {
       margin: 0 auto auto;
+    }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      font-size: 16px;
+      line-height: 26px;
     }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 10px;
@@ -1723,6 +1779,9 @@ input[type='date']::-webkit-inner-spin-button {
     width: 60px;
     height: 10px;
     margin: 34px auto;
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      margin: 24px auto;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 32px;
       height: 5.5px;
@@ -1757,6 +1816,16 @@ input[type='date']::-webkit-inner-spin-button {
       &:before {
         width: 744px;
         height: 485px;
+      }
+    }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      width: 635px;
+      height: 450px;
+      top: 120px;
+      left: 30px;
+      &:before {
+        width: 635px;
+        height: 440px;
       }
     }
     @media screen and (min-width: 650px) and (max-width: 992px) {
@@ -1804,6 +1873,10 @@ input[type='date']::-webkit-inner-spin-button {
     position: absolute;
     top: 0;
     bottom: 0;
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      height: 100%;
+      width: auto;
+    }
     @media screen and (max-width: 649px) {
       height: 100%;
     }
@@ -1822,6 +1895,9 @@ input[type='date']::-webkit-inner-spin-button {
       background-size: 100% 28px;
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         top: 130px;
+      }
+      @media screen and (min-width: 993px) and (max-width: 1365px) {
+        top: 110px;
       }
       @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 58px;
@@ -1853,6 +1929,9 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         top: 247px;
       }
+      @media screen and (min-width: 993px) and (max-width: 1365px) {
+        top: 227px;
+      }
       @media screen and (min-width: 650px) and (max-width: 992px) {
         width: 58px;
         height: 62px;
@@ -1880,6 +1959,11 @@ input[type='date']::-webkit-inner-spin-button {
       max-height: 710px;
       margin-bottom: 110px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      max-width: 700px;
+      max-height: 550px;
+      margin: 0 auto 100px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       padding: 33px 0 0;
       width: 670px;
@@ -1905,6 +1989,12 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       left: 75px;
       width: 430px;
+      height: auto;
+    }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      left: 63px;
+      top: 290px;
+      width: 267px;
       height: auto;
     }
     @media screen and (min-width: 650px) and (max-width: 992px) {
@@ -1946,6 +2036,11 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       margin-right: 30px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      font-size: 90px;
+      line-height: 92px;
+      margin: 0 30px 0 auto;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 64px;
       line-height: 60px;
@@ -1972,6 +2067,12 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       top: 230px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      top: 182px;
+      left: -30px;
+      width: 355px;
+      height: 255px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       top: 182px;
       width: 231px;
@@ -1992,6 +2093,10 @@ input[type='date']::-webkit-inner-spin-button {
     text-align: center;
     position: relative;
     margin: auto auto 0;
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      font-size: 16px;
+      line-height: 26px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       font-size: 10px;
       line-height: 13px;
@@ -2007,6 +2112,9 @@ input[type='date']::-webkit-inner-spin-button {
     width: 60px;
     height: 10px;
     margin: 36px auto 60px;
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      margin: 20px auto 35px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 31px;
       height: 5px;
@@ -2099,6 +2207,12 @@ input[type='date']::-webkit-inner-spin-button {
       width: 740px;
       height: 540px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      width: 605px;
+      height: 430px;
+      top: 120px;
+      right: 60px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 521px;
       height: 354px;
@@ -2152,6 +2266,9 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         top: 253px;
       }
+      @media screen and (min-width: 993px) and (max-width: 1365px) {
+        top: 180px;
+      }
       @media screen and (max-width: 649px) {
         width: 64px;
         height: 60px;
@@ -2174,6 +2291,9 @@ input[type='date']::-webkit-inner-spin-button {
       background-size: 100% 28px;
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         top: 372px;
+      }
+      @media screen and (min-width: 993px) and (max-width: 1365px) {
+        top: 300px;
       }
       @media screen and (max-width: 649px) {
         width: 64px;
@@ -2216,6 +2336,11 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       max-height: 750px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      max-width: 700px;
+      max-height: 600px;
+      margin: 0 auto 100px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 670px;
       max-height: 455px;
@@ -2237,6 +2362,9 @@ input[type='date']::-webkit-inner-spin-button {
     z-index: 1;
     left: 0;
     top: 0;
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      top: 140px;
+    }
     @media screen and (max-width: 649px) {
       top: 100px;
     }
@@ -2254,8 +2382,11 @@ input[type='date']::-webkit-inner-spin-button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      padding: 20px 15px 0 1px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
-      padding: 0 15px 0 1px;
+      padding: 0 20px 0 1px;
     }
     @media screen and (max-width: 649px) {
       padding: 10px 13px 0 1px;
@@ -2271,6 +2402,9 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       max-width: 420px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      max-width: 300px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       max-width: 290px;
     }
@@ -2280,6 +2414,9 @@ input[type='date']::-webkit-inner-spin-button {
     }
     &:nth-child(odd) {
       margin-top: 185px;
+      @media screen and (min-width: 993px) and (max-width: 1365px) {
+        margin-top: 50px;
+      }
       @media screen and (min-width: 650px) and (max-width: 992px) {
         margin-top: 110px;
       }
@@ -2289,6 +2426,9 @@ input[type='date']::-webkit-inner-spin-button {
     }
     &:nth-child(even) {
       margin-top: 75px;
+      @media screen and (min-width: 993px) and (max-width: 1365px) {
+        margin-top: 0;
+      }
       @media screen and (min-width: 650px) and (max-width: 992px) {
         margin-top: 50px;
       }
@@ -2307,6 +2447,11 @@ input[type='date']::-webkit-inner-spin-button {
       background: rgba(248, 236, 222, 0.6);
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         height: 450px;
+      }
+      @media screen and (min-width: 993px) and (max-width: 1365px) {
+        height: 340px;
+        top: -20px;
+        right: -20px;
       }
       @media screen and (min-width: 650px) and (max-width: 992px) {
         top: -10px;
@@ -2336,6 +2481,9 @@ input[type='date']::-webkit-inner-spin-button {
     }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       height: 410px;
+    }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      height: 300px;
     }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       height: 275px;
@@ -2385,6 +2533,11 @@ input[type='date']::-webkit-inner-spin-button {
       left: calc(50% - 180px);
       top: 330px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      max-width: 260px;
+      left: calc(50% - 130px);
+      top: 230px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       max-width: 230px;
       top: 206px;
@@ -2409,6 +2562,10 @@ input[type='date']::-webkit-inner-spin-button {
       margin: 25px auto 0;
       font-size: 26px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      margin: 25px auto 0;
+      font-size: 20px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: 33px auto 0;
       font-size: 15px;
@@ -2429,6 +2586,9 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       margin: 32px auto 22px;
     }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      margin: 22px auto 12px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 39px;
       height: 5.5px;
@@ -2448,6 +2608,10 @@ input[type='date']::-webkit-inner-spin-button {
     color: #BA8161;
     margin: 0 auto 35px;
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
+      margin: 0 auto 20px;
+    }
+    @media screen and (min-width: 993px) and (max-width: 1365px) {
+      font-size: 14px;
       margin: 0 auto 20px;
     }
     @media screen and (min-width: 650px) and (max-width: 992px) {
@@ -2488,6 +2652,10 @@ input[type='date']::-webkit-inner-spin-button {
       font-size: 120px;
       text-transform: uppercase;
       line-height: 113px;
+      @media screen and (min-width: 993px) and (max-width: 1365px) {
+        font-size: 90px;
+        line-height: 92px;
+      }
       @media screen and (min-width: 650px) and (max-width: 992px) {
         font-size: 64px;
         line-height: 60px;
