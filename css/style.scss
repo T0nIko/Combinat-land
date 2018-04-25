@@ -615,7 +615,10 @@ input[type='date']::-webkit-inner-spin-button {
   background-size: 326px 250px;
   box-shadow: 10px 0 30px rgba(168, 147, 113, 0.1);
   transition: all .5s cubic-bezier(.51, .92, .24, 1.15);
-  @media screen and (min-width: 993px) {
+  @media screen and (min-width: 993px) and (max-width: 1024px) {
+    width: 700px;
+  }
+  @media screen and (min-width: 1025px) {
     max-width: 765px;
   }
   @media screen and (min-width: 650px) and (max-width: 992px) {
@@ -720,10 +723,10 @@ input[type='date']::-webkit-inner-spin-button {
 
 .pop-up--active {
   left: 280px;
-  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+  @media screen and (min-width: 993px) and (max-width: 1599px) {
     left: 240px;
   }
-  @media screen and (max-width: 1365px) {
+  @media screen and (max-width: 992px) {
     left: 0;
   }
 }
@@ -753,6 +756,9 @@ input[type='date']::-webkit-inner-spin-button {
     text-align: center;
     text-transform: uppercase;
     margin: 157px auto 15px;
+    @media screen and (min-width: 993px) and (max-width: 1024px) {
+      margin: 100px auto 15px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: 88px auto 15px;
     }
@@ -1121,6 +1127,9 @@ input[type='date']::-webkit-inner-spin-button {
     width: 156px;
     height: 67px;
     margin: 306px auto 50px;
+    @media screen and (min-width: 993px) and (max-width: 1024px) {
+      margin: 230px auto 50px;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       margin: 140px auto 50px;
     }
