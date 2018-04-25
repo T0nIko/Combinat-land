@@ -288,6 +288,7 @@ input[type='date']::-webkit-inner-spin-button {
   @media screen and (max-width: 992px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: absolute;
     width: 100%;
     background: #FFFFFF url("../assets/pictures/svg/fish-white.svg") no-repeat 50% calc(100% + 70px);
@@ -973,7 +974,6 @@ input[type='date']::-webkit-inner-spin-button {
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 18px;
     line-height: 20px;
-    text-transform: uppercase;
     @media screen and (max-width: 649px) {
       height: 20px;
       font-size: 10px;
@@ -2464,7 +2464,7 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 650px) and (max-width: 992px) {
       width: 120px;
       height: 150px;
-      right: -13px;
+      right: 13px;
       top: 30px;
     }
     @media screen and (max-width: 649px) {
@@ -3333,6 +3333,18 @@ input[type='date']::-webkit-inner-spin-button {
   }
   &:nth-child(8) {
     overflow: hidden;
+    position: relative;
+    &:before {
+      position: absolute;
+      z-index: 15;
+      content: '';
+      height: 868px;
+      width: 300px;
+      background: linear-gradient(90deg, #FAF7F2 0%, rgba(255, 255, 255, 0) 70.37%);
+      opacity: 0.4;
+      left: 0;
+      top: 53px;
+    }
     @media screen and (min-width: 1700px) {
       max-height: 940px;
     }
@@ -3341,10 +3353,16 @@ input[type='date']::-webkit-inner-spin-button {
     }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       max-height: 507px;
+      &:before {
+        display: none;
+      }
     }
     @media screen and (max-width: 649px) {
       width: 100%;
       max-height: 990px;
+      &:before {
+        display: none;
+      }
     }
   }
   &:nth-child(8) .container-wrapper {
@@ -5528,6 +5546,7 @@ td.day.last-month {
 /*label, Delivery and Yandex*/
 .label__container {
   position: fixed;
+  z-index: 20;
   overflow: hidden;
   width: 162px;
   height: 120px;
@@ -5536,6 +5555,8 @@ td.day.last-month {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 992px){
+  }
 }
 
 .label-img {

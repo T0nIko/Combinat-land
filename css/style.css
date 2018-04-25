@@ -249,6 +249,7 @@ input[type='date']::-webkit-inner-spin-button {
     .aside-mob-nav {
       display: flex;
       flex-direction: column;
+      align-items: center;
       position: absolute;
       width: 100%;
       background: #FFFFFF url("../assets/pictures/svg/fish-white.svg") no-repeat 50% calc(100% + 70px);
@@ -851,8 +852,7 @@ input[type='date']::-webkit-inner-spin-button {
     padding-top: 5px;
     font-family: 'Catorze27 Style 1', sans-serif;
     font-size: 18px;
-    line-height: 20px;
-    text-transform: uppercase; }
+    line-height: 20px; }
     @media screen and (max-width: 649px) {
       .pop-up__container:nth-child(2) .pop-up-form .field__container .field-wrapper .field-text {
         height: 20px;
@@ -2209,7 +2209,7 @@ input[type='date']::-webkit-inner-spin-button {
       .main .container:nth-child(5) .container-bg {
         width: 120px;
         height: 150px;
-        right: -13px;
+        right: 13px;
         top: 30px; } }
     @media screen and (max-width: 649px) {
       .main .container:nth-child(5) .container-bg {
@@ -2975,7 +2975,18 @@ input[type='date']::-webkit-inner-spin-button {
           height: 2px;
           margin: 0 auto 20px; } }
   .main .container:nth-child(8) {
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
+    .main .container:nth-child(8):before {
+      position: absolute;
+      z-index: 15;
+      content: '';
+      height: 868px;
+      width: 300px;
+      background: linear-gradient(90deg, #FAF7F2 0%, rgba(255, 255, 255, 0) 70.37%);
+      opacity: 0.4;
+      left: 0;
+      top: 53px; }
     @media screen and (min-width: 1700px) {
       .main .container:nth-child(8) {
         max-height: 940px; } }
@@ -2984,11 +2995,15 @@ input[type='date']::-webkit-inner-spin-button {
         max-height: 860px; } }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       .main .container:nth-child(8) {
-        max-height: 507px; } }
+        max-height: 507px; }
+        .main .container:nth-child(8):before {
+          display: none; } }
     @media screen and (max-width: 649px) {
       .main .container:nth-child(8) {
         width: 100%;
-        max-height: 990px; } }
+        max-height: 990px; }
+        .main .container:nth-child(8):before {
+          display: none; } }
   .main .container:nth-child(8) .container-wrapper {
     z-index: 2;
     position: absolute;
@@ -4930,6 +4945,7 @@ td.day.last-month {
 /*label, Delivery and Yandex*/
 .label__container {
   position: fixed;
+  z-index: 20;
   overflow: hidden;
   width: 162px;
   height: 120px;
