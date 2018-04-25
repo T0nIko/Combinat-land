@@ -741,11 +741,14 @@ input[type='date']::-webkit-inner-spin-button {
       flex-direction: column;
     }
     &:first-child .field-wrapper {
+      position: relative;
       height: 52px;
       display: flex;
       flex-direction: row;
       align-items: center;
-      background: #FAF7F2;
+      background: rgba(250,247,242,.4);
+      border: 2px solid rgba(250,247,242,0);
+      transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
       @media screen and (max-width: 649px) {
         height: 30px;
       }
@@ -754,6 +757,11 @@ input[type='date']::-webkit-inner-spin-button {
         max-width: 300px;
         width: 100%;
         justify-content: space-between;
+        &:before {
+          position: absolute;
+          content: 'Нужно выбрать дату';
+          top: 53px;
+        }
         @media screen and (max-width: 649px) {
           max-width: 175px;
           height: 30px;
@@ -831,8 +839,14 @@ input[type='date']::-webkit-inner-spin-button {
       display: flex;
       flex-direction: row;
       align-items: center;
-      background: #FAF7F2;
+      background: rgba(250,247,242,.4);
+      border: 2px solid rgba(250,247,242,0);
       margin-bottom: 15px;
+      transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+      &:hover,
+      &:focus {
+        background: rgba(250,247,242,1);
+      }
       &:nth-child(4) {
         margin-bottom: 40px;
       }
@@ -5418,16 +5432,8 @@ input[type='date']::-webkit-inner-spin-button {
 }
 
 .empty {
-  &::placeholder {
-    color: rgba(244, 101, 0, 1) !important;
-    transition: color .4s ease-in-out;
-  }
-  &::-webkit-input-placeholder,
-  &::-moz-placeholder,
-  &:-moz-placeholder {
-    color: rgba(244, 101, 0, 1) !important;
-    transition: color .4s ease-in-out;
-  }
+  border: 2px solid #D66565 !important;
+  transition: color .4s ease-in-out;
 }
 
 .data-calendar-wrapper {

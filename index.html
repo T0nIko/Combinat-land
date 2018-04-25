@@ -9,10 +9,16 @@
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/swiper.min.css" rel="stylesheet"/>
 
-    <!-- js -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
+
+    <!-- Input mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.3/inputmask/inputmask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.3/inputmask/inputmask.phone.extensions.min.js"></script>
+
+    <!-- js -->
     <script src="js/main.js"></script>
 
 </head>
@@ -172,7 +178,7 @@
                 </div>
                 <div class="field-wrapper">
                     <label class="field-label" for="email">Электорнная почта</label>
-                    <input type="email" class="field validate" id="email" placeholder="Например, maryivanova@example.ru"
+                    <input type="email" class="field validate" id="email" onkeyup="onlyLatin(this);" placeholder="Например, maryivanova@example.ru"
                            required/>
                 </div>
                 <div class="field-wrapper">
@@ -663,7 +669,7 @@
                 }
             },
             doneRendering: function () {
-                console.log('this would be a fine place to attach custom event handlers.');
+                console.log('Lel, it\'s work!');
             }
         });
     });

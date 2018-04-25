@@ -649,11 +649,14 @@ input[type='date']::-webkit-inner-spin-button {
     .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) {
       flex-direction: column; }
     .pop-up__container:nth-child(2) .pop-up-form .field__container:first-child .field-wrapper {
+      position: relative;
       height: 52px;
       display: flex;
       flex-direction: row;
       align-items: center;
-      background: #FAF7F2; }
+      background: rgba(250, 247, 242, 0.4);
+      border: 2px solid rgba(250, 247, 242, 0);
+      transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
       @media screen and (max-width: 649px) {
         .pop-up__container:nth-child(2) .pop-up-form .field__container:first-child .field-wrapper {
           height: 30px; } }
@@ -662,6 +665,10 @@ input[type='date']::-webkit-inner-spin-button {
         max-width: 300px;
         width: 100%;
         justify-content: space-between; }
+        .pop-up__container:nth-child(2) .pop-up-form .field__container:first-child .field-wrapper:first-child:before {
+          position: absolute;
+          content: 'Нужно выбрать дату';
+          top: 53px; }
         @media screen and (max-width: 649px) {
           .pop-up__container:nth-child(2) .pop-up-form .field__container:first-child .field-wrapper:first-child {
             max-width: 175px;
@@ -728,8 +735,12 @@ input[type='date']::-webkit-inner-spin-button {
       display: flex;
       flex-direction: row;
       align-items: center;
-      background: #FAF7F2;
-      margin-bottom: 15px; }
+      background: rgba(250, 247, 242, 0.4);
+      border: 2px solid rgba(250, 247, 242, 0);
+      margin-bottom: 15px;
+      transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
+      .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper:hover, .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper:focus {
+        background: #faf7f2; }
       .pop-up__container:nth-child(2) .pop-up-form .field__container:nth-child(2) .field-wrapper:nth-child(4) {
         margin-bottom: 40px; }
       @media screen and (max-width: 649px) {
@@ -4835,11 +4846,8 @@ input[type='date']::-webkit-inner-spin-button {
   .data-text:hover, .data-text:focus {
     color: #BA8161; }
 
-.empty::placeholder {
-  color: #f46500 !important;
-  transition: color .4s ease-in-out; }
-.empty::-webkit-input-placeholder, .empty::-moz-placeholder, .empty:-moz-placeholder {
-  color: #f46500 !important;
+.empty {
+  border: 2px solid #D66565 !important;
   transition: color .4s ease-in-out; }
 
 .data-calendar-wrapper {

@@ -51,7 +51,6 @@ $(document).ready(function () {
             , 350);
         return false;
     });
-
 });
 
 // Для кнопки скролла вверх
@@ -131,44 +130,43 @@ $(document).ready(function () {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-// Валидация
+// Валидация. Проверка на заполненность формы
 $(document).ready(function () {
     $('#form_btn').click(function () {
         $('#order_form input').each(function() {
-            if ($('#order_form input').val() === '') {
-                $('#order_form input').addClass('empty');
+            // Для даты и времени
+            if ($('#order_form input#date').val() === '') {
+                $('#order_form input#date').parent('.field-wrapper').addClass('empty');
                 setTimeout( function () {
-                    $('#order_form input').removeClass('empty');
+                    $('#order_form input#date').parent('.field-wrapper').removeClass('empty');
                 }, 410);
             }
-            else if ($('#order_form input#date').val() === '') {
-                $('#order_form input').addClass('empty');
-                setTimeout( function () {
-                    $('#order_form input').removeClass('empty');
-                }, 410);
-            }
+            // Для имени
             else if ($('#order_form input#name').val() === '') {
-                $('#order_form input').addClass('empty');
+                $('#order_form input#name').parent('.field-wrapper').addClass('empty');
                 setTimeout( function () {
-                    $('#order_form input').removeClass('empty');
+                    $('#order_form input#name').parent('.field-wrapper').removeClass('empty');
                 }, 410);
             }
+            // Для телефона
             else if ($('#order_form input#phone').val() === '') {
-                $('#order_form input').addClass('empty');
+                $('#order_form input#phone').parent('.field-wrapper').addClass('empty');
                 setTimeout( function () {
-                    $('#order_form input').removeClass('empty');
+                    $('#order_form input#phone').parent('.field-wrapper').removeClass('empty');
                 }, 410);
             }
+            // Для e-mail
             else if ($('#order_form input#email').val() === '') {
-                $('#order_form input').addClass('empty');
+                $('#order_form input#email').parent('.field-wrapper').addClass('empty');
                 setTimeout( function () {
-                    $('#order_form input').removeClass('empty');
+                    $('#order_form input#email').parent('.field-wrapper').removeClass('empty');
                 }, 410);
             }
+            // Если заполнены все поля, то кнопка отправки становится активной
             else {
                 // После валидации и отправки формы
                 setTimeout( function () {
-                    $('#last_pop_up').addClass('last-pop-up--active');
+                    $('#last_pop_up').addClass('last-pop-up--active'); // Открыть следующий поп-ап
                     setInterval( function () {
                         $('#order_form input').val(''); // Очистить все формы
                     }, 100);
@@ -177,6 +175,58 @@ $(document).ready(function () {
         });
     });
 });
+
+// Проверка области для e-mail на ввод кириллицы
+function onlyLatin(obj) {
+    if (/^[a-zA-Z0-9 ,.\-:"()]*?$/.test(obj.value)) {
+        obj.defaultValue = obj.value;
+    }
+    else {
+        obj.value = obj.defaultValue;
+        $(obj).val('');
+    }
+}
+
+// Проверка области для телефона на ввод буквенных символов
+function onlyNumbers(obj) {
+    if (/^(\d){1,13}$/.test(obj.value)) {
+        obj.defaultValue = obj.value;
+    }
+    else {
+        obj.value = obj.defaultValue;
+        $(obj).val('');
+    }
+}
+
+$(document).ready(function () {
+    $('#phone').on('keydown', function(event) {
+        if( !(event.key == 'ArrowLeft' || event.key == 'ArrowRight' || event.key == 'Backspace' || event.key == 'Tab')) {
+            event.preventDefault() ;
+        }
+        var mask = '+7 (111) 111-11-11'; // Задаем маску
+
+        if (/[0-9\+\ \-\(\)]/.test(event.key)) {
+            // Здесь начинаем сравнивать this.value и mask
+            // к примеру опять же
+            var currentString = this.value;
+            var currentLength = currentString.length;
+            if (/[0-9]/.test(event.key)) {
+                if (mask[currentLength] == '1') {
+                    this.value = currentString + event.key;
+                } else {
+                    for (var i=currentLength; i<mask.length; i++) {
+                        if (mask[i] == '1') {
+                            this.value = currentString + event.key;
+                            break;
+                        }
+                        currentString += mask[i];
+                    }
+                }
+            }
+        }
+    });
+});
+
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -317,6 +367,7 @@ $(document).ready(function () {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
+// Анимация картинки в шапке на странице с каким-либо событием
 $(document).ready(function () {
     $('.header-img').addClass('header-menu--active');
 });
