@@ -368,6 +368,9 @@ input[type='date']::-webkit-inner-spin-button {
     line-height: 50px;
     font-size: 24px;
   }
+  @media screen and (max-width: 320px) {
+    line-height: 43px;
+  }
 }
 
 .aside-mob-nav .aside__container .aside-wrapper {
@@ -420,6 +423,9 @@ input[type='date']::-webkit-inner-spin-button {
       font-size: 24px;
       line-height: 24px;
       margin: 23px auto 35px;
+    }
+    @media screen and (max-width: 320px) {
+      margin: 23px auto;
     }
   }
 }
@@ -652,6 +658,9 @@ input[type='date']::-webkit-inner-spin-button {
   width: 40px;
   height: 40px;
   z-index: 90;
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
 }
 
 .close-button {
@@ -1253,8 +1262,8 @@ input[type='date']::-webkit-inner-spin-button {
   @media screen and (max-width: 649px) {
     margin-left: 0;
     width: 100%;
-    background-size: 25px 1px;
-    background: repeating-linear-gradient(90deg, #FAF7F2, #FAF7F2 27px, #F7EBDD 27px, #F7EBDD 28px);
+    background-size: 24px 1px;
+    background: repeating-linear-gradient(90deg, #FAF7F2, #FAF7F2 24px, #F7EBDD 24px, #F7EBDD 25px);
   }
 }
 
@@ -1668,6 +1677,10 @@ input[type='date']::-webkit-inner-spin-button {
       top: 0;
       left: 0;
     }
+    @media screen and (max-width: 320px) {
+      width: 225px;
+      left: 2px;
+    }
   }
   &:first-child .container-wrapper .container-text {
     font-family: 'Georgiai', sans-serif;
@@ -1771,6 +1784,9 @@ input[type='date']::-webkit-inner-spin-button {
         margin: 0 auto;
         top: 0;
         left: 0;
+      }
+      @media screen and (max-width: 375px) {
+        max-width: 325px;
       }
     }
     &:nth-child(5) {
@@ -1965,6 +1981,9 @@ input[type='date']::-webkit-inner-spin-button {
       height: auto;
       left: calc(50% - 137.5px);
       top: 274px;
+    }
+    @media screen and (max-width: 320px) {
+      left: calc(50% - 135px);
     }
   }
   &:nth-child(2) .container-wrapper .container-text {
@@ -2332,6 +2351,9 @@ input[type='date']::-webkit-inner-spin-button {
       height: 250px;
       left: calc(50% - 137.5px);
       top: 274px;
+    }
+    @media screen and (max-width: 320px) {
+      left: calc(50% - 135px);
     }
   }
   &:nth-child(3) .container-wrapper .container-box .container-text {
@@ -2817,6 +2839,12 @@ input[type='date']::-webkit-inner-spin-button {
       top: 217px;
       left: calc(50% - 137.5px);
     }
+    @media screen and (max-width: 375px) {
+      left: calc(50% - 132px);
+    }
+    @media screen and (max-width: 320px) {
+      left: calc(50% - 136px);
+    }
   }
   &:nth-child(4) .container__slider .slider-wrapper .slider-item .container-box .container__text .container-caption {
     font-family: 'Catorze27 Style 1', sans-serif;
@@ -3247,6 +3275,13 @@ input[type='date']::-webkit-inner-spin-button {
         display: none;
       }
     }
+    @media screen and (max-width: 375px) {
+      max-width: 325px;
+      left: calc(50% - 162.5px);
+      &:before {
+        display: none;
+      }
+    }
     @media screen and (max-width: 320px) {
       width: 100%;
       left: 0;
@@ -3270,7 +3305,7 @@ input[type='date']::-webkit-inner-spin-button {
     left: -25%;
     top: 0;
     bottom: 0;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 414px) {
       left: 0;
       right: 0;
     }
@@ -6483,7 +6518,7 @@ td.day.last-month {
 /*label, Delivery and Yandex*/
 .label__container {
   position: fixed;
-  z-index: 9;
+  z-index: 5;
   overflow: hidden;
   width: 162px;
   height: 120px;
