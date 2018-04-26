@@ -8,6 +8,7 @@
     <!-- css -->
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/swiper.min.css" rel="stylesheet"/>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -17,6 +18,9 @@
     <!-- Input mask -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.3/inputmask/inputmask.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.3/inputmask/inputmask.phone.extensions.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
     <!-- js -->
     <script src="js/main.js"></script>
@@ -246,11 +250,15 @@
                 <span class="gold">западный дух.</span></p>
         </div>
         <div class="container-block" id="parallax_obj_1"></div>
+        <div class="container-block">
+            <img src="assets/pictures/svg/mouse.svg" class="container-block-img" />
+            <img src="assets/pictures/svg/vertical-zigzag.svg" class="container-block-img" />
+        </div>
     </section>
     <!-- end -->
 
     <!-- Second -->
-    <section class="container" id="atmosphere">
+    <section class="container aos-item aos-init" data-aos="fade-up" id="atmosphere">
         <h1 class="container-caption">Атмосфера</h1>
         <div class="container-wrapper">
             <p class="container-text">В интерьере — <span class="gold">модная американская
@@ -286,7 +294,7 @@
     <!-- end -->
 
     <!-- Third -->
-    <section class="container" id="menu">
+    <section class="container" data-aos="fade-up" id="menu">
         <img src="assets/pictures/svg/dish.svg" class="container-bg" id="menu-bg"/>
         <div class="container-wrapper">
             <h1 class="container-caption">Меню</h1>
@@ -322,7 +330,7 @@
     <!-- end -->
 
     <!-- Fourth -->
-    <section class="container" id="affiche">
+    <section class="container" data-aos="fade-up" id="affiche">
 
         <div class="container-wrapper">
             <h1 class="container-caption">Афиша</h1>
@@ -487,7 +495,7 @@
     <!-- end -->
 
     <!-- Fifth -->
-    <section class="container" id="action">
+    <section class="container" data-aos="fade-up" id="action">
         <img src="assets/pictures/svg/shrimp-right.svg" class="container-bg" id="action-bg"/>
         <div class="container-wrapper">
             <h1 class="container-caption">% Акции</h1>
@@ -523,7 +531,7 @@
     <!-- end -->
 
     <!-- Sixth -->
-    <section class="container">
+    <section class="container" data-aos="fade-up">
         <img src="assets/pictures/svg/shrimp-left.svg" class="container-bg" id="slider-bg"/>
         <div class="container-wrapper">
             <div class="container-box">
@@ -554,7 +562,7 @@
     <!-- end -->
 
     <!-- Seventh-->
-    <section class="container">
+    <section class="container" data-aos="fade-up">
         <div class="container-wrapper">
             <div class="container-box">
                 <img src="assets/pictures/svg/car.svg" class="container-img"/>

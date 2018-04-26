@@ -77,7 +77,7 @@ function onScroll(){
         }
     });
 }
-$(document).ready(function () {
+/*$(document).ready(function () {
     $(document).on("scroll", onScroll);
     $("a[href^=#]").click(function(e){
         e.preventDefault();
@@ -93,7 +93,7 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
-});
+});*/
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -426,4 +426,8 @@ $(document).ready(function () {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
+$(document).ready(function () {
+    AOS.init();
+
+});
 
