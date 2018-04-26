@@ -1,3 +1,4 @@
+// Третья карусель на главной
 var swiper_3 = new Swiper('.swiper-container-3', {
     slidesPerView: 1,
     spaceBetween: 30,

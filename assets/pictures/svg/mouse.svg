@@ -1,8 +1,14 @@
-<svg width="26" height="39" viewBox="0 0 26 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="Canvas" fill="none">
-<g id="Vector">
-<path d="M 12.7716 1.12736L 12.7685 17.9488M 0 17.9488L 23.5881 17.9488M 0.973677 11.5559C 0.973677 5.17374 6.14741 0 12.5295 0C 18.9117 0 24.0854 5.17374 24.0854 11.5559L 24.0854 24.34C 24.0854 30.7222 18.9117 35.8959 12.5295 35.8959C 6.14741 35.8959 0.973677 30.7222 0.973677 24.34L 0.973677 11.5559Z" stroke-width="2" transform="translate(0.623047 1.19141)" stroke="#28304A"/>
-</g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 26 39" style="enable-background:new 0 0 26 39;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#28304A;stroke-width:2;}
+</style>
+<g id="Canvas">
+	<g id="Vector">
+		<path class="st0" d="M13.4,19.1 M0.6,19.1h23.6 M1.6,12.7c0-6.4,5.2-11.6,11.6-11.6c6.4,0,11.6,5.2,11.6,11.6v12.8
+			c0,6.4-5.2,11.6-11.6,11.6c-6.4,0-11.6-5.2-11.6-11.6V12.7z"/>
+	</g>
 </g>
 </svg>
-

@@ -1,3 +1,4 @@
+// Первая карусель на главной
 var swiper = new Swiper('.swiper-container-1', {
     slidesPerView: 1,
     spaceBetween: 30,

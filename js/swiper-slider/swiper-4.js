@@ -1,3 +1,4 @@
+// Четвертая карусель на главной
 var swiper_4 = new Swiper('.swiper-container-4', {
     slidesPerView: 1,
     spaceBetween: 30,
