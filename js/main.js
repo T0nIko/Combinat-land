@@ -63,7 +63,10 @@ function toTop() {
     return false;
 }
 
-var menu_selector = "#aside_navigation"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+// Ниже две функции, похожие по действию на SPA: в боковом меню загорается активный блок
+var menu_selector = "#aside_navigation";
 function onScroll(){
     var scroll_top = $(document).scrollTop();
     $(menu_selector + " a").each(function(){
@@ -77,7 +80,7 @@ function onScroll(){
         }
     });
 }
-/*$(document).ready(function () {
+$(document).ready(function () {
     $(document).on("scroll", onScroll);
     $("a[href^=#]").click(function(e){
         e.preventDefault();
@@ -93,7 +96,7 @@ function onScroll(){
             $(document).on("scroll", onScroll);
         });
     });
-});*/
+});
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -333,7 +336,7 @@ $(document).ready(function ($) {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-// Какая-то неудача(((
+// Количество гостей
 $(document).ready(function () {
     let count = 1;
     $('#count').attr('value', count);
@@ -344,11 +347,20 @@ $(document).ready(function () {
 
     $('#remove').click(function () {
         let regressCount = count--;
-        if (regressCount >= 1) {
-            $('#count').attr('value', regressCount);
+        // Пока счетчик не меньше единицы
+        if (count >= 1) {
+            if (regressCount >= 1) {
+                // Перезаписать значение в input с количеством гостей
+                $('#count').attr('value', regressCount);
+            }
+            else {
+                // Перезаписать значение в input с количеством гостей
+                $('#count').attr('value', 1);
+            }
         }
         else {
             $('#count').attr('value', 1);
+            return (count = 1);
         }
     });
 });

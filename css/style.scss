@@ -1677,6 +1677,9 @@ input[type='date']::-webkit-inner-spin-button {
       top: 0;
       left: 0;
     }
+    @media screen and (width: 414px) {
+      margin-left: 54px;
+    }
     @media screen and (max-width: 320px) {
       width: 225px;
       left: 2px;
@@ -1784,6 +1787,10 @@ input[type='date']::-webkit-inner-spin-button {
         margin: 0 auto;
         top: 0;
         left: 0;
+      }
+      @media screen and (width: 414px) {
+        margin-left: 29px;
+        max-width: 325px;
       }
       @media screen and (max-width: 375px) {
         max-width: 325px;
@@ -1982,6 +1989,9 @@ input[type='date']::-webkit-inner-spin-button {
       left: calc(50% - 137.5px);
       top: 274px;
     }
+    @media screen and (width: 414px) {
+      left: calc(50% - 133px);
+    }
     @media screen and (max-width: 320px) {
       left: calc(50% - 135px);
     }
@@ -2101,6 +2111,9 @@ input[type='date']::-webkit-inner-spin-button {
       &:before {
         display: none;
       }
+    }
+    @media screen and (width: 414px) {
+      margin-left: 4px;
     }
     @media screen and (max-width: 320px) {
       top: 102px;
@@ -2352,6 +2365,9 @@ input[type='date']::-webkit-inner-spin-button {
       left: calc(50% - 137.5px);
       top: 274px;
     }
+    @media screen and (width: 414px) {
+      left: calc(50% - 132px);
+    }
     @media screen and (max-width: 320px) {
       left: calc(50% - 135px);
     }
@@ -2503,6 +2519,9 @@ input[type='date']::-webkit-inner-spin-button {
       height: 256px;
       left: calc(50% - 162.5px);
     }
+    @media screen and (width: 414px) {
+      left: calc(50% - 158px);
+    }
     @media screen and (max-width: 320px) {
       top: 102px;
       width: 320px;
@@ -2649,6 +2668,9 @@ input[type='date']::-webkit-inner-spin-button {
     }
     @media screen and (max-width: 649px) {
       top: 100px;
+    }
+    @media screen and (width: 414px) {
+      left: 5px;
     }
   }
   &:nth-child(4) .container__slider .slider-wrapper {
@@ -3147,6 +3169,9 @@ input[type='date']::-webkit-inner-spin-button {
       left: calc(50% - 137.5px);
       top: 274px;
     }
+    @media screen and (width: 414px) {
+      left: calc(50% - 132px);
+    }
   }
   &:nth-child(5) .container-wrapper .container-box .container-text {
     &:first-child {
@@ -3275,6 +3300,10 @@ input[type='date']::-webkit-inner-spin-button {
         display: none;
       }
     }
+    @media screen and (width: 414px) {
+      max-width: 325px;
+      left: calc(50% - 158px);
+    }
     @media screen and (max-width: 375px) {
       max-width: 325px;
       left: calc(50% - 162.5px);
@@ -3305,7 +3334,7 @@ input[type='date']::-webkit-inner-spin-button {
     left: -25%;
     top: 0;
     bottom: 0;
-    @media screen and (max-width: 414px) {
+    @media screen and (width: 414px) {
       left: 0;
       right: 0;
     }
@@ -3740,6 +3769,10 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (max-width: 649px) {
       width: 330px;
       height: 480px;
+    }
+    @media screen and (width: 414px) {
+      width: 325px;
+      margin-left: 29px !important;
     }
     @media screen and (max-width: 320px) {
       width: 300px;
@@ -4676,6 +4709,9 @@ input[type='date']::-webkit-inner-spin-button {
     height: 332px;
     left: -127px;
     top: 1510px;
+    @media screen and (max-width: 649px){
+      display: none;
+    }
   }
 }
 
