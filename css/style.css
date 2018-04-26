@@ -1082,8 +1082,8 @@ input[type='date']::-webkit-inner-spin-button {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-size: 109px 1px;
-  background: repeating-linear-gradient(90deg, #FAF7F2, #FAF7F2 109px, #F7EBDD 110px, #F7EBDD 111px); }
+  background-size: 109px 2px;
+  background: repeating-linear-gradient(90deg, #FAF7F2, #FAF7F2 109px, #F7EBDD 109px, #F7EBDD 110px); }
   @media screen and (min-width: 993px) and (max-width: 1599px) {
     .main {
       margin-left: 240px;
@@ -2584,7 +2584,10 @@ input[type='date']::-webkit-inner-spin-button {
     text-align: center;
     max-width: 350px;
     line-height: 30px;
-    margin: 40px auto 0; }
+    margin: 40px auto 0;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+    .main .container:nth-child(4) .container__slider .slider-wrapper .slider-item .container-box .container__text .container-caption:hover {
+      color: #F7EBDD; }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       .main .container:nth-child(4) .container__slider .slider-wrapper .slider-item .container-box .container__text .container-caption {
         margin: 25px auto 0;
@@ -3333,9 +3336,8 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (min-width: 993px) and (max-width: 1365px) {
       .main .container:nth-child(7) {
         max-width: 650px;
-        max-height: 330px;
-        margin: 0 auto 60px;
-        padding: 35px 0; } }
+        max-height: 340px;
+        margin: 0 auto 90px; } }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       .main .container:nth-child(7) {
         background: none;
@@ -3489,6 +3491,13 @@ input[type='date']::-webkit-inner-spin-button {
         transition: height 0.4s cubic-bezier(0.86, 0, 0.07, 1), width 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
       .main .container:nth-child(7) .container-wrapper .container-box:first-child .container-btn:hover .container-btn-text, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) .container-btn:hover .container-btn-text, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) .container-btn:hover .container-btn-text {
         color: #F1DAC2; }
+      .main .container:nth-child(7) .container-wrapper .container-box:first-child .container-btn:hover .container-btn-icon, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) .container-btn:hover .container-btn-icon, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) .container-btn:hover .container-btn-icon {
+        background: url("../assets/pictures/svg/arrow-right-brown.svg") no-repeat 50% 50%;
+        background-size: 23px 11.5px; }
+        @media screen and (min-width: 650px) and (max-width: 992px) {
+          .main .container:nth-child(7) .container-wrapper .container-box:first-child .container-btn:hover .container-btn-icon:hover, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) .container-btn:hover .container-btn-icon:hover, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) .container-btn:hover .container-btn-icon:hover {
+            background: url("../assets/pictures/svg/arrow-right-brown.svg") no-repeat 50% 50%;
+            background-size: 13px 6.5px; } }
     .main .container:nth-child(7) .container-wrapper .container-box:first-child .container-btn .container-btn-text, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) .container-btn .container-btn-text, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) .container-btn .container-btn-text {
       cursor: pointer;
       transition: all 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1);
@@ -3505,10 +3514,23 @@ input[type='date']::-webkit-inner-spin-button {
     .main .container:nth-child(7) .container-wrapper .container-box:first-child .container-btn .container-btn-icon, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) .container-btn .container-btn-icon, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) .container-btn .container-btn-icon {
       cursor: pointer;
       width: 23px;
-      margin: auto auto auto 0; }
+      height: 11.5px;
+      margin: auto auto auto 0;
+      transition: all 0.4s 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+      background: url("../assets/pictures/svg/arrow-right.svg") no-repeat 50% 50%;
+      background-size: 23px 11.5px; }
+      .main .container:nth-child(7) .container-wrapper .container-box:first-child .container-btn .container-btn-icon:hover, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) .container-btn .container-btn-icon:hover, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) .container-btn .container-btn-icon:hover {
+        background: url("../assets/pictures/svg/arrow-right-brown.svg") no-repeat 50% 50%;
+        background-size: 23px 11.5px; }
       @media screen and (min-width: 650px) and (max-width: 992px) {
         .main .container:nth-child(7) .container-wrapper .container-box:first-child .container-btn .container-btn-icon, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) .container-btn .container-btn-icon, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) .container-btn .container-btn-icon {
-          width: 13px; } }
+          width: 13px;
+          height: 6.5px;
+          background: url("../assets/pictures/svg/arrow-right.svg") no-repeat 50% 50%;
+          background-size: 13px 6.5px; }
+          .main .container:nth-child(7) .container-wrapper .container-box:first-child .container-btn .container-btn-icon:hover, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) .container-btn .container-btn-icon:hover, .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) .container-btn .container-btn-icon:hover {
+            background: url("../assets/pictures/svg/arrow-right-brown.svg") no-repeat 50% 50%;
+            background-size: 13px 6.5px; } }
     .main .container:nth-child(7) .container-wrapper .container-box:first-child .container-img:first-child {
       width: 100px;
       height: 62px;
