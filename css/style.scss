@@ -1819,8 +1819,12 @@ input[type='date']::-webkit-inner-spin-button {
     display: flex;
     flex-direction: row-reverse;
     @media screen and (width: 1920px) {
-      background: url("../assets/pictures/svg/fish.svg") no-repeat 120px 67px;
+      background: url("../assets/pictures/svg/fish.svg") no-repeat 118px 67px;
       background-size: 327px 332px;
+      @-moz-document url-prefix() {
+        background: url("../assets/pictures/svg/fish.svg") no-repeat 118px 67px;
+        background-size: 327px 332px;
+      }
     }
     @media screen and (min-width: 1600px) and (max-width: 1700px) and (height: 900px) {
       background: url("../assets/pictures/svg/fish.svg") no-repeat 110px 37px;
@@ -1880,7 +1884,10 @@ input[type='date']::-webkit-inner-spin-button {
     z-index: 4;
     @media screen and (width: 1920px) {
       left: auto;
-      right: 171px;
+      right: 180px;
+      @-moz-document url-prefix() {
+        right: 166px;
+      }
     }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       left: auto;
@@ -1940,8 +1947,11 @@ input[type='date']::-webkit-inner-spin-button {
     align-items: center;
     z-index: 3;
     @media screen and (width: 1920px) {
-      left: 10px;
+      left: 8px;
       width: 555px;
+      @-moz-document url-prefix() {
+        left: 8px;
+      }
     }
     @media screen and (min-width: 1600px) and (max-width: 1700px) and (height: 900px) {
       top: 400px;
@@ -2059,7 +2069,12 @@ input[type='date']::-webkit-inner-spin-button {
       background-size: cover;
       z-index: 2;
       @media screen and (width: 1920px) {
-        right: -30px;
+        right: -18px;
+        width: 440px;
+        @-moz-document url-prefix() {
+          right: -18px;
+          width: 440px;
+        }
       }
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         top: 70px;
@@ -2247,7 +2262,10 @@ input[type='date']::-webkit-inner-spin-button {
     line-height: 113px;
     margin: 0 auto auto 0;
     @media screen and (width: 1920px) {
-      margin: 0 auto auto 10px;
+      margin: 0 auto auto 5px;
+      @-moz-document url-prefix() {
+        margin: 0 auto auto 5px;
+      }
     }
     @media screen and (min-width: 993px) and (max-width: 1365px) {
       font-size: 90px;
@@ -2284,7 +2302,10 @@ input[type='date']::-webkit-inner-spin-button {
     -ms-flex-align: center;
     align-items: center;
     @media screen and (width: 1920px) {
-      right: -30px;
+      right: -18px !important;
+      @-moz-document url-prefix() {
+        right: -18px !important;
+      }
     }
     @media screen and (min-width: 993px) and (max-width: 1365px) {
       top: 330px;
@@ -2387,10 +2408,14 @@ input[type='date']::-webkit-inner-spin-button {
       background: rgba(248, 236, 222, .6);
     }
     @media screen and (width: 1920px) {
-      width: 975px;
+      width: 965px;
       left: 33px;
       &:before {
         width: 950px;
+      }
+      @-moz-document url-prefix() {
+        width: 965px;
+        left: 33px;
       }
     }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
@@ -2633,7 +2658,10 @@ input[type='date']::-webkit-inner-spin-button {
     line-height: 113px;
     margin: 0 0 0 auto;
     @media screen and (width: 1920px) {
-      margin-right: -40px;
+      margin-right: -26px;
+      @-moz-document url-prefix() {
+        margin-right: -26px;
+      }
     }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       margin-right: 30px;
@@ -2674,7 +2702,10 @@ input[type='date']::-webkit-inner-spin-button {
     -ms-flex-align: center;
     align-items: center;
     @media screen and (width: 1920px) {
-      left: 9px;
+      left: 9px !important;
+      @-moz-document url-prefix() {
+        left: 9px !important;
+      }
     }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       top: 230px;
@@ -3024,8 +3055,12 @@ input[type='date']::-webkit-inner-spin-button {
       z-index: 12;
     }
     @media screen and (width: 1920px) {
-      width: 1222px;
-      left: 8px;
+      width: 1210px;
+      left: 6px;
+      @-moz-document url-prefix() {
+        width: 1210px;
+        left: 6px;
+      }
     }
     @media screen and (min-width: 993px) and (max-width: 1365px) {
       top: 140px;
@@ -3127,7 +3162,10 @@ input[type='date']::-webkit-inner-spin-button {
       height: 530px;
       background: rgba(248, 236, 222, 0.6);
       @media screen and (width: 1920px) {
-        right: -30px;
+        right: -25px !important;
+        @-moz-document url-prefix() {
+          right: -25px !important;
+        }
       }
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
         height: 450px;
@@ -3509,7 +3547,10 @@ input[type='date']::-webkit-inner-spin-button {
     line-height: 113px;
     margin: 0 0 0 auto;
     @media screen and (width: 1920px) {
-      margin-right: -40px;
+      margin-right: -26px;
+      @-moz-document url-prefix() {
+        margin-right: -26px;
+      }
     }
     @media screen and (min-width: 993px) and (max-width: 1365px) {
       font-size: 90px;
@@ -3549,7 +3590,10 @@ input[type='date']::-webkit-inner-spin-button {
     -ms-flex-align: center;
     align-items: center;
     @media screen and (width: 1920px) {
-      right: -30px;
+      right: -18px;
+      @-moz-document url-prefix() {
+        right: -18px;
+      }
     }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       width: 610px;
@@ -3665,10 +3709,14 @@ input[type='date']::-webkit-inner-spin-button {
       left: 30px;
     }
     @media screen and (width: 1920px) {
-      width: 555px;
-      left: 10px;
+      width: 550px;
+      left: 8px;
       &:before {
-        width: 555px;
+        width: 550px;
+      }
+      @-moz-document url-prefix() {
+        width: 550px;
+        left: 8px;
       }
     }
     @media screen and (min-width: 1600px) and (max-width: 1620px) and (height: 900px) {
@@ -3899,7 +3947,10 @@ input[type='date']::-webkit-inner-spin-button {
     justify-content: space-between;
     flex-wrap: wrap;
     @media screen and (width: 1920px) {
-      padding-left: 9px;
+      padding-left: 7px;
+      @-moz-document url-prefix() {
+        padding-left: 7px;
+      }
     }
     @media screen and (min-width: 1500px) and (max-width: 1599px) {
       max-width: 1050px;
@@ -3923,7 +3974,10 @@ input[type='date']::-webkit-inner-spin-button {
   &:nth-child(6) .container-wrapper .container-list .container-box {
     width: 330px;
     @media screen and (width: 1920px) {
-      width: 335px;
+      width: 330px;
+      @-moz-document url-prefix() {
+        width: 330px;
+      }
     }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       max-width: 280px;
@@ -3956,7 +4010,10 @@ input[type='date']::-webkit-inner-spin-button {
     &:nth-child(3) {
       margin: 0 0 auto auto;
       @media screen and (width: 1920px) {
-        margin: 0 -30px auto auto;
+        margin: 0 -18px auto auto;
+        @-moz-document url-prefix() {
+          margin: 0 -18px auto auto;
+        }
       }
       @media screen and (max-width: 768px) {
         margin-right: 5px;
@@ -4195,7 +4252,10 @@ input[type='date']::-webkit-inner-spin-button {
     justify-content: space-between;
     flex-wrap: wrap;
     @media screen and (width: 1920px) {
-      padding-left: 9px;
+      padding-left: 7px;
+      @-moz-document url-prefix() {
+        padding-left: 7px;
+      }
     }
     @media screen and (min-width: 1500px) and (max-width: 1599px) {
       max-width: 1050px;
@@ -4239,7 +4299,10 @@ input[type='date']::-webkit-inner-spin-button {
     -ms-flex-align: center;
     align-items: center;
     @media screen and (width: 1920px) {
-      width: 335px;
+      width: 330px;
+      @-moz-document url-prefix() {
+        width: 330px;
+      }
     }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       max-width: 280px;
@@ -4295,7 +4358,10 @@ input[type='date']::-webkit-inner-spin-button {
     &:nth-child(3) {
       margin-top: -120px;
       @media screen and (width: 1920px) {
-        margin-right: -30px;
+        margin-right: -18px;
+        @-moz-document url-prefix() {
+          margin-right: -18px;
+        }
       }
       @media screen and (max-width: 768px) {
         margin-right: 5px;
@@ -4766,8 +4832,12 @@ input[type='date']::-webkit-inner-spin-button {
     -webkit-box-shadow: 0 4px 30px rgba(184, 184, 184, 0.25);
     box-shadow: 0 4px 30px rgba(184, 184, 184, 0.25);
     @media screen and (width: 1920px) {
-      right: 180px;
-      width: 555px;
+      right: 193px;
+      width: 550px;
+      @-moz-document url-prefix() {
+        width: 550px;
+        right: 193px;
+      }
     }
     @media screen and (min-width: 1601px) and (max-width: 1660px) {
       right: 90px;
@@ -6403,6 +6473,9 @@ input[type='date']::-webkit-inner-spin-button {
   width: 100%;
   color: #28304A;
   z-index: 4;
+  @media screen and (width: 1920px)  {
+    padding-left: 2px;
+  }
   @media screen and (min-width: 1024px) and (max-width: 1500px) {
     width: 90%;
   }
@@ -6438,6 +6511,9 @@ input[type='date']::-webkit-inner-spin-button {
   max-width: 1200px;
   width: 100%;
   margin-bottom: 122px;
+  @media screen and (width: 1920px) {
+    max-width: 1180px;
+  }
   @media screen and (min-width: 1025px) and (max-width: 1500px) {
     width: 90%;
   }
@@ -6573,6 +6649,9 @@ input[type='date']::-webkit-inner-spin-button {
     height: 774px;
     background: url("../assets/pictures/png/3.png") no-repeat 50% 50%;
     background-size: cover;
+    @media screen and (width: 1920px) {
+      left: 8px;
+    }
     @media screen and (min-width: 1366px) and (max-width: 1500px) {
       width: 480px;
       height: 690px;
@@ -6604,6 +6683,9 @@ input[type='date']::-webkit-inner-spin-button {
     height: 602px;
     background: url("../assets/pictures/png/3.png") no-repeat 50% 50%;
     background-size: cover;
+    @media screen and (width: 1920px) {
+      right: -18px;
+    }
     @media screen and (min-width: 1366px) and (max-width: 1500px) {
       width: 480px;
       height: 540px;
@@ -6631,8 +6713,7 @@ input[type='date']::-webkit-inner-spin-button {
   &:nth-child(odd) .menu__content,
   &:nth-child(even) .menu__content {
     background: #FFFFFF;
-    max-width: 830px;
-    width: 100%;
+    width: 830px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6640,8 +6721,12 @@ input[type='date']::-webkit-inner-spin-button {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    @media screen and (width: 1920px) {
+      width: 880px;
+    }
     @media screen and (min-width: 993px) and (max-width: 1365px) {
       max-width: 630px;
+      width: 100%;
     }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       z-index: 4;
@@ -6657,6 +6742,9 @@ input[type='date']::-webkit-inner-spin-button {
   }
   &:nth-child(odd) .menu__content {
     margin: 0 0 0 auto;
+    @media screen and (width: 1920px) {
+      margin-right: -18px !important;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       max-width: 565px;
       margin: -120px auto 0;
@@ -6667,6 +6755,9 @@ input[type='date']::-webkit-inner-spin-button {
   }
   &:nth-child(even) .menu__content {
     margin: 0 auto 0 0;
+    @media screen and (width: 1920px) {
+      margin-left: 8px !important;
+    }
     @media screen and (min-width: 650px) and (max-width: 992px) {
       max-width: 565px;
       margin: -120px auto 0;
