@@ -1884,7 +1884,8 @@ input[type='date']::-webkit-inner-spin-button {
     }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {
       left: auto;
-      right: 180px;
+      top: 180px;
+      right: 95px;
       @-moz-document url-prefix() {
         right: 80px;
         top: 180px;
