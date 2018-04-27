@@ -1718,6 +1718,9 @@ input[type='date']::-webkit-inner-spin-button {
     width: 40px;
     height: 40px;
   }
+  @media screen and (max-width: 992px) {
+    z-index: 2;
+  }
 }
 
 .active {
@@ -4254,7 +4257,7 @@ input[type='date']::-webkit-inner-spin-button {
     }
     @media screen and (width: 414px) {
       width: 325px;
-      margin-left: 29px !important;
+      margin-left: 29px;
     }
     @media screen and (max-width: 320px) {
       width: 300px;
@@ -4267,6 +4270,10 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (max-width: 649px) {
         margin: 0 auto 14px;
       }
+      @media screen and (width: 414px) {
+        width: 325px;
+        margin-left: 29px;
+      }
     }
     &:nth-child(2) {
       margin-top: -15px;
@@ -4278,6 +4285,10 @@ input[type='date']::-webkit-inner-spin-button {
       }
       @media screen and (max-width: 649px) {
         margin: 0 auto 14px;
+      }
+      @media screen and (width: 414px) {
+        width: 325px;
+        margin-left: 29px;
       }
     }
     &:nth-child(3) {
@@ -4293,6 +4304,10 @@ input[type='date']::-webkit-inner-spin-button {
       }
       @media screen and (min-width: 650px) and (max-width: 992px) {
         margin-top: -22px;
+      }
+      @media screen and (width: 414px) {
+        width: 325px;
+        margin-left: 9px !important;
       }
       @media screen and (max-width: 649px) {
         margin: 0;

@@ -1539,6 +1539,9 @@ input[type='date']::-webkit-inner-spin-button {
       right: 5px;
       width: 40px;
       height: 40px; } }
+  @media screen and (max-width: 992px) {
+    .button-up {
+      z-index: 2; } }
 
 .active {
   cursor: pointer;
@@ -3885,7 +3888,7 @@ input[type='date']::-webkit-inner-spin-button {
     @media screen and (width: 414px) {
       .main .container:nth-child(7) .container-wrapper .container-box {
         width: 325px;
-        margin-left: 29px !important; } }
+        margin-left: 29px; } }
     @media screen and (max-width: 320px) {
       .main .container:nth-child(7) .container-wrapper .container-box {
         width: 300px; } }
@@ -3897,6 +3900,10 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (max-width: 649px) {
         .main .container:nth-child(7) .container-wrapper .container-box:first-child {
           margin: 0 auto 14px; } }
+      @media screen and (width: 414px) {
+        .main .container:nth-child(7) .container-wrapper .container-box:first-child {
+          width: 325px;
+          margin-left: 29px; } }
     .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) {
       margin-top: -15px; }
       @media screen and (min-width: 993px) and (max-width: 1365px) {
@@ -3908,6 +3915,10 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (max-width: 649px) {
         .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) {
           margin: 0 auto 14px; } }
+      @media screen and (width: 414px) {
+        .main .container:nth-child(7) .container-wrapper .container-box:nth-child(2) {
+          width: 325px;
+          margin-left: 29px; } }
     .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) {
       margin-top: -120px; }
       @media screen and (width: 1920px) {
@@ -3922,6 +3933,10 @@ input[type='date']::-webkit-inner-spin-button {
       @media screen and (min-width: 650px) and (max-width: 992px) {
         .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) {
           margin-top: -22px; } }
+      @media screen and (width: 414px) {
+        .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) {
+          width: 325px;
+          margin-left: 9px !important; } }
       @media screen and (max-width: 649px) {
         .main .container:nth-child(7) .container-wrapper .container-box:nth-child(3) {
           margin: 0; } }
